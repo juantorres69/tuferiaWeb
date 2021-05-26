@@ -180,7 +180,7 @@
                                 <div class="tab-pane fade show active" id="nuevos" role="tabpanel" aria-labelledby="arrival-tab">
                                     <div class="product_slider carousel_slider owl-carousel owl-theme dot_style1" data-loop="true" data-margin="20" data-responsive='{"0":{"items": "1"}, "481":{"items": "2"}, "768":{"items": "3"}, "991":{"items": "4"}}'>
                                         <?php 
-                                            $recientes = ControladorProductos::ctrConsultarRecientes(null, null, 8);
+                                           $recientes = ControladorProductos::ctrConsultarRecientes(null, null, 8);
                                             if(count($recientes) > 0){
                                                 foreach($recientes as $reciente){
                                                     echo '<div class="item">
@@ -226,7 +226,7 @@
                                 <div class="tab-pane fade" id="mas_vendidos" role="tabpanel" aria-labelledby="sellers-tab">
                                     <div class="product_slider carousel_slider owl-carousel owl-theme dot_style1" data-loop="true" data-margin="20" data-responsive='{"0":{"items": "1"}, "481":{"items": "2"}, "768":{"items": "3"}, "991":{"items": "4"}}'>
                                     <?php 
-                                            $recientes = ControladorProductos::ctrConsultarMasVendidos(null, null, 8);
+                                            /*$recientes = ControladorProductos::ctrConsultarMasVendidos(null, null, 8);
                                             if(count($recientes) > 0){
                                                 foreach($recientes as $reciente){
                                                     echo '<div class="item">
@@ -265,7 +265,7 @@
                                                     </div>
                                                 </div>';
                                                 }
-                                            }
+                                            }?*/
                                         ?>
                                     </div>
                                 </div>
