@@ -1,20 +1,21 @@
 <!-- START MAIN CONTENT -->
 <div class="main_content">    
+
     <!-- START SECTION BANNER -->
     <div class="mt-4 staggered-animation-wrap">
         <div class="custom-container">
             <div class="row">
+            
                 <!-- categorias menu -->
                 <div class="col-lg-3 col-md-4 col-sm-6 col-3">
-                    <!-- Seccion categorias -->
                     
+                    <!-- Seccion categorias -->
                     <div class="categories_wrap">
                         <button type="button" data-toggle="collapse" data-target="#navCatContent" aria-expanded="false" class="categories_btn">
                             <i class="linearicons-menu"></i><span>Categorias </span>
                         </button>
                         <div id="navCatContent" class="nav_cat navbar collapse">
                             <ul> 
-
 
                                 <?php 
                                     $categorias = ControladorProductos::ctrMostrarCategorias(null, null);
@@ -49,7 +50,6 @@
                                         }
                                     }
                                 ?>
-
 
                                 <?php if(count($categorias) > 9){ echo count($categorias)?>    
                                     <li>
@@ -94,10 +94,11 @@
                         </div>
                     </div>
                 </div>
+
                 <?php 
                 $banners = ControladorHome::ctrConsultarBanners();
-                
                 ?>
+
                 <div class="col-lg-9 ">
                     <div class="banner_section shop_el_slider">
                         <div id="carouselExampleControls" class="carousel slide carousel-fade light_arrow" data-ride="carousel">
@@ -135,6 +136,7 @@
         </div>
     </div>
     <!-- END SECTION BANNER -->
+
     <!-- START SECTION SHOP -->
     <div class="section small_pt pb-0">
         <div class="custom-container">
@@ -701,4 +703,3 @@
 
 </div>
 <!-- END MAIN CONTENT -->
-
