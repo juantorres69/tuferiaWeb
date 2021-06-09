@@ -1,51 +1,12 @@
 
 <!-- START HEADER -->
 <header class="header_wrap">
-	<!-- <div class="top-header light_skin bg_dark d-none d-md-block">
-        <div class="custom-container">
-            <div class="row align-items-center">
-                <div class="col-lg-6 col-md-8">
-                	<div class="header_topbar_info">
-                    	<div class="header_offer">
-                    		<span>Free Ground Shipping Over $250</span>
-                        </div>
-                        <div class="download_wrap">
-                            <span class="mr-3">Download App</span>
-                            <ul class="icon_list text-center text-lg-left">
-                                <li><a href="#"><i class="fab fa-apple"></i></a></li>
-                                <li><a href="#"><i class="fab fa-android"></i></a></li>
-                                <li><a href="#"><i class="fab fa-windows"></i></a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-6 col-md-4">
-                	<div class="d-flex align-items-center justify-content-center justify-content-md-end">
-                        <div class="lng_dropdown">
-                            <select name="countries" class="custome_select">
-                                <option value='en' data-image="assets/images/eng.png" data-title="English">English</option>
-                                <option value='fn' data-image="assets/images/fn.png" data-title="France">France</option>
-                                <option value='us' data-image="assets/images/us.png" data-title="United States">United States</option>
-                            </select>
-                        </div>
-                        <div class="ml-3">
-                            <select name="countries" class="custome_select">
-                                <option value='USD' data-title="USD">USD</option>
-                                <option value='EUR' data-title="EUR">EUR</option>
-                                <option value='GBR' data-title="GBR">GBR</option>
-                            </select>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div> -->
     <div class="middle-header dark_skin">
     	<div class="custom-container">
         	<div class="nav_block">
                 <a class="navbar-brand" href="<?php echo $url; ?>">
-                    <img class="logo_light" src="<?php echo $url.'assets/images/logo-feria.png'?>" alt="logo" />
-                    <img class="logo_dark" src="<?php echo $url.'assets/images/logo-feria.png'?>" alt="logo" />
+                    <img class="logo_light" src="<?php echo $url.'assets/images/LOGO.png'?>" alt="logo" />
+                    <img class="logo_dark" src="<?php echo $url.'assets/images/LOGO.png'?>" alt="logo" />
                 </a>
                 <div class="product_search_form rounded_input">
                     <form id="frmBuscar">
@@ -92,7 +53,7 @@
                     </form>
                 </div>
                 <ul class="navbar-nav attr-nav align-items-center">
-                    <li class="dropdown cart_dropdown"><a href="#" class="nav-link"><i class="linearicons-user"></i></a>
+                    <li class="dropdown cart_dropdown"><a href="http://localhost/app/login" class="nav-link"><i class="linearicons-user"></i></a>
                         <div class="cart_box cart_right dropdown-menu dropdown-menu-right">
                             <ul class="cart_list">
                                 <?php 

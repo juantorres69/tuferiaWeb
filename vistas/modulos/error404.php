@@ -9,15 +9,9 @@
                     <div class="col-lg-6 col-md-10 order-lg-first">
                         <div class="text-center">
                             <div class="error_txt">404</div>
-                            <h5 class="mb-2 mb-sm-3">oops! Pagina no encontrada!</h5> 
-                            <p>La pagiona que estas buscando fue movida, removida, renombrada o posiblemente nunca existio.</p>
-                            <!-- <div class="search_form pb-3 pb-md-4">
-                                <form method="post">
-                                    <input name="text" id="text" type="text" placeholder="Search" class="form-control">
-                                    <button type="submit" class="btn icon_search"><i class="ion-ios-search-strong"></i></button>
-                                </form>
-                            </div> -->
-                            <a href="home" class="btn btn-fill-out">LLevame al Inico</a>
+                            <h5 class="mb-2 mb-sm-3">Pagina no encontrada</h5> 
+                            <p>La página que estas buscando fue movida, removida, renombrada o posiblemente nunca existió.</p>
+                            <a href="home" class="btn btn-fill-out">Llevame al inico</a>
                         </div>
                     </div>
                 </div>
@@ -25,8 +19,6 @@
         </div>
     </div>
     <!-- END 404 SECTION -->
-
-
 
 </div>
 <!-- END MAIN CONTENT -->

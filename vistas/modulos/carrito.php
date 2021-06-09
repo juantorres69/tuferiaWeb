@@ -1,6 +1,8 @@
 <!-- START SECTION BREADCRUMB -->
 <div class="breadcrumb_section bg_gray page-title-mini">
-    <div class="container"><!-- STRART CONTAINER -->
+
+    <!-- STRART CONTAINER -->
+    <div class="container">
         <div class="row align-items-center">
         	<div class="col-md-6">
                 <div class="page-title">
@@ -14,7 +16,9 @@
                 </ol>
             </div>
         </div>
-    </div><!-- END CONTAINER-->
+    </div>
+    <!-- END CONTAINER-->
+    
 </div>
 <!-- END SECTION BREADCRUMB -->
 

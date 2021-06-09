@@ -2826,19 +2826,19 @@ fieldset:disabled a.btn {
 
 .btn-dark {
     color: #fff;
-    background-color: #343a40;
-    border-color: #343a40
+    background-color: #ef7236;
+    border-color: #ef7236
 }
 
 .btn-dark:hover {
     color: #fff;
-    background-color: #23272b;
-    border-color: #1d2124
+    background-color: #ef7236;
+    border-color: #ef7236
 }
 
 .btn-dark.focus,
 .btn-dark:focus {
-    box-shadow: 0 0 0 .2rem rgba(82, 88, 93, .5)
+    box-shadow: 0 0 0 .2rem #ef7236
 }
 
 .btn-dark.disabled,

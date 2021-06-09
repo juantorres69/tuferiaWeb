@@ -28,7 +28,7 @@
 
 .navbar-brand .logo_light,
 .navbar-brand .logo_dark {
-    width: 114px !important;
+    width: 70px !important;
 }
 
 .footer_logo a img {
@@ -97,7 +97,7 @@ table.dataTable tbody td {
 }
 
 .bg-red {
-    background-color: #FF324D;
+    background-color: #2e385e;
 }
 
 

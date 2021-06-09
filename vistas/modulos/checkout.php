@@ -1,6 +1,8 @@
 <!-- START SECTION BREADCRUMB -->
 <div class="breadcrumb_section bg_gray page-title-mini">
-    <div class="container"><!-- STRART CONTAINER -->
+
+    <!-- STRART CONTAINER -->
+    <div class="container">
         <div class="row align-items-center">
         	<div class="col-md-6">
                 <div class="page-title">
@@ -14,7 +16,9 @@
                 </ol>
             </div>
         </div>
-    </div><!-- END CONTAINER-->
+    </div>
+    <!-- END CONTAINER-->
+
 </div>
 <!-- END SECTION BREADCRUMB -->
 
@@ -70,6 +74,7 @@
                     <div class="heading_s1 ">
                         <h4 class="text-dark">Tu Orden</h4>
                     </div>
+
                     <?php 
                         $item = 'usuario_id';
                         $valor = $_SESSION['idUsuario'];
@@ -77,6 +82,7 @@
 
                         $comercioSettings = ControladorCheckout::ctrMostrarComercioSettings();
                     ?>
+                    
                     <input type="hidden" id="hdUrl" value="<?php echo $url?>">'
                     <input type="hidden" name="idUsuario" id="idUsuario" value="<?php echo $_SESSION['idUsuario']?>" >
                     <div class="table-responsive order_table">
@@ -133,6 +139,7 @@
                             </div>
                         </div>
                     </div>
+
                     <form class="formWompi">
                          <!-- OBLIGATORIOS -->
                         <input type="hidden" name="public-key" value="" />
@@ -141,6 +148,7 @@
                         <input type="hidden" name="reference" value="" />
                         <!-- OPCIONALES -->
                         <input type="hidden" name="redirect-url" value="" />
+
                         <?php 
                         if($subtotal > 0){
                             echo '<button type="submit" class="btn btn-fill-out btn-block frmCheckout">Pagar</button>';
