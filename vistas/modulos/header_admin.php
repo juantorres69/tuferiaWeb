@@ -53,6 +53,7 @@
                         </div>
                     </form>
                 </div> -->
+                
                 <ul class="navbar-nav attr-nav align-items-center">
                     <li class="dropdown cart_dropdown"><a href="#" class="nav-link"><i class="linearicons-user"></i></a>
                         <div class="cart_box cart_right dropdown-menu dropdown-menu-right">
@@ -98,7 +99,7 @@
                         </div> 
                         <div class="collapse navbar-collapse mobile_side_menu" id="navbarSidetoggle">
 							<ul class="navbar-nav">
-                                <li><a class="nav-link nav_item" href="<?php echo $url; ?>">Home</a></li> 
+                                <li><a class="nav-link nav_item" href="<?php echo $url; ?>">Inicio</a></li> 
                                 <li><a class="nav-link nav_item" href="<?php echo $url.'productos'; ?>">Productos</a></li> 
                                 <?php if(isset($_SESSION['idUsuario'])){ ?>
                                 <li><a class="nav-link nav_item" href="<?php echo $url.'deseos'; ?>">Deseos</a></li> 
@@ -118,4 +119,3 @@
     </div> -->
 </header>
 <!-- END HEADER -->
-<hr>

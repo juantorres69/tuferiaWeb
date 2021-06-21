@@ -11,7 +11,7 @@
             </div>
             <div class="col-md-6">
                 <ol class="breadcrumb justify-content-md-end">
-                    <li class="breadcrumb-item"><a href="<?php echo $url; ?>">Home</a></li>
+                    <li class="breadcrumb-item"><a href="<?php echo $url; ?>">Inicio</a></li>
                     <li class="breadcrumb-item active">Checkout</li>
                 </ol>
             </div>
@@ -70,7 +70,7 @@
                 
             </div>
             <div class="col-md-6">
-                <div class="order_review">
+                <div class="order_review" style="padding: 0px 30px;">
                     <div class="heading_s1 ">
                         <h4 class="text-dark">Tu Orden</h4>
                     </div>
@@ -83,7 +83,7 @@
                         $comercioSettings = ControladorCheckout::ctrMostrarComercioSettings();
                     ?>
                     
-                    <input type="hidden" id="hdUrl" value="<?php echo $url?>">'
+                    <input type="hidden" id="hdUrl" value="<?php echo $url?>">
                     <input type="hidden" name="idUsuario" id="idUsuario" value="<?php echo $_SESSION['idUsuario']?>" >
                     <div class="table-responsive order_table">
                         <table class="table">

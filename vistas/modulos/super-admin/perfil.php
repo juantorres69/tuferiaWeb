@@ -9,7 +9,7 @@
             </div>
             <div class="col-md-6">
                 <ol class="breadcrumb justify-content-md-end">
-                    <li class="breadcrumb-item"><a href="<?php echo $url; ?>">Home</a></li>
+                    <li class="breadcrumb-item"><a href="<?php echo $url; ?>">Inicio</a></li>
                     <li class="breadcrumb-item active">Perfil</li>
                 </ol>
             </div>

@@ -681,6 +681,7 @@ div.banner_large_pad {
 	font-size: 15px;
 }
 .padding_eight_all {
+	border-radius: 20px;
 	padding: 6%;
 }
 .contact_info_style2 li i {
