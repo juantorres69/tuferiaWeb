@@ -6,17 +6,20 @@
     }
 ?>
 
-<!-- START SECTION BREADCRUMB -->
+<!-- SECTION WISH -->
 <div class="breadcrumb_section bg_gray page-title-mini">
 
-    <!-- STRART CONTAINER -->
     <div class="container">
         <div class="row align-items-center">
+
+            <!-- TITTLE -->
         	<div class="col-md-6">
                 <div class="page-title">
             		<h1>Lista de Deseos</h1>
                 </div>
             </div>
+
+            <!-- ROUTE -->
             <div class="col-md-6">
                 <ol class="breadcrumb justify-content-md-end">
                     <li class="breadcrumb-item"><a href="<?php echo $url; ?>">Inicio</a></li>
@@ -25,18 +28,19 @@
             </div>
         </div>
     </div>
-    <!-- END CONTAINER-->
-
 </div>
-<!-- END SECTION BREADCRUMB -->
 
-<!-- START SECTION SHOP -->
+<!-- SECTION WISH LIST -->
 <div class="section">
 	<div class="container">
         <div class="row">
             <div class="col-12">
+
                 <div class="table-responsive wishlist_table">
+
+                    <!-- TABLE -->
                 	<table class="table">
+                        <!-- ELEMENT -->
                     	<thead>
                         	<tr>
                             	<th class="product-thumbnail">&nbsp;</th>
@@ -46,6 +50,8 @@
                                 <th class="product-remove">Eliminar</th>
                             </tr>
                         </thead>
+
+                        <!-- ITEMS -->
                         <tbody>
 
                             <?php 
@@ -74,4 +80,4 @@
         </div>
     </div>
 </div>
-<!-- END SECTION SHOP -->
+<!-- END SECTION WISH -->

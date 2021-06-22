@@ -11,15 +11,19 @@
     $valor = $producto['id'];
     $imagenes = ControladorProductos::ctrConsultarImagenes($item, $valor);
 ?>
-<!-- START SECTION BREADCRUMB -->
+<!-- SECTION PRODUCT INFORMATION -->
 <div class="breadcrumb_section bg_gray page-title-mini">
-    <div class="container"><!-- STRART CONTAINER -->
+    <div class="container">
         <div class="row align-items-center">
+
+            <!-- TITTLE -->
         	<div class="col-md-6">
                 <div class="page-title">
             		<h1><?php echo $producto['nombre']; ?></h1>
                 </div>
             </div>
+
+            <!-- ROUTE -->
             <div class="col-md-6">
                 <ol class="breadcrumb justify-content-md-end">
                     <li class="breadcrumb-item"><a href="<?php echo $url; ?>">Inicio</a></li>
@@ -27,14 +31,14 @@
                 </ol>
             </div>
         </div>
-    </div><!-- END CONTAINER-->
+    </div>
 </div>
-<!-- END SECTION BREADCRUMB -->
 
-<!-- START SECTION SHOP -->
+<!-- SECTION INFORMATION -->
 <div class="section">
 	<div class="container">
     	<div class="row">
+            <!-- COLUMN RIGHT -->
         	<div class="col-xl-9 col-lg-8">
 				<div class="row">
                     <div class="col-lg-6 col-md-6 mb-4 mb-md-0">
@@ -518,7 +522,8 @@
                     </div>
                 </div>
             </div>
-            
+
+            <!-- COLUMN LEFT -->
             <div class="col-xl-3 col-lg-4 order-lg-first mt-4 pt-2 mt-lg-0 pt-lg-0">
             	<div class="sidebar">
                 	<?php require_once 'categorias_sidebar.php'; ?>
@@ -577,4 +582,4 @@
         </div>
     </div>
 </div>
-<!-- END SECTION SHOP -->
+<!-- END PRODUCT INFORMATION -->

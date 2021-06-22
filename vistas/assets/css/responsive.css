@@ -615,7 +615,7 @@
 .banner_section:not(.full_screen) .carousel-item, 
 .banner_section:not(.full_screen) .banner_content_wrap, 
 .banner_section:not(.full_screen) .banner_content_wrap .carousel-item {
-	height: 500px;
+	height: 300px;
 }
 .banner_section.full_screen.banner_half_content,
 .banner_section:not(.full_screen).banner_half_content,
@@ -1302,7 +1302,7 @@ p {
 	height: 250px;
 }
 .banner_section:not(.full_screen), .banner_section:not(.full_screen) .carousel-item, .banner_section:not(.full_screen) .banner_content_wrap, .banner_section:not(.full_screen) .banner_content_wrap .carousel-item {
-	height: 350px;
+	height: 200px;
 }
 .banner_content h2 {
 	font-size: 28px;
@@ -2003,7 +2003,7 @@ footer .widget_title,
 	margin-right: 5px;
 }
 .categories_btn {
-	padding: 20px 10px;
+	padding: 10px 10px;
 }
 .fb_info {
 	padding: 0px;

@@ -232,7 +232,7 @@ button:focus {
 	left: 0;
 	top: 0;
 	bottom: 0;
-	background-color: #333;
+	background-color: #2e385e;
 	z-index: -1;
 	transition: all 0.3s ease-in-out;
 	width: 50%;
@@ -246,7 +246,7 @@ button:focus {
 	width: 0;
 }
 .btn-fill-line:hover {
-	color: #333 !important;
+	color: #2e385e !important;
 }
 .btn-border-fill {
 	border: 1px solid #2e385e;
@@ -311,7 +311,7 @@ button:focus {
 }
 .btn-fill-out-dark {
 	background-color: transparent;
-	border: 1px solid #333;
+	border: 1px solid #2e385e;
 	color: #fff !important;
 	position: relative;
 	overflow: hidden;
@@ -329,11 +329,11 @@ button:focus {
 	width: 100%;
 	z-index: -1;
 	content: '';
-	background-color: #333;
+	background-color: #2e385e;
 	transition: all 0.4s cubic-bezier(0.42, 0, 0.58, 1);
 }
 .btn-line-fill {
-	border: 1px solid #333;
+	border: 1px solid #2e385e;
 	overflow: hidden;
 	position: relative;
 	color: #333 !important;

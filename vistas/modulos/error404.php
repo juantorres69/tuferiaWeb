@@ -1,7 +1,5 @@
-<!-- START MAIN CONTENT -->
+<!-- 404 SECTION -->
 <div class="main_content">
-
-    <!-- START 404 SECTION -->
     <div class="section">
         <div class="error_wrap">
             <div class="container">
@@ -18,7 +16,5 @@
             </div>
         </div>
     </div>
-    <!-- END 404 SECTION -->
-
 </div>
-<!-- END MAIN CONTENT -->
+<!-- END 404 SECTION -->

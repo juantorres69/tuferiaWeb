@@ -1,19 +1,30 @@
 <!-- START MAIN CONTENT -->
 <div class="main_content">    
 
-    <!-- START SECTION BANNER -->
+    <!-- AUTOMATIC SLIDER -->
+    <div class="slider">
+        <ul>
+            <li><img src="./vistas/assets/images/slider1.jpg" alt=""></li>
+            <li><img src="./vistas/assets/images/slider2.jpg" alt=""></li>
+            <li><img src="./vistas/assets/images/slider3.jpg" alt=""></li>
+            <li><img src="./vistas/assets/images/slider4.jpg" alt=""></li>
+        </ul>
+    </div>
+    <!-- END AUTOMATIC SLIDER -->
+
+    <!-- HOME SECTION -->
     <div class="mt-4 staggered-animation-wrap">
         <div class="custom-container">
             <div class="row">
             
-                <!-- categorias menu -->
+                <!-- CATEGORY -->
                 <div class="col-lg-3 col-md-4 col-sm-6 col-3">
-                    
-                    <!-- Seccion categorias -->
                     <div class="categories_wrap">
+
                         <button type="button" data-toggle="collapse" data-target="#navCatContent" aria-expanded="false" class="categories_btn">
                             <i class="linearicons-menu"></i><span>Categorias </span>
                         </button>
+
                         <div id="navCatContent" class="nav_cat navbar collapse">
                             <ul> 
 
@@ -88,61 +99,27 @@
                                             ?>
                                         </ul>
                                     </li>
+
                                     <div class="more_categories">Mas Categorias</div>
+
                                 <?php }?>
                             </ul>
                         </div>
                     </div>
                 </div>
+                <!-- END CATEGORY -->
 
-                <?php 
-                $banners = ControladorHome::ctrConsultarBanners();
-                ?>
-
-                <div class="col-lg-9 ">
-                    <div class="banner_section shop_el_slider">
-                        <div id="carouselExampleControls" class="carousel slide carousel-fade light_arrow" data-ride="carousel">
-                            <div class="carousel-inner">
-                                <?php 
-                                foreach($banners as $banner){
-                                    echo '<div class="carousel-item '.(($banner['orden'] == 1) ? 'active' : '' ).' background_bg" data-img-src="'.$url.'vistas/assets/images/banners/'.$banner['imagen'].'">
-                                    <div class="banner_slide_content banner_content_inner">
-                                        <div class="col-lg-7 col-10">
-                                            <div class="banner_content3 overflow-hidden">
-                                                <h5 class="mb-3 staggered-animation font-weight-light" data-animation="slideInLeft" data-animation-delay="0.5s">'.$banner['subtitulo'].'</h5>
-                                                <h2 class="staggered-animation" data-animation="slideInLeft" data-animation-delay="1s">'.$banner['titulo'].'</h2>
-                                                <h4 class="staggered-animation mb-4 product-price" data-animation="slideInLeft" data-animation-delay="1.2s"><span class="price">$'.number_format($banner['oferta']).'</span><del>'.(($banner['precio']) ? '$'.number_format($banner['precio']) : '' ).'</del></h4>
-                                                <a class="btn btn-fill-out btn-radius staggered-animation text-uppercase" href="'.$url.$banner['link'].'" data-animation="slideInLeft" data-animation-delay="1.5s">'.$banner['link_texto'].'</a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>';
-                                }
-                                ?>
-                            </div>
-                            <ol class="carousel-indicators indicators_style3">
-                                <?php
-                                $i = 0;
-                                foreach($banners as $banner){
-                                    echo '<li data-target="#carouselExampleControls" data-slide-to="'.$i.'" '.(($banner['orden'] == 1) ? 'class="active"' : '' ).'></li>';
-                                    $i++;
-                                }
-                                ?>
-                            </ol>
-                        </div>
-                    </div>
-                </div>
             </div>
         </div>
     </div>
-    <!-- END SECTION BANNER -->
+    <!-- END HOME SECTION -->
 
-    <!-- START SECTION SHOP -->
+    <!-- SECTION SHOP -->
     <div class="section small_pt pb-0">
         <div class="custom-container">
             <div class="row">
                 <div class="col-xl-3 d-none d-xl-block">
-                    <?php 
+                    <?php /*
                     $mega = ControladorHome::ctrConsultarMegaPromo();
                     echo '<div class="sale-banner hover_effect1" style="background-image: url('.$url.'vistas/assets/images/promos/'.$mega['imagen'].');">
                             <a  href="'.$url.$mega['link'].'">
@@ -151,31 +128,41 @@
                                 <button>'.$mega['link_texto'].'</button>
                             </a>
                         </div>';
-                    ?>
+                    */?>
                 </div>
+
                 <div class="col-xl-9">
                     <div class="row">
                         <div class="col-12">
+
                             <div class="heading_tab_header">
+
                                 <div class="heading_s2">
                                     <h4>Productos Exclusivos</h4>
                                 </div>
+
                                 <div class="tab-style2">
+
                                     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#tabmenubar" aria-expanded="false"> 
                                         <span class="ion-android-menu"></span>
                                     </button>
+
                                     <ul class="nav nav-tabs justify-content-center justify-content-md-end" id="tabmenubar" role="tablist">
                                         <li class="nav-item">
                                             <a class="nav-link active" id="arrival-tab" data-toggle="tab" href="#nuevos" role="tab" aria-controls="arrival" aria-selected="true">Nuevos</a>
                                         </li>
+
                                         <li class="nav-item">
                                             <a class="nav-link" id="sellers-tab" data-toggle="tab" href="#mas_vendidos" role="tab" aria-controls="sellers" aria-selected="false">Más Vendidos</a>
                                         </li>
                                     </ul>
+
                                 </div>
                             </div>
+
                         </div>
                     </div>
+
                     <div class="row">
                         <div class="col-12">
                             <div class="tab_slider">
@@ -234,9 +221,10 @@
     </div>
     <!-- END SECTION SHOP -->
 
-    <!-- START SECTION BANNER --> 
-    <div class="section pb_20 small_pt">
+    <!-- ASSOCIATED SEGMENT --> 
+    <div class="section pb_20 small_pt" style="padding-top: 20px;">
         <div class="custom-container">
+
             <div class="row">
                 <?php 
                 $promos = ControladorHome::ctrConsultarPromos();
@@ -253,21 +241,27 @@
                 }
                 ?>
             </div>
+
         </div>
     </div>
-    <!-- END SECTION SHOP -->
+    <!-- END ASSOCIATED SEGMENT -->
 
+    <!-- FEATURED PRODUCTOS -->
     <div class="section small_pt pb_20">
         <div class="container">
+
             <div class="row">
                 <div class="col-md-12">
                     <div class="heading_tab_header">
+
                         <div class="heading_s2">
                             <h2>Productos Destacados</h2>
                         </div>
+
                     </div>
                 </div>
             </div>
+
             <div class="row">
                 <div class="col-md-12">
                     <div class="product_slider product_list carousel_slider owl-carousel owl-theme nav_style3" data-loop="true" data-dots="false" data-nav="true" data-autoplay="true" data-margin="20" data-responsive='{"0":{"items": "1"}, "767":{"items": "2"}, "991":{"items": "3"}, "1199":{"items": "3"}}'>
@@ -313,62 +307,122 @@
                             }
                         }
                         ?>
+
                     </div>
                 </div>
             </div>
         </div>
     </div>
+    <!-- END FEATURED PRODUCTS -->
+
+    <!-- ADVERTISING BANNER -->
+    <?php 
+    $banners = ControladorHome::ctrConsultarBanners();
+    ?>
+
+    <div class="col-lg-9 " style="max-width: 100%; margin: 20px 0px;">
+        <div class="banner_section shop_el_slider">
+            <div id="carouselExampleControls" class="carousel slide carousel-fade light_arrow" data-ride="carousel">
+
+                <div class="carousel-inner">
+
+                    <?php 
+                    foreach($banners as $banner){
+                        echo '<div class="carousel-item '.(($banner['orden'] == 1) ? 'active' : '' ).' background_bg" data-img-src="'.$url.'vistas/assets/images/banners/'.$banner['imagen'].'">
+                        <div class="banner_slide_content banner_content_inner">
+                            <div class="col-lg-7 col-10">
+                                <div class="banner_content3 overflow-hidden">
+                                    <h5 class="mb-3 staggered-animation font-weight-light" data-animation="slideInLeft" data-animation-delay="0.5s">'.$banner['subtitulo'].'</h5>
+                                    <h2 class="staggered-animation" data-animation="slideInLeft" data-animation-delay="1s">'.$banner['titulo'].'</h2>
+                                    <h4 class="staggered-animation mb-4 product-price" data-animation="slideInLeft" data-animation-delay="1.2s"><span class="price">$'.number_format($banner['oferta']).'</span><del>'.(($banner['precio']) ? '$'.number_format($banner['precio']) : '' ).'</del></h4>
+                                    <a class="btn btn-fill-out btn-radius staggered-animation text-uppercase" href="'.$url.$banner['link'].'" data-animation="slideInLeft" data-animation-delay="1.5s">'.$banner['link_texto'].'</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>';
+                    }
+                    ?>
+
+                </div>
+
+                <ol class="carousel-indicators indicators_style3">
+                    <?php
+                    $i = 0;
+                    foreach($banners as $banner){
+                        echo '<li data-target="#carouselExampleControls" data-slide-to="'.$i.'" '.(($banner['orden'] == 1) ? 'class="active"' : '' ).'></li>';
+                        $i++;
+                    }
+                    ?>
+                </ol>
+
+            </div>
+        </div>
+    </div>
+    <!-- END ADVERTISING BANNER -->
 
     <!-- START SECTION CLIENT LOGO -->
     <div class="section pt-0 small_pb">
         <div class="custom-container">
+
             <div class="row">
                 <div class="col-md-12">
                     <div class="heading_tab_header">
+
                         <div class="heading_s2">
                             <h4>Our Brands</h4>
                         </div>
+
                     </div>
                 </div>
             </div>
+
             <div class="row">
                 <div class="col-12">
+
                     <div class="client_logo carousel_slider owl-carousel owl-theme nav_style3" data-dots="false" data-nav="true" data-margin="30" data-loop="true" data-autoplay="true" data-responsive='{"0":{"items": "2"}, "480":{"items": "3"}, "767":{"items": "4"}, "991":{"items": "5"}, "1199":{"items": "6"}}'>
+
                         <div class="item">
                             <div class="cl_logo">
                                 <img src="<?php echo $url; ?>vistas/assets/images/cl_logo1.png" alt="cl_logo"/>
                             </div>
                         </div>
+
                         <div class="item">
                             <div class="cl_logo">
                                 <img src="<?php echo $url; ?>vistas/assets/images/cl_logo2.png" alt="cl_logo"/>
                             </div>
                         </div>
+
                         <div class="item">
                             <div class="cl_logo">
                                 <img src="<?php echo $url; ?>vistas/assets/images/cl_logo3.png" alt="cl_logo"/>
                             </div>
                         </div>
+
                         <div class="item">
                             <div class="cl_logo">
                                 <img src="<?php echo $url; ?>vistas/assets/images/cl_logo4.png" alt="cl_logo"/>
                             </div>
                         </div>
+
                         <div class="item">
                             <div class="cl_logo">
                                 <img src="<?php echo $url; ?>vistas/assets/images/cl_logo5.png" alt="cl_logo"/>
                             </div>
                         </div>
+
                         <div class="item">
                             <div class="cl_logo">
                                 <img src="<?php echo $url; ?>vistas/assets/images/cl_logo6.png" alt="cl_logo"/>
                             </div>
                         </div>
+
                         <div class="item">
                             <div class="cl_logo">
                                 <img src="<?php echo $url; ?>vistas/assets/images/cl_logo7.png" alt="cl_logo"/>
                             </div>
                         </div>
+
                     </div>
                 </div>
             </div>

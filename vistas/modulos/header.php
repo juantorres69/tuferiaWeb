@@ -1,4 +1,3 @@
-
 <!-- START HEADER -->
 <header class="header_wrap">
     <div class="middle-header dark_skin">

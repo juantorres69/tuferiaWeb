@@ -84,6 +84,50 @@ ul,li,ol {
 	margin: 5px;
 	padding: 0;
 }
+
+.slider {
+	height: 150px;
+	width: 95%;
+	margin: auto;
+	overflow: hidden;
+}
+
+.slider ul {
+	height: 150px;
+	display: flex;
+	padding: 0;
+	width: 400%;
+	animation: cambio 20s infinite;
+	animation-direction: alternate;
+	animation-timing-function: ease-in;
+}
+
+.slider li {
+	height: 150px;
+	width: 100%;
+	list-style: none;
+}
+
+.slider img {
+	height: 150px;
+	width: 100%;
+}
+
+@keyframes cambio {
+	0% {margin-left: 0;}
+	20% {margin-left: 0;}
+
+	25% {margin-left: -100%;}
+	45% {margin-left: -100%;}
+
+	50% {margin-left: -200%;}
+	70% {margin-left: -200%;}
+
+	75% {margin-left: -300%;}
+	100% {margin-left: -300%;}
+
+}
+
 fieldset {
 	border: 0 none;
 	margin: 0 auto;
@@ -110,7 +154,7 @@ video {
 }
 .section.small_pt,
 .footer_top.small_pt {
-	padding-top: 20px;
+	padding-top: 0px;
 }
 .section.small_pb,
 .footer_top.small_pb {
@@ -220,7 +264,7 @@ button:focus {
 }
 .btn-fill-line {
 	background-color: transparent;
-	border: 1px solid #333;
+	border: 1px solid #2e385e;
 	overflow: hidden;
 	position: relative;
 	color: #fff !important;
@@ -233,7 +277,7 @@ button:focus {
 	left: 0;
 	top: 0;
 	bottom: 0;
-	background-color: #333;
+	background-color: #2e385e;
 	z-index: -1;
 	transition: all 0.3s ease-in-out;
 	width: 50%;
@@ -2450,7 +2494,7 @@ input.text {
 .categories_btn {
 	background-color: #2e385e;
 	border: 1px solid #2e385e;
-	padding: 20px 15px;
+	padding: 10px 10px;
 	color: #fff;
 	text-align: left;
 	width: 100%;
@@ -2701,7 +2745,7 @@ input.text {
 .banner_section.shop_el_slider .carousel-item, 
 .banner_section.shop_el_slider .banner_content_wrap, 
 .banner_section.shop_el_slider .banner_content_wrap .carousel-item {
-	height: 500px;
+	height: 300px;
 }
 .banner_section.slide_wrap, 
 .banner_section.slide_wrap .carousel-item, 

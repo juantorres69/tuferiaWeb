@@ -1,14 +1,17 @@
-<!-- START SECTION BREADCRUMB -->
+<!-- SECTION SHOPPING CART -->
 <div class="breadcrumb_section bg_gray page-title-mini">
 
-    <!-- STRART CONTAINER -->
     <div class="container">
         <div class="row align-items-center">
+
+            <!-- TITTLE -->
         	<div class="col-md-6">
                 <div class="page-title">
             		<h1>Carrito de Compras</h1>
                 </div>
             </div>
+
+            <!-- ROUTE -->
             <div class="col-md-6">
                 <ol class="breadcrumb justify-content-md-end">
                     <li class="breadcrumb-item"><a href="<?php echo $url; ?>">Inicio</a></li>
@@ -17,23 +20,25 @@
             </div>
         </div>
     </div>
-    <!-- END CONTAINER-->
-    
 </div>
-<!-- END SECTION BREADCRUMB -->
 
-<!-- START SECTION SHOP -->
+<!-- SECTION SHOP -->
 <?php 
     $item = 'usuario_id';
     $valor = $_SESSION['idUsuario'];
     $carrito = ControladorProductos::ctrConsultarCarrito($item, $valor);
 ?>
+
 <div class="section">
 	<div class="container">
         <div class="row">
             <div class="col-12">
+
+                <!-- TABLE -->
                 <div class="table-responsive shop_cart_table">
+
                 	<table class="table">
+
                     	<thead>
                         	<tr>
                             	<th class="product-thumbnail">&nbsp;</th>
@@ -44,7 +49,9 @@
                                 <th class="product-remove">Eliminar</th>
                             </tr>
                         </thead>
+
                         <tbody id="tb_carrito">
+
                             <?php
                             $subtotal = 0;
                             if(count($carrito) > 0){
@@ -70,11 +77,16 @@
                                 echo '<tr><td colspan="6">No hay información.</td></tr>';
                             }
                             ?>
+
                         </tbody>
                     </table>
+
                 </div>
+                <!-- END TABLE -->
             </div>
         </div>
+        
+        <!-- LINE -->
         <div class="row">
             <div class="col-12">
             	<div class="medium_divider"></div>
@@ -82,32 +94,46 @@
             	<div class="medium_divider"></div>
             </div>
         </div>
+        <!-- END LINE -->
+
         <div class="row">
-        	<div class="col-md-6">
-            </div>
+            <!-- EMPTY BOX -->
+        	<div class="col-md-6"></div>
+            
+            <!-- TOTAL -->
             <div class="col-md-6">
             	<div class="border p-3 p-md-4">
+                    <!-- TITTLE -->
                     <div class="heading_s1 mb-3">
                         <h6>Totales</h6>
                     </div>
+                    <!-- TABLE -->
                     <div class="table-responsive">
                         <table class="table">
                             <tbody>
+
                                 <tr>
                                     <td class="cart_total_label">Subtotal</td>
                                     <td class="cart_total_amount" id="subtotal">$<?php echo number_format($subtotal); ?></td>
                                 </tr>
+
                                 <tr>
                                     <td class="cart_total_label">Total</td>
                                     <td class="cart_total_amount" id="total"><strong>$<?php echo number_format($subtotal); ?></strong></td>
                                 </tr>
+
                             </tbody>
                         </table>
                     </div>
+
+                    <!-- BUTTON TO PAY -->
                     <a href="<?php echo $url; ?>checkout" class="btn btn-fill-out">Ir pagar</a>
+
                 </div>
             </div>
+            <!-- END TOTAL -->
+
         </div>
     </div>
 </div>
-<!-- END SECTION SHOP -->
+<!-- END SECTION SHOPPING CART -->
