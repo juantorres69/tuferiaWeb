@@ -1,11 +1,13 @@
-<!-- START SECTION SHOP -->
+<!-- SECTION PRODUCT -->
 <div class="section">
 	<div class="container">
     	<div class="row">
+            <!-- RIGHT -->
 			<div class="col-lg-9">
             	<div class="row align-items-center mb-4 pb-1">
                     <div class="col-12">
                         <div class="product_header">
+
                             <div class="product_header_left">
                                 <!-- <div class="custom_select">
                                     <select class="form-control form-control-sm">
@@ -17,11 +19,14 @@
                                     </select>
                                 </div> -->
                             </div>
+
                             <div class="product_header_right">
+
                             	<div class="products_view">
                                     <a href="javascript:Void(0);" class="shorting_icon grid active"><i class="ti-view-grid"></i></a>
                                     <a href="javascript:Void(0);" class="shorting_icon list "><i class="ti-layout-list-thumb"></i></a>
                                 </div>
+
                                 <div class="custom_select">
                                     <select class="form-control form-control-sm" id="cbMostrar">
                                         <option value="">Mostrar</option>
@@ -34,11 +39,14 @@
                         </div>
                     </div>
                 </div>
+
                 <?php
                 echo '<input type="hidden" id="hdRuta" value="'.$_GET['ruta'].'">';
                 echo '<input type="hidden" id="hdUrl" value="'.$url.'">';
                 ?>
+
                 <div class="row shop_container grid">
+
                     <?php
                         // $ruta = explode('/',$_GET['ruta']);
                         // if($ruta[0] == 'tags'){
@@ -106,17 +114,26 @@
                         // }
                     ?>
                 </div>
-        		<div class="row">
+
+        		<!--
+                <div class="row">
                     <div class="col-12">
                         <ul class="pagination mt-3 justify-content-center pagination_style1">
                         </ul>
                     </div>
                 </div>
+                -->
+
         	</div>
+
+            <!-- CATEGORY -->
             <div class="col-lg-3 order-lg-first mt-4 pt-2 mt-lg-0 pt-lg-0">
             	<div class="sidebar">
+
                 	<?php require_once 'categorias_sidebar.php'; ?>
-                    <!-- <div class="widget">
+
+                    <!-- 
+                    <div class="widget">
                         <div class="shop_banner">
                             <div class="banner_img overlay_bg_20">
                                 <img src="assets/images/sidebar_banner_img.jpg" alt="sidebar_banner_img">
@@ -127,10 +144,11 @@
                                 <a href="#" class="btn btn-white rounded-0 btn-sm text-uppercase">Shop Now</a>
                             </div>
                         </div>
-                    </div> -->
+                    </div> 
+                    -->
                 </div>
             </div>
         </div>
     </div>
 </div>
-<!-- END SECTION SHOP -->
+<!-- END SECTION PRODUCT -->

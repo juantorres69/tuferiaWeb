@@ -104,19 +104,61 @@ if(!isset($_SESSION['rol']) || $_SESSION['rol'] === 'usuario'){ ?>
     <!-- SECTION INFO -->
     <div class="bottom_footer border-top-tran">
         <div class="custom-container">
-            <div class="row">
-                <div class="col-lg-4">
-                    <p class="mb-lg-0 text-center">© <?php echo date("Y") ?> todos los derechos reservados <strong>Luis Rodriguez Reales</strong> </p>
+            <div class="row" >
+
+                <!-- DERECHOS R -->
+                <div class="col-lg-4" style="align-items: center;display: flex;justify-content: center;">
+                    <p class="mb-lg-0 text-center">Diseño, Proyecto original y creacion de 
+                        <br> IMPRESIONES Y PUBLICIDAD <br>
+                        © <?php echo date("Y") ?> todos los derechos reservados
+                    </p>
                 </div>
-                <div class="col-lg-4 order-lg-first">
-                    <div class="widget mb-lg-0">
+
+                <!-- LOGOS -->
+
+                <div class="col-lg-4" style="align-items: center;display: flex;justify-content: center; max-width: 100px; padding: 0px 10px;">
+                    <div class="mb-lg-0 text-center">
+                        <ul style="margin: 0px;">
+                            <li style="list-style: none; margin: 0px;"><img src="./vistas/assets/images/LOGO IP.png" alt=""></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-lg-4" style="align-items: center;display: flex;justify-content: center; max-width: 100px; padding: 0px 10px;">
+                    <div class="mb-lg-0 text-center">
+                        <ul style="margin: 0px;">
+                            <li style="list-style: none; margin: 0px;"><img src="./vistas/assets/images/LOGO APS .png" alt=""></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-lg-4" style="align-items: center;display: flex;justify-content: center; max-width: 100px; padding: 0px 10px;">
+                    <div class="mb-lg-0 text-center">
+                        <ul style="margin: 0px;">
+                            <li style="list-style: none; margin: 0px;"><img src="./vistas/assets/images/RETATECH.png" alt=""></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-lg-4" style="align-items: center;display: flex;justify-content: center; max-width: 100px; padding: 0px 10px;">
+                    <div class="mb-lg-0 text-center">
+                        <ul style="margin: 0px;">
+                            <li style="list-style: none; margin: 0px;"><img src="./vistas/assets/images/LOGO MEET.png" alt=""></li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <!-- REDES SOCIALES -->
+                <div class="col-lg-4" style="align-items: center; display: flex; justify-content: center;">
+                    <div class="mb-lg-0 text-center">
                         <ul class="social_icons text-center text-lg-left">
                             <li><a href="https://web.facebook.com/groups/276245050899609/" target="_blank" class="sc_facebook"><i class="ion-social-facebook"></i></a></li>
-                            <li><a href="https://www.youtube.com/channel/UCrJkhxx3WNVeHwhriaTQmIw/videos" class="sc_youtube" target="_blank"><i class="ion-social-youtube-outline"></i></a></li>
+                            <li><a href="https://www.youtube.com/channel/UCrJkhxx3WNVeHwhriaTQmIw/videos" class="sc_youtube" target="_blank"><i class="ion-social-youtube"></i></a></li>
                             <li><a href="https://www.instagram.com/tu_feriavirtual/?hl=es-la" class="sc_instagram" target="_blank"><i class="ion-social-instagram-outline"></i></a></li>
                         </ul>
                     </div>
                 </div>
+
                 <!--
                 <div class="col-lg-4">
                     <ul class="footer_payment text-center text-lg-right">
