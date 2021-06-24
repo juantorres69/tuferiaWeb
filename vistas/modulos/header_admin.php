@@ -1,14 +1,15 @@
-<!-- START HEADER -->
+<!-- START HEADER-ADMIN -->
 <header class="header_wrap">
-    <div class="middle-header dark_skin" style="background: #e3e3e3; ">
+    <div class="middle-header dark_skin" style="background: #fff; ">
     	<div class="custom-container">
             <div class="nav_block d-flex align-items-center justify-content-center">
+
+                <!-- LOGO -->
                 <a class="navbar-brand" href="<?php echo $url; ?>">
-                    <img class="logo_light" src="<?php echo $url.'assets/images/logo-feria.png'?>" alt="logo" />
-                    <img class="logo_dark" src="<?php echo $url.'assets/images/logo-feria.png'?>" alt="logo" />
+                    <img class="logo_light" src="<?php echo $url.'assets/images/LOGO.png'?>" alt="logo" />
+                    <img class="logo_dark" src="<?php echo $url.'assets/images/LOGO.png'?>" alt="logo" />
                 </a>
 
-                <!---->
                 <!-- <div class="product_search_form rounded_input">
                     <form id="frmBuscar">
                         <input type="hidden" id="hdUrl" value="<?php echo $url; ?>">
@@ -54,8 +55,11 @@
                     </form>
                 </div> -->
                 
-                <ul class="navbar-nav attr-nav align-items-center">
-                    <li class="dropdown cart_dropdown"><a href="#" class="nav-link"><i class="linearicons-user"></i></a>
+                <ul class="navbar-nav attr-nav align-items-center" style="margin: 0px;">
+                    <li class="dropdown cart_dropdown" style="margin: 0px;">
+                        <a href="http://localhost/app/cerrar" class="nav-link" style="margin: 0px;">
+                        <i class="linearicons-home" style="font-size: 58px;"></i></a>
+                        <!--
                         <div class="cart_box cart_right dropdown-menu dropdown-menu-right">
                             <ul class="cart_list">
                                 <?php 
@@ -80,12 +84,14 @@
                                 ?>
                             </ul>
                         </div>
+                        -->
                     </li>
                 </ul>
             </div>
         </div>
     </div>
-    <!-- <div class="bottom_header dark_skin main_menu_uppercase border-top border-bottom">
+    <!-- 
+    <div class="bottom_header dark_skin main_menu_uppercase border-top border-bottom">
     	<div class="custom-container">
             <div class="row"> 
             	
@@ -116,6 +122,7 @@
                 </div>
             </div>
         </div>
-    </div> -->
+    </div> 
+    -->
 </header>
-<!-- END HEADER -->
+<!-- END HEADER-ADMIN -->

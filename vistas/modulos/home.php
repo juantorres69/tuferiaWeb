@@ -13,7 +13,7 @@
     <!-- END AUTOMATIC SLIDER -->
 
     <!-- HOME SECTION -->
-    <div class="mt-4 staggered-animation-wrap">
+    <div class="staggered-animation-wrap" style="margin-top: 15px;">
         <div class="custom-container">
             <div class="row">
             
@@ -230,7 +230,7 @@
                 $promos = ControladorHome::ctrConsultarPromos();
                 foreach($promos as $promo){
                     echo '<div class="col-md-4">
-                            <div class="sale-banner mb-3 mb-md-4 hover_effect1" style="height: 220px; background-image: url('.$url.'vistas/assets/images/promos/'.$promo['imagen'].'); background-size: cover;display: flex; align-items: center;padding: 20px;">
+                            <div class="sale-banner hover_effect1" style="height: 220px; background-image: url('.$url.'vistas/assets/images/promos/'.$promo['imagen'].'); background-size: cover;display: flex; align-items: center;padding: 20px;">
                                 <a style="z-index: 999;" href="'.$url.$promo['link'].'">
                                     <h5>'.$promo['subtitulo'].'</h5>
                                     <h2 style="font-weight: bolder; font-size: 30pt;">'.$promo['titulo'].'</h2>
@@ -247,7 +247,7 @@
     <!-- END ASSOCIATED SEGMENT -->
 
     <!-- FEATURED PRODUCTOS -->
-    <div class="section small_pt pb_20">
+    <div class="small_pt">
         <div class="container">
 
             <div class="row">
@@ -320,7 +320,7 @@
     $banners = ControladorHome::ctrConsultarBanners();
     ?>
 
-    <div class="col-lg-9 " style="max-width: 100%; margin: 20px 0px;">
+    <div class="col-lg-9" style="padding: 0px; max-width: 100%; margin: 20px 0px;">
         <div class="banner_section shop_el_slider">
             <div id="carouselExampleControls" class="carousel slide carousel-fade light_arrow" data-ride="carousel">
 
@@ -361,15 +361,15 @@
     <!-- END ADVERTISING BANNER -->
 
     <!-- START SECTION CLIENT LOGO -->
-    <div class="section pt-0 small_pb">
+    <div class="">
         <div class="custom-container">
 
             <div class="row">
                 <div class="col-md-12">
-                    <div class="heading_tab_header">
+                    <div class="heading_tab_header" style="margin-bottom: 0px;">
 
                         <div class="heading_s2">
-                            <h4>Our Brands</h4>
+                            <h4>Logos de emprendimiento</h4>
                         </div>
 
                     </div>

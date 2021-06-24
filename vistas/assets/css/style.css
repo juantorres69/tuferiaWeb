@@ -86,16 +86,17 @@ ul,li,ol {
 }
 
 .slider {
-	height: 150px;
-	width: 95%;
+	height: auto;
+	width: 100%;
 	margin: auto;
 	overflow: hidden;
 }
 
 .slider ul {
-	height: 150px;
+	height: auto;
 	display: flex;
 	padding: 0;
+	margin: 0px;
 	width: 400%;
 	animation: cambio 20s infinite;
 	animation-direction: alternate;
@@ -103,13 +104,14 @@ ul,li,ol {
 }
 
 .slider li {
-	height: 150px;
+	margin: 0px;
+	height: auto;
 	width: 100%;
 	list-style: none;
 }
 
 .slider img {
-	height: 150px;
+	height: auto;
 	width: 100%;
 }
 
@@ -5398,7 +5400,7 @@ footer .widget_title {
     font-size: 26px;
 }
 .cart-product-quantity {
-	margin: 7px 10px 7px 0;
+	margin-bottom: 15px;
 	display: table;
 }
 .quantity {
@@ -6368,6 +6370,7 @@ footer .widget_recent_post .post_img img {
 	display: inline-block;
 	margin-bottom: 5px;
 	color: #333;
+	border-radius: 20px;
 }
 .tags a:hover {
 	background-color: #ef7236;
@@ -6815,7 +6818,7 @@ footer .widget_recent_post .post_img img {
 .nav_style3.owl-theme .owl-nav [class*="owl-"],
 .nav_style4.owl-theme .owl-nav [class*="owl-"] {
 	position: absolute;
-	top: -90px;
+	top: -56px;
 	border-radius: 0;
 	right: 0;
 	height: auto;

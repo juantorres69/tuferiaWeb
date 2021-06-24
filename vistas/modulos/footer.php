@@ -1,4 +1,4 @@
-<!-- SECTION FOOTER -->
+<!-- START SUBCRIBE -->
 <?php 
 if(!isset($_SESSION['rol'])){ ?>
 
@@ -29,7 +29,7 @@ if(!isset($_SESSION['rol'])){ ?>
     </div>
 
 <?php } ?>
-<!-- END SECTION SUBCRIBE -->
+<!-- END SUBCRIBE -->
 
 <!-- START FOOTER -->
 <footer class="bg_gray">

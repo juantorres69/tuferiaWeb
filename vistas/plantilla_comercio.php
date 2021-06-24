@@ -25,7 +25,7 @@
         <meta name="keywords" content="ecommerce, electronics store, Fashion store, furniture store,  bootstrap 4, clean, minimal, modern, online store, responsive, retail, shopping, ecommerce store">
         <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
         <!-- SITE TITLE -->
-        <title>TU FERIA VIRTUAL</title>
+        <title>Tu Feria Virtual</title>
 
         <?php 
             $plantilla = ControladorPlantilla::ctrEstiloPlantilla();
@@ -33,7 +33,7 @@
         ?>
 
         <!-- Favicon Icon / cambiar el icono -->
-        <link rel="shortcut icon" type="image/x-icon" href="http://localhost/admin/<?php $plantilla['favicon'] ?>">
+        <link rel="shortcut icon" type="image/x-icon" href="./assets/images/LOGO.png <?php $plantilla['favicon'] ?>">
 
         <!-- Animation CSS -->
         <link rel="stylesheet" href="<?php echo $url; ?>vistas/assets/css/animate.css">	

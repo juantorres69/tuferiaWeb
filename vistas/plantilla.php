@@ -52,7 +52,7 @@
             // var_dump($url);
         ?>
 
-        <!-- Favicon Icon / cambiar el icono -->
+        <!-- Favicon Icon -->
         <link rel="shortcut icon" type="image/x-icon" href="./assets/images/LOGO.png <?php $plantilla['favicon'] ?>">
 
         <!-- Animation CSS -->
