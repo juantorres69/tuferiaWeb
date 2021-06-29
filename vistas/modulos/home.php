@@ -232,9 +232,9 @@
                     echo '<div class="col-md-4">
                             <div class="sale-banner hover_effect1" style="height: 220px; background-image: url('.$url.'vistas/assets/images/promos/'.$promo['imagen'].'); background-size: cover;display: flex; align-items: center;padding: 20px;">
                                 <a style="z-index: 999;" href="'.$url.$promo['link'].'">
-                                    <h5>'.$promo['subtitulo'].'</h5>
-                                    <h2 style="font-weight: bolder; font-size: 30pt;">'.$promo['titulo'].'</h2>
-                                    <span style="color: #ef7236;">'.$promo['link_texto'].'</span>
+                                    <h5 style="color: #fff; text-shadow: -1px -1px 5px #000, 1px 1px 5px #000, -1px 1px 5px #000, 1px -1px 5px #000;">'.$promo['subtitulo'].'</h5>
+                                    <h2 style="color: #fff; text-shadow: -1px -1px 5px #000, 1px 1px 5px #000, -1px 1px 5px #000, 1px -1px 5px #000; font-weight: bolder; font-size: 30pt;">'.$promo['titulo'].'</h2>
+                                    <span style="color: #fff; text-shadow: -1px -1px 5px #000, 1px 1px 5px #000, -1px 1px 5px #000, 1px -1px 5px #000;">'.$promo['link_texto'].'</span>
                                 </a>
                             </div>
                         </div>';
@@ -429,6 +429,8 @@
         </div>
     </div>
     <!-- END SECTION CLIENT LOGO -->
+
+    <?php include "suscribase.php" ?>
 
 </div>
 <!-- END MAIN CONTENT -->
