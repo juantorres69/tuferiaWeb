@@ -86,8 +86,8 @@
         <div class="preloader">
             <div class="lds-ellipsis">
                 <span></span>
-                <span></span>
-                <span></span>
+                <span style="background:#ef7236"></span>
+                <span style="background:#FFE800"></span>
             </div>
         </div>
         <!-- END LOADER -->

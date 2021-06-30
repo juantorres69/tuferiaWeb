@@ -229,7 +229,7 @@
                 <?php 
                 $promos = ControladorHome::ctrConsultarPromos();
                 foreach($promos as $promo){
-                    echo '<div class="col-md-4">
+                    echo '<div class="col-md-4" style="margin-bottom:10px;">
                             <div class="sale-banner hover_effect1" style="height: 220px; background-image: url('.$url.'vistas/assets/images/promos/'.$promo['imagen'].'); background-size: cover;display: flex; align-items: center;padding: 20px;">
                                 <a style="z-index: 999;" href="'.$url.$promo['link'].'">
                                     <h5 style="color: #fff; text-shadow: -1px -1px 5px #000, 1px 1px 5px #000, -1px 1px 5px #000, 1px -1px 5px #000;">'.$promo['subtitulo'].'</h5>

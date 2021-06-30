@@ -48,6 +48,7 @@ if($METHOD == 'POST'){
 
 if(!$error){
 ?>
+
 <div class="section">
 	<div class="container">
         <div class="row">
@@ -90,7 +91,7 @@ if(!$error){
         </div>
     </div>
 </div> 
-<?php }else{ ?>
 
+<?php }else{ ?>
 
 <?php } ?>           

@@ -193,7 +193,7 @@
 
                                 <!-- ETIQUETAS -->
                                 <div class="tab-pane fade" id="tags" role="tabpanel">
-                                <div class="row">
+                                    <div class="row">
                                         <div class="col-md-12 text-right mb-3">
                                             <button class="btn btn-danger btn-action" id="btnNuevoTag">Nuevo</button>
                                         </div>

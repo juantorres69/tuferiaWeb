@@ -86,8 +86,8 @@
         <div class="preloader">
             <div class="lds-ellipsis">
                 <span></span>
-                <span></span>
-                <span></span>
+                <span style="background:#ef7236"></span>
+                <span style="background:#FFE800"></span>
             </div>
         </div>
         <!-- END LOADER -->
@@ -102,6 +102,7 @@
             \____|\___/|_| |_|\__\___|_| |_|_|\__,_|\___/  |____/|_|_| |_|\__,_|_| |_| |_|_|\___\___/  
                                                                                                         
             */
+            
             include "modulos/header_admin.php";
             $rutas = array();
             $ruta = null;

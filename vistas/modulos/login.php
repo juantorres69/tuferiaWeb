@@ -45,7 +45,7 @@
                                 <input class="form-control" required="" type="password" name="txtPassword" placeholder="Ingrese su contraseña.">
                             </div>
 
-                            <div class="login_footer form-group">
+                            <div class="login_footer form-group"><!---->
                                 <a href="#">¿Olvidaste tu contraseña?</a>
                             </div>
 
@@ -60,10 +60,12 @@
                             <span> ó </span>
                         </div>
 
-                        <!-- <ul class="btn-login list_none text-center">
+                        <!-- 
+                        <ul class="btn-login list_none text-center">
                             <li><a href="#" class="btn btn-facebook"><i class="ion-social-facebook"></i>Facebook</a></li>
                             <li><a href="#" class="btn btn-google"><i class="ion-social-googleplus"></i>Google</a></li>
-                        </ul> -->
+                        </ul> 
+                        -->
 
                         <!-- SIGN UP -->
                         <div class="form-note text-center">¿No estas registrado? <a href="registro">Registrate</a></div>

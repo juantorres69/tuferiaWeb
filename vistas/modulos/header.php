@@ -101,7 +101,6 @@
                         <div class="cart_box cart_right dropdown-menu dropdown-menu-right" style="box-shadow: 0px 0px 1px 0px grey; width: 200px;">
 
                             <!-- lista desplegable condicional -->
-                            
                             <ul class="cart_list">
 
                                 <?php 
@@ -193,7 +192,8 @@
         </div>
     </div>
 
-    <!--<div class="bottom_header dark_skin main_menu_uppercase border-top border-bottom">
+    <!--
+    <div class="bottom_header dark_skin main_menu_uppercase border-top border-bottom">
     	<div class="custom-container">
             <div class="row"> 
             	
@@ -226,6 +226,7 @@
                 </div>
             </div>
         </div>
-    </div>-->
+    </div>
+    -->
 </header>
 <!-- END HEADER -->

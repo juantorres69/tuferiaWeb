@@ -25,7 +25,7 @@ $(document).ready(function() {
 
 function consultarProductos(url, ruta, page, mostrar) {
     $('.shop_container div').remove();
-    $('.shop_container').append(`<div class="text-center w-100"><i class="fas fa-spinner fa-5x fa-spin"></i></div>`);
+    $('.shop_container').append(`<div class="text-center w-100"><i class="fas fa-spinner fa-5x fa-spin" style="color: #ef7236"></i></div>`);
     $.ajax({
         url: `${url}ajax/productos.ajax.php`,
         type: 'post',

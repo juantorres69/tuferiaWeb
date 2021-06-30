@@ -9,7 +9,8 @@
                         <div class="product_header">
 
                             <div class="product_header_left">
-                                <!-- <div class="custom_select">
+                                <!-- 
+                                <div class="custom_select">
                                     <select class="form-control form-control-sm">
                                         <option value="order">Default sorting</option>
                                         <option value="popularity">Sort by popularity</option>
@@ -17,7 +18,8 @@
                                         <option value="price">Sort by price: low to high</option>
                                         <option value="price-desc">Sort by price: high to low</option>
                                     </select>
-                                </div> -->
+                                </div> 
+                                -->
                             </div>
 
                             <div class="product_header_right">
@@ -146,6 +148,7 @@
                         </div>
                     </div> 
                     -->
+                    
                 </div>
             </div>
         </div>

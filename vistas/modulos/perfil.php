@@ -33,12 +33,16 @@
     <div class="modal-dialog modal-lg " role="document">
         <div class="modal-content">
 
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                <span aria-hidden="true"><i class="ion-ios-close-empty"></i></span>
-            </button>
+            
 
             <div class="modal-header">
-                <h4>Detalle Compra</h4>
+
+                <h4 style="margin: 0px;">Detalle Compra</h4>
+
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true"><i class="ion-ios-close-empty"></i></span>
+                </button>
+
             </div>
 
             <div class="modal-body">
@@ -133,6 +137,7 @@
                                                 <th scope="col"></th>
                                             </tr>
                                         </thead>
+                                        
                                         <tbody>
                                             
                                             <?php 

@@ -10,7 +10,8 @@
                     <img class="logo_dark" src="<?php echo $url.'assets/images/LOGO.png'?>" alt="logo" />
                 </a>
 
-                <!-- <div class="product_search_form rounded_input">
+                <!-- 
+                <div class="product_search_form rounded_input">
                     <form id="frmBuscar">
                         <input type="hidden" id="hdUrl" value="<?php echo $url; ?>">
                         <div class="input-group">
@@ -53,7 +54,8 @@
                             <button type="submit" class="search_btn2"><i class="fa fa-search"></i></button>
                         </div>
                     </form>
-                </div> -->
+                </div> 
+                -->
                 
                 <ul class="navbar-nav attr-nav align-items-center" style="margin: 0px;">
                     <li class="dropdown cart_dropdown" style="margin: 0px;">
