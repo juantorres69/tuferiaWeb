@@ -53,7 +53,7 @@
         ?>
 
         <!-- Favicon Icon -->
-        <link rel="shortcut icon" type="image/x-icon" href="./assets/images/LOGO.png <?php $plantilla['favicon'] ?>">
+        <link rel="shortcut icon" type="image/x-icon" href="assets/images/LOGO.png <?php $plantilla['favicon'] ?>">
 
         <!-- Animation CSS -->
         <link rel="stylesheet" href="<?php echo $url; ?>vistas/assets/css/animate.css">	

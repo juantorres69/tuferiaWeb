@@ -4,10 +4,6 @@ require_once "log.controlador.php";
 
 class ControladorUsuario{
 
-
-
-
-
     static public function ctrMostrarCompras($item, $valor){
         $tabla = "compras";
         $response = ModeloUsuario::mdlMostrarCompras($tabla, $item, $valor) ;
@@ -25,7 +21,6 @@ class ControladorUsuario{
         $response = ModeloUsuario::mdlMostrarComprasPendientesComercio($tabla, $item, $valor) ;
         return $response;
     }
-
 
     public static function ctrLogout(){
         session_unset();
@@ -49,10 +44,5 @@ class ControladorUsuario{
 
         // var_dump(array("nav"=>$sessionNav,"key"=>$sessionKey ,"ip"=> $sessionIp,"date"=>$sessionDate ));
     }
-
-
-
-
-    
 
 }

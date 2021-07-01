@@ -63,8 +63,8 @@
                 <!-- iconos de interacción condicionales -->
                 <ul class="navbar-nav attr-nav align-items-center">
 
-                    <!-- icono de iniciar seccion como comprador -->
-                    <li class="dropdown cart_dropdown"><a href="http://localhost/app/login" class="nav-link"><i class="linearicons-user"></i></a>
+                    <!-- icono de iniciar seccion como comprador --> 
+                    <li class="dropdown cart_dropdown"><a href="./login" class="nav-link"><i class="linearicons-user"></i></a>
                         <div class="cart_box cart_right dropdown-menu dropdown-menu-right" style="box-shadow: 0px 0px 1px 0px grey; width: 200px;">
 
                             <!-- lista desplegable condicional -->
@@ -76,8 +76,9 @@
                                             <a href="./perfil">Perfil</a>
                                         </li>
                                         <li>
-                                            <a href="'.$url.'cerrar">Cerrar Sesión</a>
-                                        </li>';
+                                            <a href="./registro-comercio">Vende con nosotros</a>
+                                        </li>
+                                        ';
                                 }
                                 /*
                                 else{
@@ -95,43 +96,14 @@
 
                         </div>
                     </li>
-                    
-                    <!-- icono de iniciar seccion como vendedor -->
-                    <li class="dropdown cart_dropdown"><a href="http://localhost/app/registro-comercio" class="nav-link"><i class="linearicons-store" style="font-size: 34px;"></i></a>
-                        <div class="cart_box cart_right dropdown-menu dropdown-menu-right" style="box-shadow: 0px 0px 1px 0px grey; width: 200px;">
 
-                            <!-- lista desplegable condicional -->
-                            <ul class="cart_list">
-
-                                <?php 
-                                if(isset($_SESSION['idUsuario'])){
-                                    echo '<li>
-                                            <a href="./perfil">Perfil</a>
-                                        </li>
-                                        <li>
-                                            <a href="'.$url.'cerrar">Cerrar Sesión</a>
-                                        </li>';
-                                }
-                                /*
-                                else{
-                                    echo 
-                                        '<li>
-                                            <a href="'.$url.'login" class="btnIngreso">Iniciar Sesión</a>
-                                        </li>
-                                        <li>
-                                            <a href="'.$url.'registro" class="btnIngreso">Registro</a>
-                                        </li>
-                                        <li>
-                                            <a href="'.$url.'registro-comercio" class="btnIngreso">Vende con Nosotros</a>
-                                        </li>';
-                                }
-                                */
-
-                                ?>
-                            </ul>
-
-                        </div>
-                    </li>
+                    <?php 
+                        if(isset($_SESSION['idUsuario'])){
+                            $item = 'usuario_id';
+                            $valor = $_SESSION['idUsuario'];
+                            echo '<li><a href="'.$url.'cerrar" class="nav-link"><i class="linearicons-exit"></i></a></li>';
+                        }
+                    ?>
                     
                     <!-- icono de favorito -->
 
@@ -158,7 +130,7 @@
                     ?>
 
                     <!-- bolsa con contador -->
-                    <li class="dropdown cart_dropdown"><a class="nav-link cart_trigger" href="#" data-toggle="dropdown"><i class="linearicons-bag2"></i><span class="cart_count"><?php echo $count_cart; ?></span><span class="amount"><span class="currency_symbol">$</span><?php echo $sub ?></span></a>
+                    <li class="dropdown cart_dropdown"><a class="nav-link cart_trigger" href="./carrito" data-toggle="dropdown"><i class="linearicons-bag2"></i><span class="cart_count"><?php echo $count_cart; ?></span><span class="amount"><span class="currency_symbol">$</span><?php echo $sub ?></span></a>
                         <div class="cart_box cart_right dropdown-menu dropdown-menu-right" style="box-shadow: 0px 0px 1px 0px grey;">
 
                             <!-- ventana emergente -->

@@ -45,8 +45,8 @@
                                 <input class="form-control" required="" type="password" name="txtPassword" placeholder="Ingrese su contraseña.">
                             </div>
 
-                            <div class="login_footer form-group"><!---->
-                                <a href="#">¿Olvidaste tu contraseña?</a>
+                            <div class="login_footer form-group"> <!-- no se como hacer hiper link para el componente de recuperar contraseña -->
+                                <a href="---------">¿Olvidaste tu contraseña?</a>
                             </div>
 
                             <div class="form-group">
