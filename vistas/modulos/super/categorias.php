@@ -1,6 +1,6 @@
 <!-- START CATEGORY -->
 <div class="main_content">    
-    <div class="mt-4 staggered-animation-wrap">
+    <div class="staggered-animation-wrap" style="margin-top: 18px;">
         <div class="custom-container">
             <div class="row">
 
@@ -15,12 +15,11 @@
                 <div class="col-lg-9 ">
                     <input type="hidden" id="hdUrl" value="<?php echo $url; ?>">
 
-                    <!-- TITTLE -->
-                    <h4>Categorias de Productos</h4>
-
-                    <!-- BUTTON -->
                     <div class="row">
-                        <div class="col-md-12 text-right mb-3">
+                        <div class="col-md-12 text-right mb-3" style="display: flex; justify-content: space-between">
+                            <!-- TITTLE -->
+                            <h4>Categorias de Productos</h4>
+                            <!-- BUTTON -->
                             <button class="btn btn-danger btn-action" id="btnNuevaCat">Nueva</button>
                         </div>
                     </div>

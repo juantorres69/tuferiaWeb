@@ -16,7 +16,7 @@ $url = ruta::ctrRuta();
         <br> ¿deseas restaurar la contraseña?</p>
 
         <p> 
-            <a href="<?php echo $url; ?>activar/<?php echo $_GET['id']; ?>"> <!-- este boton debe de tener otra url, no se como hacer -->
+            <a href="<?php echo $url; ?>restaurar/<?php echo $_GET['id']; ?>"> <!-- este boton debe de tener otra url, no se como hacer -->
                 <button style="background-color: #ef7236;border: none; padding: 5px 20px;color: white; border-radius: 15px;">Restaurar</button>
             </a>
         </p>

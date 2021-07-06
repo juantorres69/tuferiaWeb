@@ -1,7 +1,7 @@
 <!-- START MAIN CONTENT -->
 <div class="main_content container-heigth-fluid">    
     <!-- START SECTION BANNER -->
-    <div class="mt-4 staggered-animation-wrap">
+    <div class="staggered-animation-wrap" style="margin-top: 18px;">
         <div class="custom-container">
             <div class="row">
                 <!-- categorias menu -->
@@ -33,7 +33,7 @@
                             <div class="modal-body">
                                     <div class="row">
                                         <div class="col-12">
-                                            <p style="font-size:9px">Tamaño sugerido: 540 x 600 px</p>
+                                            <p style="font-size:9px">Tamaño sugerido: 1350 x 300 px</p>
                                         </div>
                                         <div class="col-md-12">
                                             <img src="<?php echo $url; ?>assets/images/productos/no-imagen.png" class="img-thumbnail w-25 img-prod d-none">

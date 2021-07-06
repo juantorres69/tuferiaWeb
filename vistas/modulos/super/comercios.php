@@ -1,6 +1,6 @@
 <!-- START COMERCIOS -->
 <div class="main_content">    
-    <div class="mt-4 staggered-animation-wrap">
+    <div class="staggered-animation-wrap" style="margin-top: 18px;">
         <div class="custom-container">
             <div class="row">
 

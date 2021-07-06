@@ -2,7 +2,7 @@
 <input type="hidden" id="hdUrl" value="<?php echo $url; ?>">
 <div class="main_content container-heigth-fluid">    
     <!-- START SECTION BANNER -->
-    <div class="mt-4 staggered-animation-wrap">
+    <div class="staggered-animation-wrap" style="margin-top: 18px;">
         <div class="custom-container">
             <div class="row">
                 <!-- categorias menu -->

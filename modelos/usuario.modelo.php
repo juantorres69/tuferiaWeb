@@ -329,20 +329,14 @@ class ModeloUsuario {
         return $comercio;
     }
 
-    // no se manejar la base de datos de esta manera, solo se lo basico
+    // consultar email 
 
-    public static function mdlRecuperar($tabla, $valor){
-        $stmt = Conexion::conectar()->prepare("update $tabla set estado=:estado where id=:id");
-        $stmt -> bindParam(":estado", $valor['estado'], PDO::PARAM_STR);
-        $stmt -> bindParam(":id", $valor['comercio'], PDO::PARAM_STR);
+    public static function mdlConsultarUsuarioPorEmail($tabla, $valor){
+        $stmt = Conexion::conectar()->prepare("select * from $tabla where email=:email");
+        $stmt -> bindParam(":email", $valor, PDO::PARAM_STR);
         $stmt -> execute();
+        return $stmt->fetchAll(PDO::FETCH_ASSOC);
         $stmt = null;
-        $stmt = Conexion::conectar()->prepare("select * from $tabla where id=:id");
-        $stmt -> bindParam(":id", $valor['comercio'], PDO::PARAM_STR);
-        $stmt -> execute();
-        $comercio = $stmt->fetch(PDO::FETCH_ASSOC);
-        $stmt = null;
-        return $comercio;
     }
 
 }

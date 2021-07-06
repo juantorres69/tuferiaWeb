@@ -783,7 +783,7 @@ div.banner_large_pad {
 	bottom: 0;
 	display: block;
 	max-width: 270px;
-	overflow-y: auto;
+	/*overflow-y: auto;*/
 	transition: all 0.3s ease-in-out;
 }
 #navCatContent.show {

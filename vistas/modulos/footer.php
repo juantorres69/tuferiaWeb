@@ -9,7 +9,7 @@
                 <!-- DERECHOS RESERVADO -->
                 <div class="col-lg-4" style="align-items: center;display: flex;justify-content: center;">
                     <p class="mb-lg-0 text-center">Diseño, Proyecto original y creacion de 
-                        <br> IMPRESIONES Y PUBLICIDAD <br>
+                        <br> IMPRESIONES PUBLICIDAD <br>
                         © <?php echo date("Y") ?> todos los derechos reservados
                     </p>
                 </div>

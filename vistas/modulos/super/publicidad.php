@@ -1,6 +1,6 @@
 <!-- START PUBLICIDAD -->
 <div class="main_content">    
-    <div class="mt-4 staggered-animation-wrap">
+    <div class="staggered-animation-wrap" style="margin-top: 18px;">
         <div class="custom-container">
             <div class="row">
 
@@ -15,12 +15,11 @@
                 <div class="col-lg-9 ">
                     <input type="hidden" id="hdUrl" value="<?php echo $url; ?>">
 
-                    <!-- TITTLE -->
-                    <h4>Publicidad</h4>
-                    
-                    <!-- BUTTON -->
                     <div class="row">
-                        <div class="col-md-12 text-right mb-3">
+                        <div class="col-md-12 text-right mb-3" style="display: flex; justify-content: space-between">
+                            <!-- TITTLE -->
+                            <h4>Publicidad</h4>
+                            <!-- BUTTON -->
                             <button class="btn btn-danger btn-action" id="btnNuevoBanner">Nuevo</button>
                         </div>
                     </div>
@@ -43,7 +42,7 @@
                                             <div class="col-md-12">
                                                 <div class="form-group">
                                                     <label>Imagen</label>
-                                                    <label style="font-size:9px">Tamaño sugerido: 825 x 550 px</label>
+                                                    <label style="font-size:9px">Tamaño sugerido: 1350 x 300 px</label>
                                                     <input type="file" name="flImagen" id="" class="form-control">
                                                 </div>
                                             </div>
@@ -100,7 +99,7 @@
                         </div>
                     </div>
 
-                     <!-- VENTANA EMEGENTE DE MEGA PROMO -->
+                     <!-- VENTANA EMEGENTE DE MEGA PROMO 
                      <div class="modal fade" id="mdlMegaPromo" tabindex="-1" role="d ialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
                         <div class="modal-dialog modal-lg">
                             <div class="modal-content">
@@ -154,6 +153,7 @@
                             </div>
                         </div>
                     </div>
+                    -->
 
                     <!-- VENTANA EMERGENTE DE PROMOCIONES -->
                     <div class="modal fade" id="mdlPromociones" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -172,7 +172,7 @@
                                             <div class="col-md-12">
                                                 <div class="form-group">
                                                     <label>Imagen</label>
-                                                    <label style="font-size:9px">Tamaño sugerido: 419 x 220 px</label>
+                                                    <label style="font-size:9px">Tamaño sugerido: 420 x 220 px</label>
                                                     <input type="file" name="flImagen" id="" class="form-control">
                                                 </div>
                                             </div>
@@ -217,7 +217,7 @@
 
                     <hr>
 
-                    <!-- MEGA PROMO -->
+                    <!-- MEGA PROMO
                     <h4>Mega Promo</h4>
                     <div class="row">
                         <div class="col-md-4">
@@ -230,9 +230,10 @@
                             <button class="btn btn-danger btn-action" id="btnEditMegaPromo">Editar</button>
                         </div>
                     </div>
-
+        
                     <hr>
-
+                    -->
+                    
                     <!-- PROMOCIONES -->
                     <h4>Promociones</h4>
                     <div class="row mb-5" id="dvPromociones"></div>

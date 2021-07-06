@@ -1,6 +1,6 @@
 <!-- START COMPRAS -->
 <div class="main_content">    
-    <div class="mt-4 staggered-animation-wrap">
+    <div class="staggered-animation-wrap" style="margin-top: 18px;">
         <div class="custom-container">
             <div class="row">
 
@@ -14,12 +14,11 @@
                 <div class="col-lg-9 ">
                     <input type="hidden" id="hdUrl" value="<?php echo $url; ?>">
 
-                    <!-- TITTLE -->
-                    <h4>Compras</h4>
-
-                    <!-- BUTTON -->
                     <div class="row">
-                        <div class="col-12" style="margin-bottom: 10px;">
+                        <div class="col-12" style="margin-bottom: 10px; display:flex; justify-content: space-between;">
+                            <!-- TITTLE -->
+                            <h4>Compras</h4>
+                            <!-- BUTTON -->
                             <button id="DLtoExcel" class="btn btn-sm btn-success">Exportar</button>
                         </div>
                     </div>
