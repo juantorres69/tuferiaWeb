@@ -35,14 +35,14 @@
                         </div>
 
                         <p>
-                            Ingrese el correo con el cual se registró, se le enviara un mail para la recuperación de contraseña.
+                            Ingrese el correo con el cual se registró, se le enviara un email para la recuperación de contraseña.
                         </p>
 
                         <!-- FORM -->
-                        <form id="frmLogin">
+                        <form id="frmRecuperar">
 
                             <div class="form-group">
-                                <input type="email" required="" class="form-control" name="txtEmail" placeholder="Ingrese su correo." require autofocus>
+                                <input type="email" id="txtEmail" required="" class="form-control" name="txtEmail" placeholder="Ingrese su correo." require autofocus>
                             </div>
 
                             <div class="form-group">

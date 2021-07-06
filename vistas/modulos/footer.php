@@ -6,7 +6,7 @@
         <div class="custom-container">
             <div class="row" style="justify-content: center;">
 
-                <!-- DERECHOS R -->
+                <!-- DERECHOS RESERVADO -->
                 <div class="col-lg-4" style="align-items: center;display: flex;justify-content: center;">
                     <p class="mb-lg-0 text-center">Diseño, Proyecto original y creacion de 
                         <br> IMPRESIONES Y PUBLICIDAD <br>
@@ -14,7 +14,18 @@
                     </p>
                 </div>
 
-                <!-- LOGOS -->
+                <!-- REDES SOCIALES -->
+                <div class="col-lg-4" style="align-items: center; display: flex; justify-content: center;">
+                    <div class="mb-lg-0 text-center">
+                        <ul class="social_icons text-center text-lg-left">
+                            <li><a href="https://web.facebook.com/groups/276245050899609/" target="_blank" class="sc_facebook"><i class="ion-social-facebook"></i></a></li>
+                            <li><a href="https://www.youtube.com/channel/UCrJkhxx3WNVeHwhriaTQmIw/videos" class="sc_youtube" target="_blank"><i class="ion-social-youtube"></i></a></li>
+                            <li><a href="https://www.instagram.com/tu_feriavirtual/?hl=es-la" class="sc_instagram" target="_blank"><i class="ion-social-instagram-outline"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- LOGOS 
 
                 <div class="col-lg-4" style="align-items: center;display: flex;justify-content: center; max-width: 100px; margin: 10px 50px;">
                     <div class="mb-lg-0 text-center">
@@ -47,7 +58,7 @@
                         </ul>
                     </div>
                 </div>
-
+                -->
                 <!--
                 <div class="col-lg-4">
                     <ul class="footer_payment text-center text-lg-right">
@@ -60,19 +71,6 @@
                 </div>
                 -->
 
-            </div>
-            
-            <!-- REDES SOCIALES -->
-            <div class="row" style="justify-content: center;">
-                <div class="col-lg-4" style="align-items: center; display: flex; justify-content: center;">
-                    <div class="mb-lg-0 text-center">
-                        <ul class="social_icons text-center text-lg-left">
-                            <li><a href="https://web.facebook.com/groups/276245050899609/" target="_blank" class="sc_facebook"><i class="ion-social-facebook"></i></a></li>
-                            <li><a href="https://www.youtube.com/channel/UCrJkhxx3WNVeHwhriaTQmIw/videos" class="sc_youtube" target="_blank"><i class="ion-social-youtube"></i></a></li>
-                            <li><a href="https://www.instagram.com/tu_feriavirtual/?hl=es-la" class="sc_instagram" target="_blank"><i class="ion-social-instagram-outline"></i></a></li>
-                        </ul>
-                    </div>
-                </div>
             </div>
         </div>
     </div>

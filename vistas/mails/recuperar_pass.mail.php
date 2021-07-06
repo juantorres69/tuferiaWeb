@@ -8,19 +8,18 @@ $url = ruta::ctrRuta();
     </div>
     <div style="padding: 20px;">
 
-        <p>¿<strong><?php echo explode(' ',$_GET['nombre'])[0]; ?></strong>, solucitó una restauracion de contraseña?</p>
+        <p>¿<strong><?php echo explode(' ',$_GET['nombre'])[0]; ?></strong>, solucitó restaurar su contraseña?</p>
 
         <br>
 
-        <p>Recibes este email porque se solicitó un reestablecimiento de contraseña para tu cuenta.
-        <br> ¿deseas restablecer la contraseña?</p>
+        <p>Recibes este email porque se solicitó recuperar su contraseña para tu cuenta.
+        <br> ¿deseas restaurar la contraseña?</p>
 
-        <p>
-            <a href="<?php echo $url; ?>activar/<?php echo $_GET['id']; ?>">
-                <button style="background-color: #ef7236;border: none; padding: 5px 20px;color: white; border-radius: 15px;">Restablecer</button>
+        <p> 
+            <a href="<?php echo $url; ?>activar/<?php echo $_GET['id']; ?>"> <!-- este boton debe de tener otra url, no se como hacer -->
+                <button style="background-color: #ef7236;border: none; padding: 5px 20px;color: white; border-radius: 15px;">Restaurar</button>
             </a>
         </p>
-
 
     </div>
     <div style="background-color: #2e385e;height: 20px; display: flex; justify-content: center; align-items:center">

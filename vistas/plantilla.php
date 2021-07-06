@@ -182,7 +182,7 @@
                                                                                 
                         */
 
-                        $whiteListGeneric = array("productos", "login", "registro-comercio", "registro", "carrito",  "deseos", "checkout", "error404", "buscar", "perfil","wompi-response");
+                        $whiteListGeneric = array("productos", "login", "registro-comercio", "registro", "carrito",  "deseos", "checkout", "error404", "buscar", "perfil","wompi-response","recuperar","restaurar");
                         if($ruta != null || $valor == "tags"){
                             include "modulos/productos.php";
                             $sw_prods = true;
@@ -289,6 +289,8 @@
             <script src="<?php echo $url; ?>vistas/js/perfil.js"></script>
             
             <script src="<?php echo $url; ?>vistas/js/checkout.js"></script>
+
+            <script src="<?php echo $url; ?>vistas/js/recuperar.js"></script>
 
     </body>
 

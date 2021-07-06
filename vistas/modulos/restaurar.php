@@ -42,11 +42,11 @@
                         <form id="frmLogin">
 
                             <div class="form-group">
-                                <input type="text" required="" class="form-control" name="txtEmail" placeholder="Ingrese la nueva contraseña" require autofocus>
+                                <input type="text" required="" class="form-control" name="txtEmail" placeholder="Nueva contraseña" require autofocus>
                             </div>
 
                             <div class="form-group">
-                                <input type="text" required="" class="form-control" name="txtEmail" placeholder="Confirma la contraseña">
+                                <input type="text" required="" class="form-control" name="txtEmail" placeholder="Confirme nueva contraseña">
                             </div>
 
                             <div class="form-group">

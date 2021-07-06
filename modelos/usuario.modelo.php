@@ -329,4 +329,20 @@ class ModeloUsuario {
         return $comercio;
     }
 
+    // no se manejar la base de datos de esta manera, solo se lo basico
+
+    public static function mdlRecuperar($tabla, $valor){
+        $stmt = Conexion::conectar()->prepare("update $tabla set estado=:estado where id=:id");
+        $stmt -> bindParam(":estado", $valor['estado'], PDO::PARAM_STR);
+        $stmt -> bindParam(":id", $valor['comercio'], PDO::PARAM_STR);
+        $stmt -> execute();
+        $stmt = null;
+        $stmt = Conexion::conectar()->prepare("select * from $tabla where id=:id");
+        $stmt -> bindParam(":id", $valor['comercio'], PDO::PARAM_STR);
+        $stmt -> execute();
+        $comercio = $stmt->fetch(PDO::FETCH_ASSOC);
+        $stmt = null;
+        return $comercio;
+    }
+
 }

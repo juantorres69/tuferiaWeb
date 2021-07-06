@@ -122,7 +122,6 @@ class AjaxLogin{
                 $mail->AddAddress(Mail::getUser());                                                            
 			    $mail->MsgHTML(file_get_contents(str_replace(' ','%20',$url.'vistas/mails/nuevo_comercio.mail.php?nombre='.$comercio['razon_social'])));                                   
    
-
                 $mail->Send();
             }
 

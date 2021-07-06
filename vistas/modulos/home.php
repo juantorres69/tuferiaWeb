@@ -332,10 +332,10 @@
                         <div class="banner_slide_content banner_content_inner">
                             <div class="col-lg-7 col-10">
                                 <div class="banner_content3 overflow-hidden">
-                                    <h5 class="mb-3 staggered-animation font-weight-light" data-animation="slideInLeft" data-animation-delay="0.5s">'.$banner['subtitulo'].'</h5>
-                                    <h2 class="staggered-animation" data-animation="slideInLeft" data-animation-delay="1s">'.$banner['titulo'].'</h2>
-                                    <h4 class="staggered-animation mb-4 product-price" data-animation="slideInLeft" data-animation-delay="1.2s"><span class="price">$'.number_format($banner['oferta']).'</span><del>'.(($banner['precio']) ? '$'.number_format($banner['precio']) : '' ).'</del></h4>
-                                    <a class="btn btn-fill-out btn-radius staggered-animation text-uppercase" href="'.$url.$banner['link'].'" data-animation="slideInLeft" data-animation-delay="1.5s">'.$banner['link_texto'].'</a>
+                                    <h5 class="staggered-animation mb-3 font-weight-light" data-animation="slideInLeft" data-animation-delay="0.5s" style="color: #fff; text-shadow: -1px -1px 5px #000, 1px 1px 5px #000, -1px 1px 5px #000, 1px -1px 5px #000;">'.$banner['subtitulo'].'</h5>
+                                    <h2 class="staggered-animation" data-animation="slideInLeft" data-animation-delay="0.5s" style="color: #fff !important; text-shadow: -1px -1px 5px #000, 1px 1px 5px #000, -1px 1px 5px #000, 1px -1px 5px #000 !important;">'.$banner['titulo'].'</h2>
+                                    <h4 class="staggered-animation mb-4 product-price" data-animation="slideInLeft" data-animation-delay="0.5s"><span class="price">$'.number_format($banner['oferta']).'</span><del>'.(($banner['precio']) ? '$'.number_format($banner['precio']) : '' ).'</del></h4>
+                                    <a class="btn btn-fill-out btn-radius staggered-animation text-uppercase" href="'.$url.$banner['link'].'" data-animation="slideInLeft" data-animation-delay="0.5s">'.$banner['link_texto'].'</a>
                                 </div>
                             </div>
                         </div>
