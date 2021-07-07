@@ -30,7 +30,7 @@ class Ajaxrecuperar{
 			// $mail->AddAddress($usuario['email']);     //
 			$mail->AddAddress($email);      //                                                       
 
-			$mail->MsgHTML(file_get_contents(str_replace(' ','%20',$url.'vistas/mails/recuperar_pass.mail.php?id=7000&nombre='.$usuario['email'].''))); //esta parte es dinamica (el nombre)                                
+			$mail->MsgHTML(file_get_contents(str_replace(' ','%20',$url.'vistas/mails/recuperar_pass.mail.php?id=7000&nombre='.$usuario['email'].''))); // el id debe ser dinamico                    
 
             $mail->AltBody = 'Correo enviado';        
 

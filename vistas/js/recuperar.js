@@ -45,7 +45,7 @@ $(document).ready(function() {
                     } else {
                         swal.fire({
                             title: 'No existe',
-                            text: res.Msj,
+                            text: 'el correo que digitó no esta registrado',
                             icon: 'error',
                             confirmButtonText: 'Aceptar'
                         });
