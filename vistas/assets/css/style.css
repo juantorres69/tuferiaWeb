@@ -38,6 +38,18 @@ Version      : 1.0
 /*===================================*
   01.GENERAL STYLE
 *===================================*/
+*::-webkit-scrollbar {
+	width: 8px;
+	height: 8px;
+	/*display: none;*/
+}
+*::-webkit-scrollbar-thumb{
+	background: #ef7236;
+	border-radius: 4px;
+}
+*::-webkit-scrollbar-thumb:hover{
+	background: #2e385e;
+}
 html, body {
     -webkit-font-smoothing: antialiased;
     -moz-font-smoothing: antialiased;
@@ -227,7 +239,7 @@ button:focus {
 	cursor: pointer;
 	line-height: normal;
 	padding: 12px 35px;
-	text-transform: capitalize;
+	/*text-transform: capitalize;*/
 	transition: all 0.3s ease-in-out;
 }
 .btn.active:focus, .btn:active:focus {
@@ -896,7 +908,7 @@ button:focus {
 .heading_s1 h1, .heading_s1 h2, .heading_s1 h3, .heading_s1 h4, .heading_s1 h5, .heading_s1 h6 {
 	font-weight: 700;
 	margin: 0;
-	text-transform: capitalize;
+	/*text-transform: capitalize;*/
 }
 .heading_s2 {
 	position: relative;
@@ -4187,7 +4199,7 @@ footer .widget_title {
 }
 .page-title h1 {
 	margin: 0;
-	text-transform: capitalize;
+	/*text-transform: capitalize;*/
 	font-weight: bold;
 	line-height: normal;
 }
@@ -5903,7 +5915,7 @@ footer .widget_title {
 .product-remove a i {
 	height: 30px;
 	width: 30px;
-	color: #292b2c;
+	color: #000;
 	display: inline-block;
 	line-height: 30px;
 	text-align: center;
@@ -5911,7 +5923,7 @@ footer .widget_title {
 	font-size: 14px;
 }
 .product-remove a i:hover {
-	background-color: #F00;
+	background-color: #ef7236;
 	color: #fff;
 }
 .shop_cart_table td.product-price,
@@ -5973,7 +5985,7 @@ label.label_info {
 	border: 0;
 }
 .payment_method {
-	margin-bottom: 30px;
+	/*margin-bottom: 30px;*/
 	display: inline-block;
 	width: 100%;
 }

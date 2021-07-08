@@ -217,7 +217,7 @@
 
                     <hr>
 
-                    <!-- MEGA PROMO
+                    <!-- MEGA PROMO 
                     <h4>Mega Promo</h4>
                     <div class="row">
                         <div class="col-md-4">
@@ -232,6 +232,7 @@
                     </div>
         
                     <hr>
+                    
                     -->
                     
                     <!-- PROMOCIONES -->

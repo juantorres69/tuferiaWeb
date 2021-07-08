@@ -36,7 +36,7 @@
                 <form method="post">
 
                     <div class="form-group">
-                        <input type="text" required class="form-control" value="<?php echo $_SESSION['nombreUsuario']; ?>" name="fname" placeholder="Nombre">
+                        <input type="text" required class="form-control" value="<?php echo $_SESSION['nombreUsuario']; ?>" name="fname" placeholder="Nombre" style="text-transform: capitalize;">
                     </div>
 
                     <div class="form-group">
@@ -69,7 +69,7 @@
                     </div>
 
                     <div class="heading_s1">
-                        <h4>Información Adicional</h4>
+                        <h4>Información adicional</h4>
                     </div>
 
                     <div class="form-group mb-0">
@@ -84,7 +84,7 @@
                 <div class="order_review" style="padding: 0px 30px;">
                     <!-- TITTLE -->
                     <div class="heading_s1 ">
-                        <h4 class="text-dark">Tu Orden</h4>
+                        <h4 class="text-dark">Tu orden</h4>
                     </div>
 
                     <?php 

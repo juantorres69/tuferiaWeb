@@ -51,7 +51,7 @@
                             </div>
                             
                             <!-- caja de texto -->
-                            <input class="form-control" placeholder="Buscar Productos..." required=""  type="text" id="txtBuscar" value="<?php echo $buscar; ?>">
+                            <input class="form-control" placeholder="Buscar productos..." required=""  type="text" id="txtBuscar" value="<?php echo $buscar; ?>">
 
                             <!-- boton de busqueda -->
                             <button type="submit" class="search_btn2"><i class="fa fa-search"></i></button>
@@ -141,7 +141,7 @@
                                         foreach($carrito as $cart){
                                             echo '<li>
                                                     <!-- el boton de cerrar no resulta --> 
-                                                    <a href="#" class="item_remove"><i class="ion-close" style="margin: 0px 15px;"></i></a>
+                                                    <a href="#" onclick="eliminarCarrito('.$cart['id_carrito'].',\''.$url.'\')" class="item_remove"><i class="ion-close" style="margin: 0px 15px;"></i></a>
                                                     <a href="#"><img src="'.$url.'assets/images/productos/'.(($cart['imagen'] != '') ? $cart['imagen'] : 'no-imagen.png').'" alt="cart_thumb1" style="height: 80px;">'.$cart['nombre'].'</a>
                                                     <span class="cart_quantity"> '.$cart['cantidad'].' x <span class="cart_amount"> <span class="price_symbole">$</span></span>'.(($cart['oferta']) ? number_format($cart['oferta']) : number_format($cart['precio']) ).'</span>
                                                 </li>';

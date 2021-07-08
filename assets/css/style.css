@@ -5870,7 +5870,7 @@ footer .widget_title {
 .product-remove a i {
 	height: 30px;
 	width: 30px;
-	color: #292b2c;
+	color: #000;
 	display: inline-block;
 	line-height: 30px;
 	text-align: center;
@@ -5878,7 +5878,7 @@ footer .widget_title {
 	font-size: 14px;
 }
 .product-remove a i:hover {
-	background-color: #F00;
+	background-color: #ef7236;
 	color: #fff;
 }
 .shop_cart_table td.product-price,

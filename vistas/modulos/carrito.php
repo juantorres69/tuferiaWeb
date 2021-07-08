@@ -7,7 +7,7 @@
             <!-- TITTLE -->
         	<div class="col-md-6">
                 <div class="page-title">
-            		<h1>Carrito de Compras</h1>
+            		<h1>Carrito de compras</h1>
                 </div>
             </div>
 
@@ -102,7 +102,7 @@
             
             <!-- TOTAL -->
             <div class="col-md-6">
-            	<div class="border p-3 p-md-4">
+            	<div class="border p-3 p-md-4" style="border-radius: 24px;">
                     <!-- TITTLE -->
                     <div class="heading_s1 mb-3">
                         <h6>Totales</h6>
@@ -127,7 +127,7 @@
                     </div>
 
                     <!-- BUTTON TO PAY -->
-                    <a href="<?php echo $url; ?>checkout" class="btn btn-fill-out">Ir pagar</a>
+                    <a href="<?php echo $url; ?>checkout" class="btn btn-fill-out">Ir a pagar</a>
 
                 </div>
             </div>
