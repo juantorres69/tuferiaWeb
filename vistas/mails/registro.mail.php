@@ -10,7 +10,7 @@ $url = ruta::ctrRuta();
         <p>¡Gracias por registrarte en <strong>tuferiavirtual.co</strong>!</p>
         <p><strong><?php echo explode(' ',$_GET['nombre'])[0]; ?></strong>, ahora podras disfrutar de nuestros productos y servicios.</p>
         <p>Para poder comprar nuestros productos debes activar tu cuenta.</p>
-        <p><a href="<?php echo $url; ?>activar/<?php echo $_GET['id']; ?>"><button style="background-color: #ef7236;border: none; padding: 5px 20px;color: white; border-radius: 15px;">ACTIVAR</button></a></p>
+        <p><a href="<?php echo $url; ?>activar/<?php echo $_GET['id']; ?>"><button style="background-color: #ef7236;border: none; padding: 5px 20px;color: white; border-radius: 15px;">Activar</button></a></p>
     </div>
     <div style="background-color: #2e385e;height: 20px; display: flex; justify-content: center; align-items:center">
         <div style="background-color: #2e385e;height: 10px;color: white;text-align: center;text-decoration: none;"></div>

@@ -1,3 +1,16 @@
+
+<?php 
+    $rutas = explode("/", $_GET['ruta']) ;
+    $id=$rutas[1];
+
+    $existe = ModeloUsuario::mdlConsultarUsuarioPorId ("usuarios",$id);
+
+    if (!$existe){      // Olvidé para que era el condicional 
+        echo 'usuario no existe';
+        
+    }
+
+?>
 <!-- START LOGIN SECTION -->
 <div class="breadcrumb_section bg_gray page-title-mini">
     <div class="container">
@@ -39,14 +52,14 @@
                         </p>
 
                         <!-- FORM -->
-                        <form id="frmLogin">
+                        <form id="frmRestaurar"> <!-- le puse un id a cada imput para compararlos -->
 
                             <div class="form-group">
-                                <input type="text" required="" class="form-control" name="txtEmail" placeholder="Nueva contraseña" require autofocus>
+                                <input type="password" id="txtPass" required="" class="form-control" name="txtPassword" placeholder="Nueva contraseña" require autofocus>
                             </div>
 
                             <div class="form-group">
-                                <input type="text" required="" class="form-control" name="txtEmail" placeholder="Confirme nueva contraseña">
+                                <input type="password" id="txtPassC" required="" class="form-control" name="txtPassword" placeholder="Confirme nueva contraseña">
                             </div>
 
                             <div class="form-group">

@@ -3,17 +3,12 @@ $(document).ready(function() {
     $('#frmRecuperar').on('submit', function(e) {
         e.preventDefault();
         let form = $(this).serializeArray();
-        console.log(form);
         let datos = new FormData();
         form.forEach((item,index) => {
             console.log(item.name, item.value);
             datos.append(item.name, item.value);
         });
         datos.append('accion', 'recuperar');
-        for (var key of datos.entries()) {
-            console.log(key[0] + ', ' + key[1]);
-        }
-        console.log(datos)
         if ($('#txtEmail').val() !== "") {
             $('.preloader').css('display', 'block');
             $.ajax({
@@ -27,8 +22,6 @@ $(document).ready(function() {
                 success: function(res) {
                     $('.preloader').css('display', 'none');
                     
-                    console.log('respuesta',res)
-
                     if (res.ErrorStatus == false) {
 
                         swal.fire({
@@ -39,7 +32,7 @@ $(document).ready(function() {
                             allowOutsideClick: false
 
                         }).then(() => {
-                            // location.href = 'home';
+                            location.href = 'home';
                         });
                         
                     } else {
@@ -50,12 +43,10 @@ $(document).ready(function() {
                             confirmButtonText: 'Aceptar'
                         });
                     }
-                }, error:function(error){
+                }, error:function(error){ 
                     console.log(error)
                 }
-
             });
-            console.log($('#txtEmail').val())
         } else {
             swal.fire({
                 title: 'Error',

@@ -6726,7 +6726,7 @@ footer .widget_recent_post .post_img img {
 }
 .owl-theme .owl-dots {
 	font-size: 0;
-	margin-top: 15px;
+	margin-top: 0px !important;
 }
 .owl-theme .owl-dots .owl-dot span {
 	background-color: transparent;

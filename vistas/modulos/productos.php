@@ -1,5 +1,5 @@
 <!-- SECTION PRODUCT -->
-<div class="section">
+<div class="section aj1" style="padding: 20px;">
 	<div class="container">
     	<div class="row">
             <!-- RIGHT -->

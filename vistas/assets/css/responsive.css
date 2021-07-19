@@ -1340,12 +1340,25 @@ div.banner_large_pad {
 .blog_post,
 .pricing_box,
 .team_box,
-.heading_tab_header,
 .sale_banner,
 .contact_style3,
 .product_list .product, 
 .product_list .product_wrap {
 	margin-bottom: 15px;
+}
+.heading_tab_header{
+	margin: 20px 0px;
+	padding: 0px;
+}
+.heading_tab_header_{
+	margin-top: -52px !important;
+	padding: 0px;
+}
+.aj{
+	padding-left: 70px;
+}
+.aj1{
+	padding: 0px !important;
 }
 .pr_title {
 	padding: 20px 15px 20px;
@@ -1469,6 +1482,7 @@ blockquote p {
 	height: 6px;
 }
 .nav_style3.owl-theme .owl-nav [class*="owl-"] {
+	visibility: hidden;
 	top: -52px;
 }
 .follow_box {

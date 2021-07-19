@@ -32,12 +32,12 @@ class AjaxLogin{
 			$mail->Username   = Mail::getUser();
 			$mail->Password   = Mail::getPassword();
 			$mail->From = Mail::getUser();
-			$mail->FromName = "Registro tuferia virtual";  
-			$mail->Subject = 'Registro tuferia virtual';                                            
+			$mail->FromName = "Registro Tu Feria Virtual";  
+			$mail->Subject = 'Registro Tu Feria Virtual';                                            
 			$mail->AddAddress($usuario['email']);                                                            
 			$mail->MsgHTML(file_get_contents(str_replace(' ','%20',$url.'vistas/mails/registro.mail.php?id='.$usuario['id'].'&nombre='.$usuario['nombre'])));                                   
 
-            $mail->AltBody = 'REGISTRO TUFERIA VIRTUAL';        
+            $mail->AltBody = 'Registro Tu Feria Virtual';        
 
             $mail->Send();
             $result = array('ErrorStatus' => false, 'Msj' => 'Se ha registrado con exito en nuestra plataforma, le enviamos un correo electronico para activar su cuenta.');
@@ -97,12 +97,12 @@ class AjaxLogin{
 			$mail->Username   = Mail::getUser();
 			$mail->Password   = Mail::getPassword();
 			$mail->From = Mail::getUser();
-			$mail->FromName = "Registro tuferia virtual";  
-			$mail->Subject = 'Registro tuferia virtual';                                            
+			$mail->FromName = "Registro Tu Feria Virtual";  
+			$mail->Subject = 'Registro Tu Feria Virtual';                                            
 			$mail->AddAddress($comercio['email']);                                                            
 			$mail->MsgHTML(file_get_contents(str_replace(' ','%20',$url.'vistas/mails/registro_comercio.mail.php?nombre='.$comercio['razon_social'])));                                   
 
-            $mail->AltBody = 'REGISTRO TUFERIA VIRTUAL';        
+            $mail->AltBody = 'Registro Tu Feria Virtual';        
 
             // $mail->Send();
             if($mail->Send()){
@@ -117,8 +117,8 @@ class AjaxLogin{
                 $mail->Username   = Mail::getUser();
                 $mail->Password   = Mail::getPassword();
                 $mail->From = Mail::getUser();
-                $mail->FromName = "Registro tuferia virtual";  
-                $mail->Subject = 'Registro tuferia virtual';                                            
+                $mail->FromName = "Registro Tu Feria Virtual";  
+                $mail->Subject = 'Registro Tu Feria Virtual';                                            
                 $mail->AddAddress(Mail::getUser());                                                            
 			    $mail->MsgHTML(file_get_contents(str_replace(' ','%20',$url.'vistas/mails/nuevo_comercio.mail.php?nombre='.$comercio['razon_social'])));                                   
    

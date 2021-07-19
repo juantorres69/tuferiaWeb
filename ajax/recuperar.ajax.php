@@ -12,8 +12,8 @@ class Ajaxrecuperar{
         $tabla = 'usuarios';
         $url = ruta::ctrRuta();
         $usuario = ModeloUsuario::mdlConsultarUsuarioPorEmail($tabla,$email);
+
         if($usuario){
-            // ControladorUsuario::setSecuritySessions();
             $mail = new PHPMailer();
 			$mail->CharSet = 'UTF-8';
 			$mail->isSMTP ();
@@ -26,11 +26,10 @@ class Ajaxrecuperar{
 			$mail->Password   = Mail::getPassword();
 			$mail->From = Mail::getUser();
 			$mail->FromName = "Recuperar contraseña";  
-			$mail->Subject = 'Recuperar contraseña';                                            
-			// $mail->AddAddress($usuario['email']);     //
-			$mail->AddAddress($email);      //                                                       
+			$mail->Subject = 'Recuperar contraseña'; 
+			$mail->AddAddress($email);                               
 
-			$mail->MsgHTML(file_get_contents(str_replace(' ','%20',$url.'vistas/mails/recuperar_pass.mail.php?id=7000&nombre='.$usuario['email'].''))); // el id debe ser dinamico                    
+			$mail->MsgHTML(file_get_contents(str_replace(' ','%20',$url.'vistas/mails/recuperar_pass.mail.php?id='.$usuario['id'].'&nombre='.$usuario['nombre'].''))); //                 
 
             $mail->AltBody = 'Correo enviado';        
 
@@ -49,7 +48,6 @@ if(isset($_POST['accion'])){
     $objeto = new Ajaxrecuperar();
     if($_POST['accion'] == 'recuperar'){
         $email = $_POST["txtEmail"];
-        // echo $_POST;
         $objeto->validarEmail($email);
     }
 }

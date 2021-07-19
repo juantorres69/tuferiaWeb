@@ -18,7 +18,7 @@
             <div class="row">
             
                 <!-- CATEGORY -->
-                <div class="col-lg-3 col-md-4 col-sm-6 col-3">
+                <div class="col-lg-3 col-md-4 col-sm-6 col-3" style="z-index: 100;">
                     <div class="categories_wrap">
 
                         <button type="button" data-toggle="collapse" data-target="#navCatContent" aria-expanded="false" class="categories_btn">
@@ -135,9 +135,9 @@
                     <div class="row">
                         <div class="col-12">
 
-                            <div class="heading_tab_header">
+                            <div class="heading_tab_header heading_tab_header_" style="padding-top: 0px; margin-top: -39px;">
 
-                                <div class="heading_s2">
+                                <div class="heading_s2 aj">
                                     <h4>Productos Exclusivos</h4>
                                 </div>
 
@@ -229,7 +229,7 @@
                 <?php 
                 $promos = ControladorHome::ctrConsultarPromos();
                 foreach($promos as $promo){
-                    echo '<div class="col-md-4" style="margin-bottom:10px;">
+                    echo '<div class="col-md-4">
                             <div class="sale-banner hover_effect1" style="height: 220px; background-image: url('.$url.'vistas/assets/images/promos/'.$promo['imagen'].'); background-size: cover;display: flex; align-items: center;padding: 20px;">
                                 <a style="z-index: 999;" href="'.$url.$promo['link'].'">
                                     <h5 style="color: #fff; text-shadow: -1px -1px 5px #000, 1px 1px 5px #000, -1px 1px 5px #000, 1px -1px 5px #000;">'.$promo['subtitulo'].'</h5>
@@ -252,7 +252,7 @@
 
             <div class="row">
                 <div class="col-md-12">
-                    <div class="heading_tab_header">
+                    <div class="heading_tab_header" style="padding-top: 0px;">
 
                         <div class="heading_s2">
                             <h2>Productos Destacados</h2>
@@ -320,7 +320,7 @@
     $banners = ControladorHome::ctrConsultarBanners();
     ?>
 
-    <div class="col-lg-9" style="padding: 0px; max-width: 100%; margin: 20px 0px;">
+    <div class="col-lg-9" style="padding: 0px; max-width: 100%; margin: 20px 0px 0px;">
         <div class="banner_section shop_el_slider">
             <div id="carouselExampleControls" class="carousel slide carousel-fade light_arrow" data-ride="carousel">
 

@@ -344,16 +344,14 @@
                     </div>
                 </div>
 
-
-
-                <!-- RELATED PRODUCTS -->
+                <!-- RELATED PRODUCTS 
         		<div class="row">
                     <div class="col-12">
-                        <!-- TITTLE -->
+                        -- TITTLE --
                         <div class="heading_s1">
                             <h3>productos relacionados</h3>
                         </div>
-                        <!-- PRODUCTS LIST --> <!---->
+                        -- PRODUCTS LIST --
                         <div class="releted_product_slider carousel_slider owl-carousel owl-theme" data-margin="20" data-responsive='{"0":{"items": "1"}, "481":{"items": "2"}, "768":{"items": "3"}, "992":{"items": "2"}, "1199":{"items": "3"}}'>
                             <div class="item">
                                 <div class="product">
@@ -574,12 +572,9 @@
                                 </div>
                             </div>
                         
-
                         </div>
                     </div>
-                </div>
-
-
+                </div> -->
 
             </div>
 

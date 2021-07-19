@@ -2,7 +2,7 @@
 <?php 
 if(!isset($_SESSION['rol'])){ ?>
 
-    <div class="section bg_default small_pt small_pb" style="padding-top: 20px;">
+    <div class="section bg_default small_pt small_pb" style="padding: 20px 0px;">
         <div class="custom-container">	
             <div class="row align-items-center">	
 

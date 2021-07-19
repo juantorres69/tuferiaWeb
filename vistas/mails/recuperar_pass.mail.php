@@ -8,7 +8,7 @@ $url = ruta::ctrRuta();
     </div>
     <div style="padding: 20px;">
 
-        <p>¿<strong><?php echo $_GET['nombre']; ?></strong>, solucitó restaurar su contraseña?</p> <!-- como hago para que digite el nombre de ese usuario en especial -->
+        <p>¿<strong><?php echo explode(' ',$_GET['nombre'])[0];?></strong>, solucitó restaurar su contraseña?</p> <!-- traté de hacerlo de otra manera pero no funciona aun -->
 
         <br>
 
@@ -16,7 +16,7 @@ $url = ruta::ctrRuta();
         <br> ¿deseas restaurar la contraseña?</p>
 
         <p> 
-            <a href="<?php echo $url; ?>restaurar/<?php echo $_GET['id']; ?>"> <!-- el id no es dinamico -->
+            <a href="<?php echo $url; ?>restaurar/<?php echo $_GET['id']; ?>"> <!--  -->
                 <button style="background-color: #ef7236;border: none; padding: 5px 20px;color: white; border-radius: 15px;">Restaurar</button>
             </a>
         </p>

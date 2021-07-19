@@ -339,4 +339,13 @@ class ModeloUsuario {
         $stmt = null;
     }
 
+    // consultar id 
+
+    public static function mdlConsultarUsuarioPorId($tabla, $valor){
+        $stmt = Conexion::conectar()->prepare("select * from $tabla where id=:id");
+        $stmt -> bindParam(":id", $valor, PDO::PARAM_STR);
+        $stmt -> execute();
+        return $stmt->fetchAll(PDO::FETCH_ASSOC);
+        $stmt = null;
+    }
 }

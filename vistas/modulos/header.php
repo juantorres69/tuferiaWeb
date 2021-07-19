@@ -64,8 +64,8 @@
                 <ul class="navbar-nav attr-nav align-items-center">
 
                     <!-- icono de iniciar seccion como comprador --> 
-                    <li class="dropdown cart_dropdown"><a href="./login" class="nav-link"><i class="linearicons-user"></i></a>
-                        <div class="cart_box cart_right dropdown-menu dropdown-menu-right" style="box-shadow: 0px 0px 1px 0px grey; width: 200px;">
+                    <li class="dropdown cart_dropdown"><a href="./login" class="nav-link cart_trigger" data-toggle="dropdown"><i class="linearicons-user"></i></a>
+                        <div class="cart_box cart_right dropdown-menu dropdown-menu-right" style="box-shadow: 0px 0px 1px 0px grey; width: 200px; margin:0px">
 
                             <!-- lista desplegable condicional -->
                             <ul class="cart_list">
@@ -76,11 +76,13 @@
                                             <a href="./perfil">Perfil</a>
                                         </li>
                                         <li>
+                                            <a href="'.$url.'cerrar" class="nav-link">Cerrar seccion</a>
+                                        </li>
+                                        <li>
                                             <a href="./registro-comercio">Vende con nosotros</a>
                                         </li>
                                         ';
                                 }
-                                /*
                                 else{
                                     echo '<li>
                                             <a href="'.$url.'login" class="btnIngreso">Iniciar Sesión</a>
@@ -88,21 +90,25 @@
                                         <li>
                                             <a href="'.$url.'registro" class="btnIngreso">Registro</a>
                                         </li>
+                                        <li>
+                                            <a href="./registro-comercio">Vende con nosotros</a>
+                                        </li>
                                         ';
-                                }
-                                */                            
+                                }                       
                                 ?>
                             </ul>
 
                         </div>
                     </li>
 
+                    <!-- icono de cerrar  -->
+
                     <?php 
-                        if(isset($_SESSION['idUsuario'])){
-                            $item = 'usuario_id';
-                            $valor = $_SESSION['idUsuario'];
-                            echo '<li><a href="'.$url.'cerrar" class="nav-link"><i class="linearicons-exit"></i></a></li>';
-                        }
+                        // if(isset($_SESSION['idUsuario'])){
+                        //     $item = 'usuario_id';
+                        //     $valor = $_SESSION['idUsuario'];
+                        //     echo '<li><a href="'.$url.'cerrar" class="nav-link"><i class="linearicons-exit"></i></a></li>';
+                        // }
                     ?>
                     
                     <!-- icono de favorito -->
@@ -129,7 +135,7 @@
                         }
                     ?>
 
-                    <!-- bolsa con contador -->
+                    <!-- bolsa / carrito y checkout -->
                     <li class="dropdown cart_dropdown"><a class="nav-link cart_trigger" href="./carrito" data-toggle="dropdown"><i class="linearicons-bag2"></i><span class="cart_count"><?php echo $count_cart; ?></span><span class="amount"><span class="currency_symbol">$</span><?php echo $sub ?></span></a>
                         <div class="cart_box cart_right dropdown-menu dropdown-menu-right" style="box-shadow: 0px 0px 1px 0px grey;">
 
