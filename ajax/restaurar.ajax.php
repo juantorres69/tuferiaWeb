@@ -8,10 +8,10 @@ require_once '../lib/PHPMailer/PHPMailerAutoload.php';
 
 class Ajaxrestaurar{
 
-    public function validarId($id){ //
+    public function CambiarContrasena($id, $PassN){      //
         $tabla = 'usuarios';
         $url = ruta::ctrRuta();
-        $usuario = ModeloUsuario::mdlConsultarUsuarioPorId($tabla, $id); //
+        $usuario = ModeloUsuario::mdlcambiarcontrasena($tabla, $id, $PassN);     //
 
         if($usuario){
             $mail = new PHPMailer();
@@ -27,9 +27,9 @@ class Ajaxrestaurar{
 			$mail->From = Mail::getUser();
 			$mail->FromName = "Restaurar contraseña"; //
 			$mail->Subject = 'Restaurar contraseña'; //
-			$mail->AddAddress($usuario['email']);   //  así sería? 
+			$mail->AddAddress($usuario['email']);   //  
 
-			$mail->MsgHTML(file_get_contents(str_replace(' ','%20',$url.'vistas/mails/restaurar_pass.mail.php?id='.$usuario['id'].'&nombre='.$usuario['nombre'].''))); //                 
+			$mail->MsgHTML(file_get_contents(str_replace(' ','%20',$url.'vistas/mails/restaurar_pass.mail.php?nombre='.$usuario['nombre'].''))); //                 
 
             $mail->AltBody = 'Correo enviado';        
 
@@ -45,10 +45,11 @@ class Ajaxrestaurar{
 
 if(isset($_POST['accion'])){
 
-    $objeto = new Ajaxrestaurar(); //
-    if($_POST['accion'] == 'restaurar'){ //
-        $email = $_POST["txtPass"];
-        $objeto->validarId($id);
+    $objeto = new Ajaxrestaurar();                 //
+    if($_POST['accion'] == 'restaurar'){          //
+        $PassN = $_POST["txtPass"];              //
+        $idUsuario = $_POST["idUsuario"];
+        $objeto->CambiarContrasena($idUsuario, $PassN);
     }
 }
 ?>

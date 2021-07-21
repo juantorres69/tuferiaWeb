@@ -5,11 +5,10 @@ $(document).ready(function() {
         let form = $(this).serializeArray();
         let datos = new FormData();
         form.forEach((item,index) => {
-            console.log(item.name, item.value);
             datos.append(item.name, item.value);
         });
         datos.append('accion', 'restaurar'); //
-        if ($('#txtPass').val() === $('#txtPassC').val() ) { // pienso que sería algo así 
+        if ($('#txtPass').val() === $('#txtPassC').val() && ($('#txtPass').val() !== "" && $('#txtPassC').val() !== "") ) { // pienso que sería algo así 
             $('.preloader').css('display', 'block');
             $.ajax({
                 url: 'ajax/restaurar.ajax.php', // 
@@ -47,10 +46,10 @@ $(document).ready(function() {
                     console.log(error)
                 }
             });
-        } else { // no recuerdo
+        } else { // no recuerdo // 
             swal.fire({
                 title: 'Error',
-                text: 'llene los campos ',
+                text: 'verifique si coicido o jssajsndjas',
                 icon: 'error',
                 confirmButtonText: 'Aceptar'
             });

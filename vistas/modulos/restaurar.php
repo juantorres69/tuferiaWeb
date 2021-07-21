@@ -1,13 +1,12 @@
 
 <?php 
     $rutas = explode("/", $_GET['ruta']) ;
-    $id=$rutas[1];
+    $id = $rutas[1];
 
     $existe = ModeloUsuario::mdlConsultarUsuarioPorId ("usuarios",$id);
 
-    if (!$existe){      // Olvidé para que era el condicional 
-        echo 'usuario no existe';
-        
+    if (!$existe){      // puedes crear una alerta de usurio no existe
+        echo "<script type='text/javascript'>alert('usuario no existe')</script>";
     }
 
 ?>
@@ -55,15 +54,17 @@
                         <form id="frmRestaurar"> <!-- le puse un id a cada imput para compararlos -->
 
                             <div class="form-group">
-                                <input type="password" id="txtPass" required="" class="form-control" name="txtPassword" placeholder="Nueva contraseña" require autofocus>
+                                <input type="password" id="txtPass" required="" class="form-control" name="txtPass" placeholder="Nueva contraseña" require autofocus>
                             </div>
 
                             <div class="form-group">
-                                <input type="password" id="txtPassC" required="" class="form-control" name="txtPassword" placeholder="Confirme nueva contraseña">
+                                <input type="password" id="txtPassC" required="" class="form-control" name="txtPassC" placeholder="Confirme nueva contraseña">
                             </div>
 
+                            <input type="hidden" id="idUsuario" required="" class="form-control" name="idUsuario" value="<?php $id ?>">
+
                             <div class="form-group">
-                                <button type="submit" class="btn btn-fill-out btn-block" name="login">Restaurar</button>
+                                <button type="submit" class="btn btn-fill-out btn-block" name="Restaurar">Restaurar</button>
                             </div>
 
                         </form>

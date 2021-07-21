@@ -8,7 +8,7 @@ $url = ruta::ctrRuta();
     </div>
     <div style="padding: 20px;">
 
-        <p><strong><?php echo explode(' ',$_GET['nombre'])[0];?></strong>, se ha restaurado su contraseña</p> 
+        <p><strong><?php echo $_GET['nombre']?></strong>, se ha restaurado su contraseña</p> 
 
         <br>
 
@@ -16,8 +16,8 @@ $url = ruta::ctrRuta();
         <br> regresa a Tu Feria Virtual</p>
 
         <p> 
-            <a href="<?php echo $url; ?>login/<?php echo $_GET['id']; ?>"> <!-- prentendo que regrese a login -->
-                <button style="background-color: #ef7236;border: none; padding: 5px 20px;color: white; border-radius: 15px;">Restaurar</button>
+            <a href="<?php echo $url; ?>login"> <!-- prentendo que regrese a login -->
+                <button style="background-color: #ef7236;border: none; padding: 5px 20px;color: white; border-radius: 15px;">intenta iniciar seccion</button>
             </a>
         </p>
 
