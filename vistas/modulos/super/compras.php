@@ -2,9 +2,10 @@
 <div class="main_content">    
     <div class="staggered-animation-wrap" style="margin-top: 18px;">
         <div class="custom-container">
-            <div class="row" >
+            <div class="" >
 
-                <div class="col-lg-9 ">
+                <div class="">
+                    
                     <input type="hidden" id="hdUrl" value="<?php echo $url; ?>">
 
                     <div class="row">

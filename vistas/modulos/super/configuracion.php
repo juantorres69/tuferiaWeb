@@ -1,5 +1,5 @@
 <!-- START COFIGURACION -->
-<div class="main_content">    
+<div class="main_content container-heigth-fluid">    
     <div class="staggered-animation-wrap" style="margin-top: 18px;">
         <div class="custom-container">
             <div class="" >
@@ -43,7 +43,7 @@
                                 </div>
                             </div>
 
-                            <div class="col-md-12 text-center" style="margin: 20px;">
+                            <div class="col-md-12 text-center" style="margin: 20px 0px;">
                                 <button class="btn btn-action btn-danger" type="submit">Actualizar</button>
                             </div>
 

@@ -4778,6 +4778,7 @@ input[type=submit].btn-block {
 }
 
 .card {
+    margin: 0px auto;
     position: relative;
     display: -ms-flexbox;
     display: flex;

@@ -121,7 +121,7 @@
 
                                     <!-- BUTTON -->
                                     <div class="row">
-                                        <div class="col-md-12 mb-3" style="margin: 20px; text-align: center;">
+                                        <div class="col-md-12 mb-3" style="margin: 20px 0px; text-align: center;">
                                             <button class="btn btn-danger btn-action" id="btnNuevoColor">Nuevo</button>
                                         </div>
                                     </div>
@@ -191,7 +191,7 @@
 
                                     <!-- BUTTON -->
                                     <div class="row">
-                                        <div class="col-md-12 mb-3" style="margin: 20px; text-align: center;">
+                                        <div class="col-md-12 mb-3" style="margin: 20px 0px; text-align: center;">
                                             <button class="btn btn-danger btn-action" id="btnNuevaTalla">Nueva</button>
                                         </div>
                                     </div>
@@ -259,10 +259,11 @@
 
                                     <!-- BUTTON -->
                                     <div class="row">
-                                        <div class="col-md-12 mb-3" style="margin: 20px; text-align: center;">
+                                        <div class="col-md-12 mb-3" style="margin: 20px 0px; text-align: center;">
                                             <button class="btn btn-danger btn-action" id="btnNuevoTag">Nuevo</button>
                                         </div>
                                     </div>
+
                                 </div>
                             </div>
                         </div>
