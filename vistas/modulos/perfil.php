@@ -33,8 +33,6 @@
     <div class="modal-dialog modal-lg " role="document">
         <div class="modal-content">
 
-            
-
             <div class="modal-header">
 
                 <h4 style="margin: 0px;">Detalle Compra</h4>
@@ -81,7 +79,7 @@
         <div class="col-xl-12">
             <!-- PROFILE HEADER -->
             <div class="row">
-                <div class="col-12 mt-5">
+                <div class="col-12">
                     <div class="heading_tab_header">
 
                         <!-- USER NAME -->
@@ -103,9 +101,11 @@
                                 <li class="nav-item">
                                     <a class="nav-link" id="tabEditPerfil" data-toggle="tab" href="#perfil-tab" role="tab" aria-controls="sellers" aria-selected="false">Editar Perfil</a>
                                 </li>
+                                
                                 <li class="nav-item">
                                     <a class="nav-link" id="featured-tab" data-toggle="tab" href="#deseos-tab" role="tab" aria-controls="featured" aria-selected="false">Mi lista de deseos</a>
                                 </li>
+                                
                             </ul>
                         </div>
 
@@ -298,8 +298,70 @@
                         </div>
                         
                         <!-- LISTA DE DESEOS -->
-                        <div class="tab-pane fade" id="deseos-tab" role="tabpanel" aria-labelledby="featured-tab"></div>
-                        
+                        <div class="tab-pane fade" id="deseos-tab" role="tabpanel" aria-labelledby="featured-tab">
+
+                            <?php 
+                                $ruta = explode('/', $_GET['ruta']);
+                                if(count($ruta) > 1){
+                                    $producto = $ruta[1];
+                                    ControladorProductos::ctrAgregarDeseos($producto);
+                                }
+                            ?>
+
+                            <div class="">
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="col-12">
+
+                                        <h4 >Deseos</h4>
+                                        <h6 class="text-secondary">Esta es tu lista de deseos</h6>
+
+                                            <div class="table-responsive wishlist_table">
+
+                                                <!-- TABLE -->
+                                                <table class="table">
+                                                    <!-- ELEMENT -->
+                                                    <thead>
+                                                        <tr>
+                                                            <th class="product-thumbnail">&nbsp;</th>
+                                                            <th class="product-name">Producto</th>
+                                                            <th class="product-price">Precio</th>
+                                                            <th class="product-add-to-cart"></th>
+                                                            <th class="product-remove">Eliminar</th>
+                                                        </tr>
+                                                    </thead>
+
+                                                    <!-- ITEMS -->
+                                                    <tbody>
+
+                                                        <?php 
+                                                        $item = 'usuario_id';
+                                                        $valor = $_SESSION['idUsuario'];
+                                                        $deseos = ControladorProductos::ctrConsultarDeseos($item, $valor);
+                                                        if(count($deseos) > 0){
+                                                            foreach($deseos as $deseo){
+                                                                echo '<tr>
+                                                                    <td class="product-thumbnail"><a href="'.$url.$deseo['categoria'].'/'.$deseo['id'].'"><img src="'.$url.'assets/images/productos/'.(($deseo['imagen'] != '') ? $deseo['imagen'] : 'no-imagen.png').'" alt="product1" style="height: 100px;"></a></td>
+                                                                    <td class="product-name" data-title="Product"><a href="'.$url.$deseo['categoria'].'/'.$deseo['id'].'">'.$deseo['nombre'].'</a></td>
+                                                                    <td class="product-price" data-title="Price">$'.(($deseo['oferta']) ? number_format($deseo['oferta']) : number_format($deseo['precio']) ).'</td>
+                                                                    <td class="product-add-to-cart"><a href="'.$url.'carrito" class="btn btn-fill-out"><i class="icon-basket-loaded"></i>Agregar al Carrito</a></td>
+                                                                    <td class="product-remove" data-title="Remove"><a onclick="eliminarDeseo('.$deseo['id_lista'].',\''.$url.'\')"><i class="ti-close"></i></a></td>
+                                                                </tr>';
+                                                            }
+                                                        }else{
+                                                            echo '<tr><td colspan="5">No hay información.</td></tr>';
+                                                        }
+                                                        ?>
+                                                        
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>                        
                     </div>
                 </div>
             </div>

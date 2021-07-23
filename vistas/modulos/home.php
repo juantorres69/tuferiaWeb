@@ -222,15 +222,15 @@
     <!-- END SECTION SHOP -->
 
     <!-- ASSOCIATED SEGMENT --> 
-    <div class="section pb_20 small_pt" style="padding-top: 20px;">
+    <div class="small_pt" >
         <div class="custom-container">
 
             <div class="row">
                 <?php 
                 $promos = ControladorHome::ctrConsultarPromos();
                 foreach($promos as $promo){
-                    echo '<div class="col-md-4">
-                            <div class="sale-banner hover_effect1" style="height: 220px; background-image: url('.$url.'vistas/assets/images/promos/'.$promo['imagen'].'); background-size: cover;display: flex; align-items: center;padding: 20px;">
+                    echo '<div class="col-md-4" style="padding: 0px 10px 20px">
+                            <div class="sale-banner hover_effect1" style="height: 220px; background-image: url('.$url.'vistas/assets/images/promos/'.$promo['imagen'].'); background-size: cover;display: flex; align-items: center;">
                                 <a style="z-index: 999;" href="'.$url.$promo['link'].'">
                                     <h5 style="color: #fff; text-shadow: -1px -1px 5px #000, 1px 1px 5px #000, -1px 1px 5px #000, 1px -1px 5px #000;">'.$promo['subtitulo'].'</h5>
                                     <h2 style="color: #fff; text-shadow: -1px -1px 5px #000, 1px 1px 5px #000, -1px 1px 5px #000, 1px -1px 5px #000; font-weight: bolder; font-size: 30pt;">'.$promo['titulo'].'</h2>
@@ -252,7 +252,7 @@
 
             <div class="row">
                 <div class="col-md-12">
-                    <div class="heading_tab_header" style="padding-top: 0px;">
+                    <div class="" style="margin-bottom: 20px;">
 
                         <div class="heading_s2">
                             <h2>Productos Destacados</h2>
@@ -366,7 +366,7 @@
 
             <div class="row">
                 <div class="col-md-12">
-                    <div class="heading_tab_header" style="margin-bottom: 0px;">
+                    <div class="aj2" style="margin: 20px 0px;">
 
                         <div class="heading_s2">
                             <h4>Logos de emprendimiento</h4>

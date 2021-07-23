@@ -2,20 +2,13 @@
 <div class="main_content">    
     <div class="staggered-animation-wrap" style="margin-top: 18px;">
         <div class="custom-container">
-            <div class="row">
-
-                <!-- MENU -->
-                <div class="col-lg-3 col-md-4 col-sm-6 col-3">
-                    
-                    <!-- OPTIONS -->
-                    <?php include 'menu_super.php'; ?>
-                </div>
+            <div class="row" >
 
                 <div class="col-lg-9 ">
                     <input type="hidden" id="hdUrl" value="<?php echo $url; ?>">
 
                     <!-- TITTLE -->
-                    <h4>Comercios</h4>
+                    <h4 style="margin-top: 10px;">Comercios</h4>
 
                     <table class="table" id="tbComercios">
                         <thead>

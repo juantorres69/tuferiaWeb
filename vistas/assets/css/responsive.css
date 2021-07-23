@@ -737,9 +737,10 @@ div.banner_large_pad {
 	height: auto !important;
 }
 #tabmenubar.show {
+	border-radius: 20px;
 	opacity: 1;
 	visibility: visible;
-	margin-top: 0;
+	margin-top: -457px;
 }
 #tabmenubar li a {
 	text-align: left;
@@ -1347,7 +1348,7 @@ div.banner_large_pad {
 	margin-bottom: 15px;
 }
 .heading_tab_header{
-	margin: 20px 0px;
+	margin: 0px 0px 20px;
 	padding: 0px;
 }
 .heading_tab_header_{
@@ -1522,6 +1523,13 @@ blockquote p {
   max-width: 480px
 ---------------------------------------------------*/
 @media only screen and (max-width: 480px) {
+.owl-theme .owl-nav.disabled+.owl-dots{
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+.aj2{
+	margin-top: 20px !important;
+}
 body {
 	font-size: 14px;
 }

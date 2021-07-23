@@ -2,19 +2,12 @@
 <div class="main_content">    
     <div class="staggered-animation-wrap" style="margin-top: 18px;">
         <div class="custom-container">
-            <div class="row">
+            <div class="" >
 
-                <!-- MENU -->
-                <div class="col-lg-3 col-md-4 col-sm-6 col-3">
-
-                    <!-- OPTIONS -->
-                    <?php include 'menu_super.php'; ?>
-                </div>
-
-                <div class="col-lg-9 ">
+                <div class="">
                     <input type="hidden" id="hdUrl" value="<?php echo $url; ?>">
                     
-                    <div class="heading_tab_header">
+                    <div class="" style="margin-top: 10px;">
 
                         <!-- TITTLE -->
                         <div class="heading_s2">
@@ -23,12 +16,13 @@
 
                         <!-- OPTIONS -->
                         <div class="tab-style2">
-
-                            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#tabmenubar" aria-expanded="false"> 
+                            <!--
+                            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#tabmenubar" aria-expanded="false" style="margin: 5px; z-index: 10000000;"> 
                                 <span class="ion-android-menu"></span>
                             </button>
+                            -->
 
-                            <ul class="nav nav-tabs justify-content-center justify-content-md-end" id="tabmenubar" role="tablist">
+                            <ul class="nav nav-tabs justify-content-center justify-content-md-end" id="tabmenubar" role="tablist" style="z-index: 10000;">
 
                                 <!-- COLORES -->
                                 <li class="nav-item">
@@ -44,6 +38,7 @@
                                 <li class="nav-item">
                                     <a class="nav-link" id="tags-tab" data-toggle="tab" href="#tags" role="tab" aria-controls="tags" aria-selected="false">Etiquetas</a>
                                 </li>
+
                             </ul>
                         </div>
                     </div>
@@ -55,12 +50,6 @@
 
                                 <!-- COLORES -->
                                 <div class="tab-pane fade show active" id="colores" role="tabpanel" aria-labelledby="colores-tab">
-                                    <!-- BUTTON -->
-                                    <div class="row">
-                                        <div class="col-md-12 text-right mb-3">
-                                            <button class="btn btn-danger btn-action" id="btnNuevoColor">Nuevo</button>
-                                        </div>
-                                    </div>
         
                                     <!-- VENTANA DE NUEVO COLORES -->
                                     <div class="modal fade" id="mdlColores" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -111,12 +100,17 @@
                                     </div>
         
                                     <table class="table">
+
                                         <thead>
                                             <tr>
                                                 <th scope="col">Color</th>
                                                 <th scope="col">Vista</th>
                                                 <th scope="col">Estado</th>
-                                                <th></th>
+                                                <th>
+                                                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#tabmenubar" aria-expanded="false" style="margin: -5px; z-index: 10000000;"> 
+                                                        <span class="ion-android-menu"></span>
+                                                    </button>
+                                                </th>
                                             </tr>
                                         </thead>
 
@@ -124,17 +118,18 @@
                                         </tbody>
 
                                     </table>
+
+                                    <!-- BUTTON -->
+                                    <div class="row">
+                                        <div class="col-md-12 mb-3" style="margin: 20px; text-align: center;">
+                                            <button class="btn btn-danger btn-action" id="btnNuevoColor">Nuevo</button>
+                                        </div>
+                                    </div>
+
                                 </div>
 
                                 <!-- TALLAS -->
                                 <div class="tab-pane fade" id="tallas" role="tabpanel" aria-labelledby="tallas-tab">
-
-                                    <!-- BUTTON -->
-                                    <div class="row">
-                                        <div class="col-md-12 text-right mb-3">
-                                            <button class="btn btn-danger btn-action" id="btnNuevaTalla">Nueva</button>
-                                        </div>
-                                    </div>
         
                                     <!-- VENTANA DE NUEVO TALLAS -->
                                     <div class="modal fade" id="mdlTallas" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -181,7 +176,11 @@
                                             <tr>
                                                 <th scope="col">Talla</th>
                                                 <th scope="col">Estado</th>
-                                                <th></th>
+                                                <th>
+                                                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#tabmenubar" aria-expanded="false" style="margin: -5px; z-index: 10000000;"> 
+                                                        <span class="ion-android-menu"></span>
+                                                    </button>
+                                                </th>
                                             </tr>
                                         </thead>
 
@@ -189,16 +188,19 @@
                                         </tbody>
 
                                     </table>
+
+                                    <!-- BUTTON -->
+                                    <div class="row">
+                                        <div class="col-md-12 mb-3" style="margin: 20px; text-align: center;">
+                                            <button class="btn btn-danger btn-action" id="btnNuevaTalla">Nueva</button>
+                                        </div>
+                                    </div>
+
                                 </div>
 
                                 <!-- ETIQUETAS -->
                                 <div class="tab-pane fade" id="tags" role="tabpanel">
-                                    <div class="row">
-                                        <div class="col-md-12 text-right mb-3">
-                                            <button class="btn btn-danger btn-action" id="btnNuevoTag">Nuevo</button>
-                                        </div>
-                                    </div>
-        
+
                                     <!-- VENTANA DE NUEVA ETIQUETA -->
                                     <div class="modal fade" id="mdlTags" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
                                         <div class="modal-dialog modal-lg">
@@ -244,12 +246,23 @@
                                             <tr>
                                                 <th scope="col">Etiquetas</th>
                                                 <th scope="col">Estado</th>
-                                                <th></th>
+                                                <th>
+                                                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#tabmenubar" aria-expanded="false" style="margin: -5px; z-index: 10000000;"> 
+                                                        <span class="ion-android-menu"></span>
+                                                    </button>
+                                                </th>
                                             </tr>
                                         </thead>
                                         <tbody id="tbTags">
                                         </tbody>
                                     </table>
+
+                                    <!-- BUTTON -->
+                                    <div class="row">
+                                        <div class="col-md-12 mb-3" style="margin: 20px; text-align: center;">
+                                            <button class="btn btn-danger btn-action" id="btnNuevoTag">Nuevo</button>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>

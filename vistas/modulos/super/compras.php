@@ -2,20 +2,13 @@
 <div class="main_content">    
     <div class="staggered-animation-wrap" style="margin-top: 18px;">
         <div class="custom-container">
-            <div class="row">
-
-                <!-- MENU -->
-                <div class="col-lg-3 col-md-4 col-sm-6 col-3">
-
-                    <!-- OPTION -->
-                    <?php include 'menu_super.php'; ?>
-                </div>
+            <div class="row" >
 
                 <div class="col-lg-9 ">
                     <input type="hidden" id="hdUrl" value="<?php echo $url; ?>">
 
                     <div class="row">
-                        <div class="col-12" style="margin-bottom: 10px; display:flex; justify-content: space-between;">
+                        <div class="col-12" style="margin-bottom: 10px; display:flex; justify-content: space-between; margin-top: 10px;">
                             <!-- TITTLE -->
                             <h4>Compras</h4>
                             <!-- BUTTON -->

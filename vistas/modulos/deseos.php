@@ -64,7 +64,7 @@
                                         <td class="product-thumbnail"><a href="'.$url.$deseo['categoria'].'/'.$deseo['id'].'"><img src="'.$url.'assets/images/productos/'.(($deseo['imagen'] != '') ? $deseo['imagen'] : 'no-imagen.png').'" alt="product1" style="height: 100px;"></a></td>
                                         <td class="product-name" data-title="Product"><a href="'.$url.$deseo['categoria'].'/'.$deseo['id'].'">'.$deseo['nombre'].'</a></td>
                                         <td class="product-price" data-title="Price">$'.(($deseo['oferta']) ? number_format($deseo['oferta']) : number_format($deseo['precio']) ).'</td>
-                                        <td class="product-add-to-cart"><a href="'.$url.$deseo['categoria'].'/'.$deseo['id'].'" class="btn btn-fill-out"><i class="icon-basket-loaded"></i> Agregar al Carrito</a></td>
+                                        <td class="product-add-to-cart"><a href="'.$url.'carrito" class="btn btn-fill-out"><i class="icon-basket-loaded"></i> Agregar al Carrito</a></td>
                                         <td class="product-remove" data-title="Remove"><a onclick="eliminarDeseo('.$deseo['id_lista'].',\''.$url.'\')"><i class="ti-close"></i></a></td>
                                     </tr>';
                                 }

@@ -64,7 +64,10 @@
                 <ul class="navbar-nav attr-nav align-items-center">
 
                     <!-- icono de iniciar seccion como comprador --> 
-                    <li class="dropdown cart_dropdown"><a href="./login" class="nav-link cart_trigger" data-toggle="dropdown"><i class="linearicons-user"></i></a>
+                    <li class="dropdown cart_dropdown">
+                        <a href="./login" class="nav-link cart_trigger" data-toggle="dropdown">
+                        <i class="linearicons-user"></i></a>
+                        
                         <div class="cart_box cart_right dropdown-menu dropdown-menu-right" style="box-shadow: 0px 0px 1px 0px grey; width: 200px; margin:0px">
 
                             <!-- lista desplegable condicional -->

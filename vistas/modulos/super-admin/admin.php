@@ -3,13 +3,7 @@
     <!-- START SECTION BANNER -->
     <div class="staggered-animation-wrap" style="margin-top: 18px;">
         <div class="custom-container">
-            <div class="row">
-                <!-- categorias menu -->
-                <div class="col-lg-3 col-md-4 col-sm-6 col-3">
-                    <!-- Seccion categorias -->
-                    
-                    <?php include 'menu_admin.php'; ?>
-                </div>
+            <div class="row" >
                 <div class="col-lg-9 ">
                     <h4>Dashboard</h4>
                 </div>

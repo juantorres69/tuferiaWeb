@@ -2,21 +2,13 @@
 <div class="main_content">    
     <div class="staggered-animation-wrap" style="margin-top: 18px;">
         <div class="custom-container">
-            <div class="row">
+            <div class="">
 
-                <!-- MENU -->
-                <div class="col-lg-3 col-md-4 col-sm-6 col-3">
-                    
-                    <!-- OPTIONS -->
-                    <?php include 'menu_super.php'; ?>
-                    
-                </div>
-
-                <div class="col-lg-9 ">
+                <div class="">
                     <input type="hidden" id="hdUrl" value="<?php echo $url; ?>">
 
                     <div class="row">
-                        <div class="col-md-12 text-right mb-3" style="display: flex; justify-content: space-between">
+                        <div class="col-md-12 text-right mb-3" style="display: flex; justify-content: space-between; margin-top: 10px;">
                             <!-- TITTLE -->
                             <h4>Categorias de Productos</h4>
                             <!-- BUTTON -->
@@ -113,7 +105,7 @@
                     </div>
 
                     <!-- TABLE -->
-                    <table class="table" id="tbCategorias">
+                    <table class="table" id="tbCategorias" style="width: 100%;">
                         <thead>
                             <tr>
                             <th scope="col">Categoria</th>

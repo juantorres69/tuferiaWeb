@@ -2,16 +2,11 @@
 <div class="main_content container-heigth-fluid">    
     <div class="staggered-animation-wrap" style="margin-top: 18px;">
         <div class="custom-container">
-            <div class="row">
-
-                <!-- MENU -->
-                <div class="col-lg-3 col-md-4 col-sm-6 col-3">
-                    <?php include 'menu_super.php'; ?>
-                </div>
+            <div class="row" >
 
                 <!-- TITTLE -->
                 <div class="col-lg-9 ">
-                    <h4>Administrador</h4>
+                    <h4 style="margin-top: 10px;">Administrador</h4>
                 </div>
                 
             </div>

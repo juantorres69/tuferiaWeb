@@ -2,21 +2,14 @@
 <div class="main_content">    
     <div class="staggered-animation-wrap" style="margin-top: 18px;">
         <div class="custom-container">
-            <div class="row">
-
-                <!-- MENU -->
-                <div class="col-lg-3 col-md-4 col-sm-6 col-3">
+            <div class="row" >
                 
-                    <!-- OPTION -->    
-                    <?php include 'menu_super.php'; ?>
-                </div>
-
                 <!-- CONTENTS -->
                 <div class="col-lg-9 ">
                     <input type="hidden" id="hdUrl" value="<?php echo $url; ?>">
 
                     <div class="row">
-                        <div class="col-md-12 text-right mb-3" style="display: flex; justify-content: space-between">
+                        <div class="col-md-12 text-right mb-3" style="display: flex; justify-content: space-between; margin-top: 10px;">
                             <!-- TITTLE -->
                             <h4>Publicidad</h4>
                             <!-- BUTTON -->
@@ -211,9 +204,9 @@
                         </div>
                     </div>
 
-                    <!-- BANNER -->
-                    <h4>Banners</h4>
-                    <div class="row" id="dvBanners"></div>
+                    <!-- PROMOCIONES -->
+                    <h4>Promociones</h4>
+                    <div class="row mb-5" id="dvPromociones"></div>
 
                     <hr>
 
@@ -232,12 +225,11 @@
                     </div>
         
                     <hr>
-                    
                     -->
-                    
-                    <!-- PROMOCIONES -->
-                    <h4>Promociones</h4>
-                    <div class="row mb-5" id="dvPromociones"></div>
+
+                    <!-- BANNER -->
+                    <h4>Banners</h4>
+                    <div class="row" id="dvBanners"></div>
 
                 </div>
             </div>

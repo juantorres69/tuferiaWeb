@@ -2,93 +2,58 @@
 <header class="header_wrap">
     <div class="middle-header dark_skin" style="background: #fff; ">
     	<div class="custom-container">
-            <div class="nav_block d-flex align-items-center justify-content-center">
+            <div class="nav_block d-flex align-items-center" style="justify-content: space-between;">
 
                 <!-- LOGO -->
                 <a class="navbar-brand" href="<?php echo $url; ?>">
                     <img class="logo_light" src="<?php echo $url.'assets/images/LOGO.png'?>" alt="logo" />
                     <img class="logo_dark" src="<?php echo $url.'assets/images/LOGO.png'?>" alt="logo" />
                 </a>
-
-                <!-- 
-                <div class="product_search_form rounded_input">
-                    <form id="frmBuscar">
-                        <input type="hidden" id="hdUrl" value="<?php echo $url; ?>">
-                        <div class="input-group">
-                            <div class="input-group-prepend">
-                                <div class="custom_select">
-                                    <select class="first_null" id="cbCategorias">
-                                        <option value="">Categorias</option>
-                                        <?php 
-                                            $ruta = array();
-                                            if(isset($_GET['ruta'])){
-                                                $ruta = explode('/',$_GET['ruta']);
-                                            }
-
-                                            $buscar = '';
-                                            $cat = '';
-                                            if($ruta[0] == 'buscar'){
-                                                if(count($ruta) == 2){
-                                                    $buscar = $ruta[1];
-                                                }else{
-                                                    $buscar = $ruta[2];
-                                                    $cat = $ruta[1];
-                                                }
-                                            }else{
-                                                $cat = $ruta[0];
-                                            }
-
-                                            $categorias = ControladorProductos::ctrMostrarCategorias(null, null);
-                                            
-                                            foreach ($categorias as $key => $value) {
-                                                echo '<option value="'.$value['ruta'].'" '.(($cat == $value['ruta']) ? 'selected' : '' ).'>'.$value['categoria'].'</option>';
-                                            }
-                                        ?>
-                                    </select>
-                                </div>
-                            </div>
-                            <?php 
-                            
-                            ?>
-                            <input class="form-control" placeholder="Buscar Productos..." required=""  type="text" id="txtBuscar" value="<?php echo $buscar; ?>">
-                            <button type="submit" class="search_btn2"><i class="fa fa-search"></i></button>
-                        </div>
-                    </form>
-                </div> 
-                -->
                 
                 <ul class="navbar-nav attr-nav align-items-center" style="margin: 0px;">
+
                     <li class="dropdown cart_dropdown" style="margin: 0px;">
                         <a href="http://localhost/app/cerrar" class="nav-link" style="margin: 0px;">
-                        <i class="linearicons-home" style="font-size: 58px;"></i></a>
-                        <!--
-                        <div class="cart_box cart_right dropdown-menu dropdown-menu-right">
+                        <i class="linearicons-home" style="font-size: 50px;"></i></a>
+                    </li>
+
+                    <li class="dropdown cart_dropdown" style="margin: 0px;">
+                        <a href="./admin" class="nav-link cart_trigger" data-toggle="dropdown" style="margin: 0px;">
+                        <i class="linearicons-menu" style="font-size: 50px;"></i></a>
+                         
+                        <div class="cart_box cart_right dropdown-menu dropdown-menu-right" style="height: 487%; box-shadow: 0 0 10px rgb(0 0 0 / 20%);">
                             <ul class="cart_list">
                                 <?php 
                                 if(isset($_SESSION['idUsuario'])){
                                     echo '<li>
-                                            <a href="'.$url.'perfil">Perfil</a>
+                                            <a href="'.$url.'admin">dashboard</a>
                                         </li>
                                         <li>
-                                            <a href="'.$url.'cerrar">Cerrar Sesión</a>
-                                        </li>';
-                                }else{
-                                    echo '<li>
-                                            <a href="'.$url.'login">Iniciar Sesión</a>
+                                            <a href="'.$url.'categorias">Categorias</a>
                                         </li>
                                         <li>
-                                            <a href="'.$url.'registro">Registro</a>
+                                            <a href="'.$url.'detalle-productos">Detalles de productos</a>
                                         </li>
                                         <li>
-                                            <a href="'.$url.'registro-comercio">Vende con Nosotros</a>
-                                        </li>';
+                                            <a href="'.$url.'comercios">Comercios</a>
+                                        </li>
+                                        <li>
+                                            <a href="'.$url.'publicidad">Publicidad</a>
+                                        </li>
+                                        <li>
+                                            <a href="'.$url.'compras">Compras</a>
+                                        </li>
+                                        <li>
+                                            <a href="'.$url.'configuracion">configuracion</a>
+                                        </li>
+                                        ';
                                 }                               
                                 ?>
                             </ul>
                         </div>
-                        -->
                     </li>
                 </ul>
+             
             </div>
         </div>
     </div>

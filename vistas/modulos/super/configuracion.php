@@ -2,21 +2,14 @@
 <div class="main_content">    
     <div class="staggered-animation-wrap" style="margin-top: 18px;">
         <div class="custom-container">
-            <div class="row">
-
-                <!-- MENU -->
-                <div class="col-lg-3 col-md-4 col-sm-6 col-3">
-
-                    <!-- OPTIONS -->
-                    <?php include 'menu_super.php'; ?>
-                </div>
+            <div class="" >
 
                 <!-- CONTENTS -->
-                <div class="col-lg-9 ">
+                <div class="">
                     <input type="hidden" id="hdUrl" value="<?php echo $url; ?>">
 
                     <!-- TITTLE -->
-                    <h4>Configuración</h4>
+                    <h4 style="margin-top: 10px;">Configuración</h4>
 
                     <?php 
                     $config = ControladorConfig::ctrConsultarConfig();
@@ -50,7 +43,7 @@
                                 </div>
                             </div>
 
-                            <div class="col-md-12 text-center">
+                            <div class="col-md-12 text-center" style="margin: 20px;">
                                 <button class="btn btn-action btn-danger" type="submit">Actualizar</button>
                             </div>
 

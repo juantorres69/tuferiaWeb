@@ -4985,11 +4985,13 @@ footer .widget_title {
 }
 .product,
 .product_wrap {
+	margin: 2px;
+	border-radius: 20px;
 	background-color: #fff;
 	position: relative;
 	/*margin-bottom: 30px;*/
 	transition: all 0.5s ease-in-out;
-	box-shadow: 0 0 7px rgba(0,0,0,0.1);
+	box-shadow: 0 0 2px #2e385e7e;
 }
 .product_box {
 	margin-bottom: 30px;
@@ -5361,7 +5363,7 @@ footer .widget_title {
 	-ms-flex-align: center;
 	align-items: center;
 	padding: 15px;
-	margin-bottom: 30px;
+	margin-bottom: 24px;
 }
 .product_list .product_img {
 	max-width: 30%;
@@ -6648,6 +6650,7 @@ footer .widget_recent_post .post_img img {
 }
 .heading_tab_header {
 	padding: 20px 0px;
+	margin-top: 20px;
 	/*border-bottom: 1px solid #ddd;*/
 	display: -ms-flexbox;
 	display: flex;
@@ -6771,7 +6774,7 @@ footer .widget_recent_post .post_img img {
 }
 .owl-theme .owl-dots {
 	font-size: 0;
-	margin-top: 0px !important;
+	margin-top: 0px; /* no recuerdo haber hecho esto */
 }
 .owl-theme .owl-dots .owl-dot span {
 	background-color: transparent;
