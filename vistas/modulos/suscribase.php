@@ -4,23 +4,20 @@ if(!isset($_SESSION['rol'])){ ?>
 
     <div class="section bg_default small_pt small_pb" style="padding: 20px 0px;">
         <div class="custom-container">	
-            <div class="row align-items-center">	
+            <div class="row align-items-center" style="justify-content: space-evenly; margin: 0px 5px;">	
 
                 <!-- TEXT -->
-                <div class="col-md-6">
+                <div>
                     <div class="newsletter_text text_white">
-                        <h3>Suscríbase a nuestro boletín ahora</h3>
-                        <p> Regístrese ahora para obtener actualizaciones sobre promociones. </p>
+                        <h3>registrate ahora</h3>
+                        <p> Regístrese ahora para ser parte de tu feria virtual. </p>
                     </div>
                 </div>
 
                 <!-- SUBSCRIBE -->
-                <div class="col-md-6">
-                    <div class="newsletter_form2 rounded_input">
-                        <form>
-                            <input type="text" required="" class="form-control" placeholder="Ingresa Correo Electronico">
-                            <button type="submit" class="btn btn-dark btn-radius" name="submit" value="Submit">Suscribase</button>
-                        </form>
+                <div>
+                    <div>
+                        <a href="registro"><button class="btn btn-dark btn-radius" >Registrate</button></a>
                     </div>
                 </div>
 

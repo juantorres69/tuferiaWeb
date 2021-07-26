@@ -79,7 +79,7 @@
                                             <a href="./perfil">Perfil</a>
                                         </li>
                                         <li>
-                                            <a href="'.$url.'cerrar" class="nav-link">Cerrar seccion</a>
+                                            <a href="'.$url.'cerrar" class="nav-link">Cerrar sessión</a>
                                         </li>
                                         <li>
                                             <a href="./registro-comercio">Vende con nosotros</a>
@@ -88,7 +88,7 @@
                                 }
                                 else{
                                     echo '<li>
-                                            <a href="'.$url.'login" class="btnIngreso">Iniciar Sesión</a>
+                                            <a href="'.$url.'login" class="btnIngreso">Iniciar Sessión</a>
                                         </li>
                                         <li>
                                             <a href="'.$url.'registro" class="btnIngreso">Registro</a>

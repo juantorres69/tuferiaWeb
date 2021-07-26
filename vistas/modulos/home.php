@@ -138,7 +138,7 @@
                             <div class="heading_tab_header heading_tab_header_" style="padding-top: 0px; margin-top: -39px;">
 
                                 <div class="heading_s2 aj">
-                                    <h4>Productos Exclusivos</h4>
+                                    <h4>Productos</h4>
                                 </div>
 
                                 <div class="tab-style2">
@@ -255,7 +255,7 @@
                     <div class="" style="margin-bottom: 20px;">
 
                         <div class="heading_s2">
-                            <h2>Productos Destacados</h2>
+                            <h2>Productos destacados</h2>
                         </div>
 
                     </div>

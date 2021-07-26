@@ -1,5 +1,5 @@
 <!-- START COMPRAS -->
-<div class="main_content">    
+<div class="main_content container-heigth-fluid">    
     <div class="staggered-animation-wrap" style="margin-top: 18px;">
         <div class="custom-container">
             <div class="" >
@@ -18,24 +18,26 @@
                     </div>
 
                     <!-- CONTENTS -->
-                    <table class="table" id="tbCompras">
-                        <thead>
-                            <tr>
-                                <!-- <th></th> -->
-                                <th scope="col">Nit</th>
-                                <th scope="col">Comercio</th>
-                                <th scope="col">Referencia Compra</th>
-                                <th scope="col">Valor</th>
-                                <th scope="col">Fecha Compra</th>
-                                <th scope="col">Estado</th>
-                                <th scope="col">Metodo</th>
-                            </tr>
-                        </thead>
+                    <div style="overflow-x: auto;">
+                        <table class="table" id="tbCompras">
+                            <thead>
+                                <tr>
+                                    <!-- <th></th> -->
+                                    <th scope="col">Nit</th>
+                                    <th scope="col">Comercio</th>
+                                    <th scope="col">Referencia Compra</th>
+                                    <th scope="col">Valor</th>
+                                    <th scope="col">Fecha Compra</th>
+                                    <th scope="col">Estado</th>
+                                    <th scope="col">Metodo</th>
+                                </tr>
+                            </thead>
 
-                        <tbody>
-                        </tbody>
+                            <tbody>
+                            </tbody>
 
-                    </table>
+                        </table>
+                    </div>
                 </div>
             </div>
         </div>

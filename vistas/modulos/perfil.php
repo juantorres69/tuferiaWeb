@@ -94,7 +94,7 @@
                                 <span class="ion-android-menu"></span>
                             </button>
 
-                            <ul class="nav nav-tabs justify-content-center justify-content-md-end" id="tabmenubar" role="tablist">
+                            <ul class="nav nav-tabs justify-content-center justify-content-md-end" id="tabmenubar" role="tablist" style="margin: 0px;">
                                 <li class="nav-item">
                                     <a class="nav-link active" id="arrival-tab" data-toggle="tab" href="#compras-tab" role="tab" aria-controls="arrival" aria-selected="true">Mis Compras</a>
                                 </li>

@@ -39,7 +39,7 @@ if(isset($_POST['accion'])){
         if(isset($_SESSION['idUsuario'])){
             $objeto->agregarCarrito($_POST);
         }else{
-            echo json_encode(array('ErrorStatus'=>true, 'Debe Iniciar Sesion.'));
+            echo json_encode(array('ErrorStatus'=>true, 'Debe Iniciar Session.'));
         }
     }else if($_POST['accion'] == 'eliminarCarrito'){
         $objeto->eliminarCarrito($_POST['id']);
