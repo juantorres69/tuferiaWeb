@@ -10,6 +10,7 @@
 <div class="breadcrumb_section bg_gray page-title-mini">
     <div class="container">
         <div class="row align-items-center">
+
             <!-- TITTLE -->
         	<div class="col-md-6">
                 <div class="page-title">
@@ -24,6 +25,7 @@
                     <li class="breadcrumb-item active">Perfil</li>
                 </ol>
             </div>
+
         </div>
     </div>
 </div>
@@ -57,24 +59,6 @@
 </div>
 
 <div class="main_content">
-
-    <!-- 
-    <div class="mt-4 staggered-animation-wrap">
-        <div class="custom-container">
-            <div class="row">
-                <div class="col-lg-3 col-md-4 col-sm-6 col-3">
-                    <?php include "menu_cuenta.php" ?>
-                </div>
-                <div class="col-lg-9 ">
-                    <div>
-                        <h4 class="text-dark">Administrador</h4>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div> 
-    -->
-
     <div class="container">
         <div class="col-xl-12">
             <!-- PROFILE HEADER -->
@@ -360,7 +344,6 @@
                                     </div>
                                 </div>
                             </div>
-
                         </div>                        
                     </div>
                 </div>

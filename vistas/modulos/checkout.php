@@ -1,6 +1,5 @@
 <!-- SECTION CHECKOUT -->
 <div class="breadcrumb_section bg_gray page-title-mini">
-
     <div class="container">
         <div class="row align-items-center">
 
@@ -18,6 +17,7 @@
                     <li class="breadcrumb-item active">Checkout</li>
                 </ol>
             </div>
+
         </div>
     </div>
 </div>
@@ -27,6 +27,7 @@
 	<div class="container">
         <div class="row">
         	<div class="col-md-6">
+
                 <!-- TITTLE -->
             	<div class="heading_s1">
             		<h4 class="text-dark">Información de su compra</h4>
@@ -82,6 +83,7 @@
 
             <div class="col-md-6">
                 <div class="order_review" style="padding: 0px 30px;">
+
                     <!-- TITTLE -->
                     <div class="heading_s1 ">
                         <h4 class="text-dark">Tu orden</h4>
@@ -102,6 +104,7 @@
                     <!-- TABLE -->
                     <div class="table-responsive order_table">
                         <table class="table">
+
                             <thead>
                                 <tr>
                                     <th>Producto</th>
@@ -148,6 +151,7 @@
 
                     <!-- PAYMENT METHOD -->
                     <div class="payment_method">
+
                         <div class="heading_s1">
                             <h4>Metodo de Pago</h4>
                         </div>
@@ -179,8 +183,6 @@
                         ?>
                         
                     </form>
-
-                    <!-- <a href="#" class="btn btn-fill-out btn-block">Comprar</a> -->
 
                 </div>
             </div>

@@ -13,7 +13,9 @@
                 <!-- barra de buscador -->
                 <div class="product_search_form rounded_input">
                     <form id="frmBuscar">
+
                         <input type="hidden" id="hdUrl" value="<?php echo $url; ?>">
+
                         <div class="input-group">
                             <div class="input-group-prepend">
                                 <div class="custom_select">
@@ -103,16 +105,6 @@
 
                         </div>
                     </li>
-
-                    <!-- icono de cerrar  -->
-
-                    <?php 
-                        // if(isset($_SESSION['idUsuario'])){
-                        //     $item = 'usuario_id';
-                        //     $valor = $_SESSION['idUsuario'];
-                        //     echo '<li><a href="'.$url.'cerrar" class="nav-link"><i class="linearicons-exit"></i></a></li>';
-                        // }
-                    ?>
                     
                     <!-- icono de favorito -->
 
@@ -168,46 +160,10 @@
                         </div>
                     </li>
                     <?php } ?>
+                    
                 </ul>
             </div>
         </div>
     </div>
-
-    <!--
-    <div class="bottom_header dark_skin main_menu_uppercase border-top border-bottom">
-    	<div class="custom-container">
-            <div class="row"> 
-            	
-                <div class="col-sm-12 ">
-                	<nav class="navbar navbar-expand-lg">
-                    
-                    	<button class="navbar-toggler side_navbar_toggler" type="button" data-toggle="collapse" data-target="#navbarSidetoggle" aria-expanded="false"> 
-                            <span class="ion-android-menu"></span>
-                        </button>
-
-                        <div class="pr_search_icon">
-                            <a href="javascript:void(0);" class="nav-link pr_search_trigger"><i class="linearicons-magnifier"></i></a>
-                        </div> 
-
-                        <div class="collapse navbar-collapse mobile_side_menu" id="navbarSidetoggle">
-
-							<ul class="navbar-nav">
-                                <li><a class="nav-link nav_item" href="<?php echo $url; ?>">Inicio</a></li> 
-                                <li><a class="nav-link nav_item" href="<?php echo $url.'productos'; ?>">Productos</a></li> 
-                                <?php if(isset($_SESSION['idUsuario'])){ ?>
-                                <li><a class="nav-link nav_item" href="<?php echo $url.'deseos'; ?>">Deseos</a></li> 
-                                <li><a class="nav-link nav_item" href="<?php echo $url.'checkout'; ?>">Checkout</a></li> 
-                                <?php } ?>
-                                <li><a class="nav-link nav_item" href="<?php echo $url; ?>">Contáctanos</a></li> 
-                            </ul>
-
-                        </div>
-
-                    </nav>
-                </div>
-            </div>
-        </div>
-    </div>
-    -->
 </header>
 <!-- END HEADER -->

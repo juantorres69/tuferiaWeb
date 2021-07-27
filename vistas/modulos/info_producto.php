@@ -30,6 +30,7 @@
                     <li class="breadcrumb-item active"><?php echo $producto['nombre']; ?></li>
                 </ol>
             </div>
+
         </div>
     </div>
 </div>
@@ -37,17 +38,19 @@
 <!-- SECTION INFORMATION -->
 <div class="section">
 	<div class="container">
-    	<div class="row">
-            <!-- COLUMN RIGHT -->
-        	<div class="col-xl-9 col-lg-8">
+    	<div>
+        	<div>
 				<div class="row">
+
                     <!-- PRODUCT IMAGE -->
                     <div class="col-lg-6 col-md-6 mb-4 mb-md-0">
 						<div class="product-image">
+
                             <div class="product_img_box">
                                 <img id="product_img" src='<?php echo $url.'assets/images/productos/'.((count($imagenes) > 0) ? $imagenes[0]['imagen'] : 'no-imagen.png'); ?>' data-zoom-image="<?php echo $url.'assets/images/productos/'.((count($imagenes) > 0) ? $imagenes[0]['imagen'] : 'no-imagen.png'); ?>" alt="product_img1" />
                                 <a href="#" class="product_img_zoom" title="Zoom"><span class="linearicons-zoom-in"></span></a>
                             </div>
+
                             <div id="pr_item_gallery" class="product_gallery_item slick_slider" data-slides-to-show="4" data-slides-to-scroll="1" data-infinite="false">
                                 <?php 
                                     foreach($imagenes as $imagen){
@@ -59,14 +62,18 @@
                                     }
                                 ?>
                             </div>
+
                         </div>
                     </div>
+
                     <!-- PRODUCT DETAILS -->
                     <div class="col-lg-6 col-md-6">
                         <div class="pr_detail">
                             <div class="product_description">
+
                                 <!-- PRODUCT NAME -->
                                 <h4 class="product_title"><a href="#"><?php echo $producto['nombre']; ?></a></h4>
+
                                 <!-- DESCRIPTION -->
                                 <div class="row">
                                     <div class="col-md-8">
@@ -161,13 +168,12 @@
                                 <div class="cart_btn">
                                     <input type="hidden" id="hdProducto" value="<?php echo $producto['id']; ?>">
                                     <button class="btn btn-fill-out btn-addtocart btnIngreso" type="button" onclick="agregarCarrito('<?php echo $url; ?>')"><i class="icon-basket-loaded"></i> Agregar al Carrito</button>
-                                    <!-- <a class="add_compare" href="#"><i class="icon-shuffle"></i></a> -->
                                     <a class="add_wishlist" href="<?php echo $url.'deseos/'.$producto['id']; ?>"><i class="icon-heart"></i></a>
                                 </div>
 
                             </div>
 
-                            <hr />
+                            <hr/>
 
                             <!-- PRODUCT CATEGORY -->
                             <ul class="product-meta">
@@ -185,36 +191,15 @@
                                 <li>Tags: <?php echo substr($tags_str, 0, -2); ?> </li>
                             </ul>
                             
-                            <!--
-                            <div class="product_share">
-                                 <span>Share:</span>
-                                <ul class="social_icons">
-                                    <div class="fb-share-button" data-href="http://app.tuferiavirtual.co" data-layout="button_count" data-size="small"><a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Fapp.tuferiavirtual.co%2F&amp;src=sdkpreparse" class="fb-xfbml-parse-ignore">Compartir</a></div>
-                                    <li><a href="#"><i class="ion-social-facebook"></i></a></li>
-                                    <li><a href="#"><i class="ion-social-twitter"></i></a></li>
-                                    <li><a href="#"><i class="ion-social-googleplus"></i></a></li>
-                                    <li><a href="#"><i class="ion-social-youtube-outline"></i></a></li>
-                                    <li><a href="#"><i class="ion-social-instagram-outline"></i></a></li>
-                                </ul> 
-                            </div>
-                            -->
-
                         </div>
                     </div>
                 </div>
-
-                <!--
-        		<div class="row">
-                    <div class="col-12">
-                        <div class="large_divider clearfix"></div>
-                    </div>
-                </div>
-                -->
 
                 <!-- COMMENTS -->
                 <div class="row">
                     <div class="col-12">
                         <div class="tab-style3">
+
                             <!-- SEGMENTS -->
                             <ul class="nav nav-tabs" role="tablist">
                                 <li class="nav-item">
@@ -295,11 +280,13 @@
                                     </div>
 
                                     <div class="review_form field_form">
+
                                         <!-- TITTLE -->
                                         <h5>Agregar una reseña</h5>
                                         
                                         <!-- FORMULARIO -->
                                         <form class="row mt-3">
+
                                             <!-- STARS -->
                                             <div class="form-group col-12">
                                                 <div class="star_rating">
@@ -310,6 +297,7 @@
                                                     <span data-value="5"><i class="far fa-star"></i></span>
                                                 </div>
                                             </div>
+
                                             <!-- REVIEW DATA -->
                                             <div class="form-group col-12">
                                                 <textarea required="required" placeholder="Añade tu reseña" class="form-control" name="message" rows="4"></textarea>
@@ -339,314 +327,61 @@
         		<div class="row">
                     <div class="col-12">
                         <div class="small_divider"></div>
-                        <!--<div class="divider"></div>-->
-                        <!--<div class="medium_divider"></div>-->
                     </div>
                 </div>
 
-                <!-- RELATED PRODUCTS 
-        		<div class="row">
-                    <div class="col-12">
-                        -- TITTLE --
-                        <div class="heading_s1">
-                            <h3>productos relacionados</h3>
-                        </div>
-                        -- PRODUCTS LIST --
-                        <div class="releted_product_slider carousel_slider owl-carousel owl-theme" data-margin="20" data-responsive='{"0":{"items": "1"}, "481":{"items": "2"}, "768":{"items": "3"}, "992":{"items": "2"}, "1199":{"items": "3"}}'>
-                            <div class="item">
-                                <div class="product">
-                                    <div class="product_img">
-                                        <a href="shop-product-detail.html">
-                                            <img src="assets/images/product_img1.jpg" alt="product_img1">
-                                        </a>
-                                        <div class="product_action_box">
-                                            <ul class="list_none pr_action_btn">
-                                                <li class="add-to-cart"><a href="#"><i class="icon-basket-loaded"></i> Add To Cart</a></li>
-                                                <li><a href="shop-compare.html"><i class="icon-shuffle"></i></a></li>
-                                                <li><a href="//bestwebcreator.com/shopping-zone/demo/shop-quick-view.html" class="popup-ajax"><i class="icon-magnifier-add"></i></a></li>
-                                                <li><a href="#"><i class="icon-heart"></i></a></li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                    <div class="product_info">
-                                        <h6 class="product_title"><a href="shop-product-detail.html">Blue Dress For Woman</a></h6>
-                                        <div class="product_price">
-                                            <span class="price">$45.00</span>
-                                            <del>$55.25</del>
-                                            <div class="on_sale">
-                                                <span>35% Off</span>
-                                            </div>
-                                        </div>
-                                        <div class="rating_wrap">
-                                            <div class="rating">
-                                                <div class="product_rate" style="width:80%"></div>
-                                            </div>
-                                            <span class="rating_num">(21)</span>
-                                        </div>
-                                        <div class="pr_desc">
-                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus blandit massa enim. Nullam id varius nunc id varius nunc.</p>
-                                        </div>
-                                        <div class="pr_switch_wrap">
-                                            <div class="product_color_switch">
-                                                <span class="active" data-color="#87554B"></span>
-                                                <span data-color="#333333"></span>
-                                                <span data-color="#DA323F"></span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
+                <div class="">
+                    <div class="sidebar">
 
-                            <div class="item">
-                                <div class="product">
-                                    <div class="product_img">
-                                        <a href="shop-product-detail.html">
-                                            <img src="assets/images/product_img2.jpg" alt="product_img2">
-                                        </a>
-                                        <div class="product_action_box">
-                                            <ul class="list_none pr_action_btn">
-                                                <li class="add-to-cart"><a href="#"><i class="icon-basket-loaded"></i> Add To Cart</a></li>
-                                                <li><a href="shop-compare.html"><i class="icon-shuffle"></i></a></li>
-                                                <li><a href="//bestwebcreator.com/shopping-zone/demo/shop-quick-view.html" class="popup-ajax"><i class="icon-magnifier-add"></i></a></li>
-                                                <li><a href="#"><i class="icon-heart"></i></a></li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                    <div class="product_info">
-                                        <h6 class="product_title"><a href="shop-product-detail.html">Lether Gray Tuxedo</a></h6>
-                                        <div class="product_price">
-                                            <span class="price">$55.00</span>
-                                            <del>$95.00</del>
-                                            <div class="on_sale">
-                                                <span>25% Off</span>
-                                            </div>
-                                        </div>
-                                        <div class="rating_wrap">
-                                            <div class="rating">
-                                                <div class="product_rate" style="width:68%"></div>
-                                            </div>
-                                            <span class="rating_num">(15)</span>
-                                        </div>
-                                        <div class="pr_desc">
-                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus blandit massa enim. Nullam id varius nunc id varius nunc.</p>
-                                        </div>
-                                        <div class="pr_switch_wrap">
-                                            <div class="product_color_switch">
-                                                <span class="active" data-color="#847764"></span>
-                                                <span data-color="#0393B5"></span>
-                                                <span data-color="#DA323F"></span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
+                        <div class="widget">
+                            <!-- TITTLE -->
+                            <h5 class="widget_title">Productos Recientes</h5>
 
-                            <div class="item">
-                                <div class="product">
-                                    <span class="pr_flash">New</span>
-                                    <div class="product_img">
-                                        <a href="shop-product-detail.html">
-                                            <img src="assets/images/product_img3.jpg" alt="product_img3">
-                                        </a>
-                                        <div class="product_action_box">
-                                            <ul class="list_none pr_action_btn">
-                                                <li class="add-to-cart"><a href="#"><i class="icon-basket-loaded"></i> Add To Cart</a></li>
-                                                <li><a href="shop-compare.html"><i class="icon-shuffle"></i></a></li>
-                                                <li><a href="//bestwebcreator.com/shopping-zone/demo/shop-quick-view.html" class="popup-ajax"><i class="icon-magnifier-add"></i></a></li>
-                                                <li><a href="#"><i class="icon-heart"></i></a></li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                    <div class="product_info">
-                                        <h6 class="product_title"><a href="shop-product-detail.html">woman full sliv dress</a></h6>
-                                        <div class="product_price">
-                                            <span class="price">$68.00</span>
-                                            <del>$99.00</del>
-                                        </div>
-                                        <div class="rating_wrap">
-                                            <div class="rating">
-                                                <div class="product_rate" style="width:87%"></div>
-                                            </div>
-                                            <span class="rating_num">(25)</span>
-                                        </div>
-                                        <div class="pr_desc">
-                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus blandit massa enim. Nullam id varius nunc id varius nunc.</p>
-                                        </div>
-                                        <div class="pr_switch_wrap">
-                                            <div class="product_color_switch">
-                                                <span class="active" data-color="#333333"></span>
-                                                <span data-color="#7C502F"></span>
-                                                <span data-color="#2F366C"></span>
-                                                <span data-color="#874A3D"></span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
+                            <!-- LIST -->
+                            <ul class="widget_recent_post">
 
-                            <div class="item">
-                                <div class="product">
-                                    <div class="product_img">
-                                        <a href="shop-product-detail.html">
-                                            <img src="assets/images/product_img4.jpg" alt="product_img4">
-                                        </a>
-                                        <div class="product_action_box">
-                                            <ul class="list_none pr_action_btn">
-                                                <li class="add-to-cart"><a href="#"><i class="icon-basket-loaded"></i> Add To Cart</a></li>
-                                                <li><a href="shop-compare.html"><i class="icon-shuffle"></i></a></li>
-                                                <li><a href="//bestwebcreator.com/shopping-zone/demo/shop-quick-view.html" class="popup-ajax"><i class="icon-magnifier-add"></i></a></li>
-                                                <li><a href="#"><i class="icon-heart"></i></a></li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                    <div class="product_info">
-                                        <h6 class="product_title"><a href="shop-product-detail.html">light blue Shirt</a></h6>
-                                        <div class="product_price">
-                                            <span class="price">$69.00</span>
-                                            <del>$89.00</del>
-                                            <div class="on_sale">
-                                                <span>20% Off</span>
-                                            </div>
-                                        </div>
-                                        <div class="rating_wrap">
-                                            <div class="rating">
-                                                <div class="product_rate" style="width:70%"></div>
-                                            </div>
-                                            <span class="rating_num">(22)</span>
-                                        </div>
-                                        <div class="pr_desc">
-                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus blandit massa enim. Nullam id varius nunc id varius nunc.</p>
-                                        </div>
-                                        <div class="pr_switch_wrap">
-                                            <div class="product_color_switch">
-                                                <span class="active" data-color="#333333"></span>
-                                                <span data-color="#A92534"></span>
-                                                <span data-color="#B9C2DF"></span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="item">
-                                <div class="product">
-                                    <div class="product_img">
-                                        <a href="shop-product-detail.html">
-                                            <img src="assets/images/product_img5.jpg" alt="product_img5">
-                                        </a>
-                                        <div class="product_action_box">
-                                            <ul class="list_none pr_action_btn">
-                                                <li class="add-to-cart"><a href="#"><i class="icon-basket-loaded"></i> Add To Cart</a></li>
-                                                <li><a href="shop-compare.html"><i class="icon-shuffle"></i></a></li>
-                                                <li><a href="//bestwebcreator.com/shopping-zone/demo/shop-quick-view.html" class="popup-ajax"><i class="icon-magnifier-add"></i></a></li>
-                                                <li><a href="#"><i class="icon-heart"></i></a></li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                    <div class="product_info">
-                                        <h6 class="product_title"><a href="shop-product-detail.html">blue dress for woman</a></h6>
-                                        <div class="product_price">
-                                            <span class="price">$45.00</span>
-                                            <del>$55.25</del>
-                                            <div class="on_sale">
-                                                <span>35% Off</span>
-                                            </div>
-                                        </div>
-                                        <div class="rating_wrap">
-                                            <div class="rating">
-                                                <div class="product_rate" style="width:80%"></div>
-                                            </div>
-                                            <span class="rating_num">(21)</span>
-                                        </div>
-                                        <div class="pr_desc">
-                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus blandit massa enim. Nullam id varius nunc id varius nunc.</p>
-                                        </div>
-                                        <div class="pr_switch_wrap">
-                                            <div class="product_color_switch">
-                                                <span class="active" data-color="#87554B"></span>
-                                                <span data-color="#333333"></span>
-                                                <span data-color="#5FB7D4"></span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        
-                        </div>
-                    </div>
-                </div> -->
-
-            </div>
-
-            <!-- COLUMN LEFT -->
-            <div class="col-xl-3 col-lg-4 order-lg-first mt-4 pt-2 mt-lg-0 pt-lg-0">
-            	<div class="sidebar">
-                    <!-- CATEGORY -->
-                	<?php require_once 'categorias_sidebar.php'; ?>
-
-                    <div class="widget">
-                        <!-- TITTLE -->
-                        <h5 class="widget_title">Productos Recientes</h5>
-
-                        <!-- LIST -->
-                        <ul class="widget_recent_post">
-
-                            <?php 
-                                $recientes = ControladorProductos::ctrConsultarRecientes(null, null, 3);
-                                // print_r($recientes);
-                                foreach($recientes as $reciente){
-                                    echo '<li>
-                                            <div class="post_img">
-                                                <a href="#"><img src="'.$url.'assets/images/productos/'.(($reciente['imagen'] != '') ? $reciente['imagen'] : 'no-imagen.png').'" alt="shop_small1"></a>
-                                            </div>
-                                            <div class="post_content">
-                                                <h6 class="product_title"><a href="'.$url.$reciente['ruta'].'">'.$reciente['nombre'].'</a></h6>
-                                                <div class="product_price"><span class="price">$'.(($reciente['oferta']) ? number_format($reciente['oferta']) : number_format($reciente['precio']) ).'</span><del>'.(($reciente['oferta']) ? '$'.number_format($reciente['precio']) : '' ).'</del></div>
-                                                <div class="rating_wrap">
-                                                    <div class="rating">
-                                                        <div class="product_rate" style="width:'.($reciente['total_votos'] > 0 ? ($reciente['rating']/$reciente['total_votos'])*20 : 0).'%"></div>
+                                <?php 
+                                    $recientes = ControladorProductos::ctrConsultarRecientes(null, null, 5);
+                                    // print_r($recientes);
+                                    foreach($recientes as $reciente){
+                                        echo '<li>
+                                                <div class="post_img">
+                                                    <a href="#"><img src="'.$url.'assets/images/productos/'.(($reciente['imagen'] != '') ? $reciente['imagen'] : 'no-imagen.png').'" alt="shop_small1"></a>
+                                                </div>
+                                                <div class="post_content">
+                                                    <h6 class="product_title"><a href="'.$url.$reciente['ruta'].'">'.$reciente['nombre'].'</a></h6>
+                                                    <div class="product_price"><span class="price">$'.(($reciente['oferta']) ? number_format($reciente['oferta']) : number_format($reciente['precio']) ).'</span><del>'.(($reciente['oferta']) ? '$'.number_format($reciente['precio']) : '' ).'</del></div>
+                                                    <div class="rating_wrap">
+                                                        <div class="rating">
+                                                            <div class="product_rate" style="width:'.($reciente['total_votos'] > 0 ? ($reciente['rating']/$reciente['total_votos'])*20 : 0).'%"></div>
+                                                        </div>
                                                     </div>
                                                 </div>
-                                            </div>
-                                        </li>';
-                                }
-                            ?>
+                                            </li>';
+                                    }
+                                ?>
 
-                        </ul>
-                    </div>
-
-                    <!-- TAG -->
-                    <div class="widget">
-                    	<h5 class="widget_title">Etiqueta</h5>
-                        <div class="tags">
-
-                            <?php 
-                                $item = 'estado';
-                                $valor = 1;
-                                $tags = ControladorTags::ctrConsultarTags($item, $valor);
-                                foreach($tags as $tag){
-                                    echo '<a href="'.$url.'tags/'.$tag['ruta'].'">'.$tag['descripcion'].'</a> ';
-                                }
-                            ?>
-
+                            </ul>
                         </div>
-                    </div>
 
-                    <!--
-                    <div class="widget">
-                        <div class="shop_banner">
-                            <div class="banner_img overlay_bg_20">
-                                <img src="assets/images/sidebar_banner_img.jpg" alt="sidebar_banner_img">
-                            </div> 
-                            <div class="shop_bn_content2 text_white">
-                                <h5 class="text-uppercase shop_subtitle">New Collection</h5>
-                                <h3 class="text-uppercase shop_title">Sale 30% Off</h3>
-                                <a href="#" class="btn btn-white rounded-0 btn-sm text-uppercase">Shop Now</a>
+                        <!-- TAG -->
+                        <div class="widget">
+                            <h5 class="widget_title">Etiqueta</h5>
+                            <div class="tags">
+
+                                <?php 
+                                    $item = 'estado';
+                                    $valor = 1;
+                                    $tags = ControladorTags::ctrConsultarTags($item, $valor);
+                                    foreach($tags as $tag){
+                                        echo '<a href="'.$url.'tags/'.$tag['ruta'].'">'.$tag['descripcion'].'</a> ';
+                                    }
+                                ?>
+
                             </div>
                         </div>
-                    </div> 
-                    -->
-
+                        
+                    </div>
                 </div>
             </div>
         </div>

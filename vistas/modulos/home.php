@@ -118,18 +118,8 @@
     <div class="section small_pt pb-0">
         <div class="custom-container">
             <div class="row">
-                <div class="col-xl-3 d-none d-xl-block">
-                    <?php /*
-                    $mega = ControladorHome::ctrConsultarMegaPromo();
-                    echo '<div class="sale-banner hover_effect1" style="background-image: url('.$url.'vistas/assets/images/promos/'.$mega['imagen'].');">
-                            <a  href="'.$url.$mega['link'].'">
-                                <h3>'.$mega['titulo'].'</h3>
-                                <h4>'.$mega['subtitulo'].'</h4>
-                                <button>'.$mega['link_texto'].'</button>
-                            </a>
-                        </div>';
-                    */?>
-                </div>
+
+                <div class="col-xl-3 d-none d-xl-block"></div>
 
                 <div class="col-xl-9">
                     <div class="row">
@@ -138,7 +128,7 @@
                             <div class="heading_tab_header heading_tab_header_" style="padding-top: 0px; margin-top: -39px;">
 
                                 <div class="heading_s2 aj">
-                                    <h4>Productos</h4>
+                                    <h4>Productos recientes </h4>
                                 </div>
 
                                 <div class="tab-style2">
@@ -169,7 +159,7 @@
                                 <div class="tab-pane fade show active" id="nuevos" role="tabpanel" aria-labelledby="arrival-tab">
                                     <div class="product_slider carousel_slider owl-carousel owl-theme dot_style1" data-loop="true" data-margin="20" data-responsive='{"0":{"items": "1"}, "481":{"items": "2"}, "768":{"items": "3"}, "991":{"items": "4"}}'>
                                         <?php 
-                                           $recientes = ControladorProductos::ctrConsultarRecientes(null, null, 8);
+                                           $recientes = ControladorProductos::ctrConsultarRecientes(null, null, 10);
                                             if(count($recientes) > 0){
                                                 foreach($recientes as $reciente){
                                                     echo '<div class="item">
@@ -266,7 +256,7 @@
                 <div class="col-md-12">
                     <div class="product_slider product_list carousel_slider owl-carousel owl-theme nav_style3" data-loop="true" data-dots="false" data-nav="true" data-autoplay="true" data-margin="20" data-responsive='{"0":{"items": "1"}, "767":{"items": "2"}, "991":{"items": "3"}, "1199":{"items": "3"}}'>
                         <?php 
-                        $destacados = ControladorProductos::ctrConsultarDestacados(null, null, 18);
+                        $destacados = ControladorProductos::ctrConsultarDestacados(null, null, 20);
                         if(count($destacados) > 0){
                             $cant = count($destacados);
                             $items = round($cant / 3);
@@ -361,7 +351,7 @@
     <!-- END ADVERTISING BANNER -->
 
     <!-- START SECTION CLIENT LOGO -->
-    <div class="">
+    <div>
         <div class="custom-container">
 
             <div class="row">

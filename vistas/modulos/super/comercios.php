@@ -3,12 +3,12 @@
     <div class="staggered-animation-wrap" style="margin-top: 18px;">
         <div class="custom-container">
             <div class="" >
-
                 <div class="">
                     <input type="hidden" id="hdUrl" value="<?php echo $url; ?>">
 
                     <!-- TITTLE -->
                     <h4 style="margin-top: 10px;">Comercios</h4>
+
                     <div style="overflow-x: auto;">
                         <table class="table" id="tbComercios">
                             <thead>

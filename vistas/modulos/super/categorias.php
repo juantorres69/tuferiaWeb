@@ -88,8 +88,8 @@
                                     <table class="table mt-3">
                                             <thead>
                                                 <tr>
-                                                <th scope="col">Subcategoria</th>
-                                                <th scope="col">Eliminar</th>
+                                                    <th scope="col">Subcategoria</th>
+                                                    <th scope="col">Eliminar</th>
                                                 </tr>
                                             </thead>
                                             <tbody id="tbSubcategorias">
@@ -108,10 +108,10 @@
                     <table class="table" id="tbCategorias" style="width: 100%;">
                         <thead>
                             <tr>
-                            <th scope="col">Categoria</th>
-                            <th scope="col">Icono</th>
-                            <th></th>
-                        </tr>
+                                <th scope="col">Categoria</th>
+                                <th scope="col">Icono</th>
+                                <th></th>
+                            </tr>
                         </thead>
                         <tbody>
                         </tbody>

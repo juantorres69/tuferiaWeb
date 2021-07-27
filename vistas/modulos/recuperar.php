@@ -2,6 +2,7 @@
 <div class="breadcrumb_section bg_gray page-title-mini">
     <div class="container">
         <div class="row align-items-center">
+            
             <!-- TITTLE -->
         	<div class="col-md-6">
                 <div class="page-title">

@@ -1,32 +1,40 @@
 <!-- START SECTION BREADCRUMB -->
 <div class="breadcrumb_section bg_gray page-title-mini">
-    <div class="container"><!-- STRART CONTAINER -->
+    <!-- STRART CONTAINER -->
+    <div class="container">
         <div class="row align-items-center">
+
         	<div class="col-md-6">
                 <div class="page-title">
             		<h1>Perfil</h1>
                 </div>
             </div>
+
             <div class="col-md-6">
                 <ol class="breadcrumb justify-content-md-end">
                     <li class="breadcrumb-item"><a href="<?php echo $url; ?>">Inicio</a></li>
                     <li class="breadcrumb-item active">Perfil</li>
                 </ol>
             </div>
+
         </div>
-    </div><!-- END CONTAINER-->
+    </div>
+    <!-- END CONTAINER-->
 </div>
 
 <!-- Modal -->
 <div class="modal fade " id="detalleCompra" tabindex="-1" role="dialog" aria-hidden="true"  data-keyboard="true" tabindex="-1" role="dialog" aria-labelledby="staticBackdropLabel" aria-hidden="true">
     <div class="modal-dialog modal-lg " role="document">
         <div class="modal-content">
+
             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                 <span aria-hidden="true"><i class="ion-ios-close-empty"></i></span>
             </button>
+
             <div class="modal-header">
                 <h4>Detalle Compra</h4>
             </div>
+
             <div class="modal-body">
                 <div class="row no-gutters">
                     <div class="col-sm-12"> 
@@ -36,6 +44,7 @@
                     </div>
                 </div>
             </div>
+
         </div>
     </div>
 </div>
@@ -49,13 +58,17 @@
             <div class="row">
                 <div class="col-12 mt-5">
                     <div class="heading_tab_header">
+
                         <div class="heading_s2">
                             <h4><?php echo $_SESSION['nombreUsuario'] ?></h4>
                         </div>
+
                         <div class="tab-style2">
+
                             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#tabmenubar" aria-expanded="false"> 
                                 <span class="ion-android-menu"></span>
                             </button>
+
                             <ul class="nav nav-tabs justify-content-center justify-content-md-end" id="tabmenubar" role="tablist">
                                 <li class="nav-item">
                                     <a class="nav-link active" id="arrival-tab" data-toggle="tab" href="#compras-tab" role="tab" aria-controls="arrival" aria-selected="true">Mis Pedidos</a>
@@ -68,6 +81,7 @@
                                 </li>
                             </ul>
                         </div>
+
                     </div>
                 </div>
             </div>
@@ -372,10 +386,6 @@
                 </div>
             </div>
         </div>
-    
     </div>
-
     <!-- END SECTION CONTENIDO -->
-
-
 </div>

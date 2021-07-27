@@ -2,12 +2,14 @@
 <div class="breadcrumb_section bg_gray page-title-mini">
     <div class="container">
         <div class="row align-items-center">
+
             <!-- TITTLE -->
         	<div class="col-md-6">
                 <div class="page-title">
             		<h1>Registro</h1>
                 </div>
             </div>
+
             <!-- ROUTE -->
             <div class="col-md-6">
                 <ol class="breadcrumb justify-content-md-end">
@@ -15,6 +17,7 @@
                     <li class="breadcrumb-item active">Registro</li>
                 </ol>
             </div>
+
         </div>
     </div>
 </div>
@@ -120,15 +123,8 @@
 
                         <!-- OR -->
                         <div class="different_login">
-                            <span> ó</span>
+                            <span> ó </span>
                         </div>
-
-                            <!-- 
-                            <ul class="btn-login list_none text-center">
-                                <li><a href="#" class="btn btn-facebook"><i class="ion-social-facebook"></i>Facebook</a></li>
-                                <li><a href="#" class="btn btn-google"><i class="ion-social-googleplus"></i>Google</a></li>
-                            </ul> 
-                            -->
 
                         <div class="form-note text-center"> ¿Ya estás registrado? <a href="<?php echo $url; ?>login">Iniciar Sesión</a></div>
 

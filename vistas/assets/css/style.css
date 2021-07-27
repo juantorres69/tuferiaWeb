@@ -3886,14 +3886,14 @@ h6.blog_title {
 	margin: 0;
 }
 .newsletter_text::before {
-	content: "\e999";
+	content: "\ecc4";
 	position: absolute;
 	left: 0;
 	color: #fff;
 	font-family: linearicons;
 	font-size: 65px;
 	line-height: normal;
-	opacity: 0.4;
+	opacity: 0.7;
 }
 /*===================================*
   09.END NEWLETTER STYLE
@@ -6333,7 +6333,7 @@ select option {
 .widget_course li {
 	list-style: none;
 	margin-bottom: 15px;
-	width: 100%;
+	width: auto;
 	display: inline-block;
 }
 .widget_course li {

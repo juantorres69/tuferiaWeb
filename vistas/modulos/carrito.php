@@ -36,7 +36,6 @@
 
                 <!-- TABLE -->
                 <div class="table-responsive shop_cart_table">
-
                 	<table class="table">
 
                     	<thead>

@@ -2,6 +2,7 @@
 <div class="breadcrumb_section bg_gray page-title-mini">
     <div class="container">
         <div class="row align-items-center">
+
             <!-- TITTLE -->
         	<div class="col-md-6">
                 <div class="page-title">
@@ -59,13 +60,6 @@
                         <div class="different_login">
                             <span> ó </span>
                         </div>
-
-                        <!-- 
-                        <ul class="btn-login list_none text-center">
-                            <li><a href="#" class="btn btn-facebook"><i class="ion-social-facebook"></i>Facebook</a></li>
-                            <li><a href="#" class="btn btn-google"><i class="ion-social-googleplus"></i>Google</a></li>
-                        </ul> 
-                        -->
 
                         <!-- SIGN UP -->
                         <div class="form-note text-center">¿No estas registrado? <a href="registro">Registrate</a></div>

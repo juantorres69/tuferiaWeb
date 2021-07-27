@@ -32,7 +32,6 @@
                                         <option value="prod" <?php echo (($config['modo'] == 'prod') ? 'selected' : '' ); ?>>Produccion</option>
                                         <option value="sandbox" <?php echo (($config['modo'] == 'sandbox') ? 'selected' : '' ); ?>>Sandbox</option>
                                     </select>
-
                                 </div>
                             </div>
 

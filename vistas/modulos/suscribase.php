@@ -9,8 +9,7 @@ if(!isset($_SESSION['rol'])){ ?>
                 <!-- TEXT -->
                 <div>
                     <div class="newsletter_text text_white">
-                        <h3>registrate ahora</h3>
-                        <p> Regístrese ahora para ser parte de tu feria virtual. </p>
+                        <h3>¡Regístrate, es hora emprender y comprar!</h3>
                     </div>
                 </div>
 
@@ -31,6 +30,7 @@ if(!isset($_SESSION['rol'])){ ?>
 if(!isset($_SESSION['rol']) || $_SESSION['rol'] === 'usuario'){ ?>
 
     <div class=""></div>
+
     <!-- cumplimiento -->
     <div class="middle_footer">
     	<div class="custom-container">
@@ -52,6 +52,7 @@ if(!isset($_SESSION['rol']) || $_SESSION['rol'] === 'usuario'){ ?>
                                     	<h5>Entregas</h5>
                                         <p>Las entregas son a cargo del expositor</p>
                                     </div>
+
                                 </div>
                             </div>
 
@@ -68,6 +69,7 @@ if(!isset($_SESSION['rol']) || $_SESSION['rol'] === 'usuario'){ ?>
                                     	<h5>Garantia</h5>
                                         <p>La garantía mínimas son de 30 días.</p>
                                     </div>
+
                                 </div>
                             </div>
 
@@ -84,6 +86,7 @@ if(!isset($_SESSION['rol']) || $_SESSION['rol'] === 'usuario'){ ?>
                                     	<h5>Soporte</h5>
                                         <p>El soporte técnico se responderá en maximo 24 horas.</p>
                                     </div>
+                                    
                                 </div>
                             </div>
 

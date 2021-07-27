@@ -16,11 +16,6 @@
 
                         <!-- OPTIONS -->
                         <div class="tab-style2">
-                            <!--
-                            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#tabmenubar" aria-expanded="false" style="margin: 5px; z-index: 10000000;"> 
-                                <span class="ion-android-menu"></span>
-                            </button>
-                            -->
 
                             <ul class="nav nav-tabs justify-content-center justify-content-md-end" id="tabmenubar" role="tablist" style="z-index: 10000;">
 
@@ -242,6 +237,7 @@
                                     </div>
         
                                     <table class="table">
+                                        
                                         <thead>
                                             <tr>
                                                 <th scope="col">Etiquetas</th>
@@ -253,8 +249,9 @@
                                                 </th>
                                             </tr>
                                         </thead>
-                                        <tbody id="tbTags">
-                                        </tbody>
+
+                                        <tbody id="tbTags"></tbody>
+
                                     </table>
 
                                     <!-- BUTTON -->

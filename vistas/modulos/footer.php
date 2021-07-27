@@ -24,53 +24,7 @@
                         </ul>
                     </div>
                 </div>
-
-                <!-- LOGOS 
-
-                <div class="col-lg-4" style="align-items: center;display: flex;justify-content: center; max-width: 100px; margin: 10px 50px;">
-                    <div class="mb-lg-0 text-center">
-                        <ul style="margin: 0px;">
-                            <li style="list-style: none; margin: 0px;"><img src="./vistas/assets/images/LOGO IP.png" alt=""></li>
-                        </ul>
-                    </div>
-                </div>
-
-                <div class="col-lg-4" style="align-items: center;display: flex;justify-content: center; max-width: 100px; margin: 10px 50px;">
-                    <div class="mb-lg-0 text-center">
-                        <ul style="margin: 0px;">
-                            <li style="list-style: none; margin: 0px;"><img src="./vistas/assets/images/LOGO APS .png" alt=""></li>
-                        </ul>
-                    </div>
-                </div>
-
-                <div class="col-lg-4" style="align-items: center;display: flex;justify-content: center; max-width: 100px; margin: 10px 50px;">
-                    <div class="mb-lg-0 text-center">
-                        <ul style="margin: 0px;">
-                            <li style="list-style: none; margin: 0px;"><img src="./vistas/assets/images/RETATECH.png" alt=""></li>
-                        </ul>
-                    </div>
-                </div>
-
-                <div class="col-lg-4" style="align-items: center;display: flex;justify-content: center; max-width: 100px; margin: 10px 50px;">
-                    <div class="mb-lg-0 text-center">
-                        <ul style="margin: 0px;">
-                            <li style="list-style: none; margin: 0px;"><img src="./vistas/assets/images/LOGO MEET.png" alt=""></li>
-                        </ul>
-                    </div>
-                </div>
-                -->
-                <!--
-                <div class="col-lg-4">
-                    <ul class="footer_payment text-center text-lg-right">
-                        <li><a href="#"><img src="<?php echo $url; ?>vistas/assets/images/visa.png" alt="visa"></a></li>
-                        <li><a href="#"><img src="<?php echo $url; ?>vistas/assets/images/discover.png" alt="discover"></a></li>
-                        <li><a href="#"><img src="<?php echo $url; ?>vistas/assets/images/master_card.png" alt="master_card"></a></li>
-                        <li><a href="#"><img src="<?php echo $url; ?>vistas/assets/images/paypal.png" alt="paypal"></a></li>
-                        <li><a href="#"><img src="<?php echo $url; ?>vistas/assets/images/amarican_express.png" alt="amarican_express"></a></li>
-                    </ul>
-                </div>
-                -->
-
+                
             </div>
         </div>
     </div>

@@ -291,7 +291,5 @@
             <script src="<?php echo $url; ?>vistas/js/checkout.js"></script>
 
             <script src="<?php echo $url; ?>vistas/js/recuperar.js"></script>
-
     </body>
-
 </html>

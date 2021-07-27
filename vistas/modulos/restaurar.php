@@ -1,4 +1,3 @@
-
 <?php 
     $rutas = explode("/", $_GET['ruta']) ;
     $id = $rutas[1];
@@ -8,12 +7,13 @@
     if (!$existe){      // puedes crear una alerta de usurio no existe
         echo "<script type='text/javascript'>alert('usuario no existe')</script>";
     }
-
 ?>
+
 <!-- START LOGIN SECTION -->
 <div class="breadcrumb_section bg_gray page-title-mini">
     <div class="container">
         <div class="row align-items-center">
+            
             <!-- TITTLE -->
         	<div class="col-md-6">
                 <div class="page-title">
