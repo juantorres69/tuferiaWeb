@@ -9,14 +9,14 @@ if(!isset($_SESSION['rol'])){ ?>
                 <!-- TEXT -->
                 <div>
                     <div class="newsletter_text text_white">
-                        <h3>¡Regístrate, es hora emprender y comprar!</h3>
+                        <h3 style="margin: 0px;">¡Regístrate, es hora de emprender y comprar!</h3>
                     </div>
                 </div>
 
                 <!-- SUBSCRIBE -->
                 <div>
                     <div>
-                        <a href="registro"><button class="btn btn-dark btn-radius" >Registrate</button></a>
+                        <a href="registro"><button class="btn btn-dark btn-radius" style="border-width: 2px; border-color: #fff;">Registrate</button></a>
                     </div>
                 </div>
 
@@ -49,8 +49,8 @@ if(!isset($_SESSION['rol']) || $_SESSION['rol'] === 'usuario'){ ?>
 
                                     <!-- TEXT -->
                                     <div class="icon_box_content">
-                                    	<h5>Entregas</h5>
-                                        <p>Las entregas son a cargo del expositor</p>
+                                    	<h5>Envíos</h5>
+                                        <p>Los envíos son a cargo del expositor por medio de envia.com</p>
                                     </div>
 
                                 </div>
@@ -67,7 +67,7 @@ if(!isset($_SESSION['rol']) || $_SESSION['rol'] === 'usuario'){ ?>
                                     <!-- TEXT -->
                                     <div class="icon_box_content">
                                     	<h5>Garantia</h5>
-                                        <p>La garantía mínimas son de 30 días.</p>
+                                        <p>Como herramienta de confianza en nuestra plataforma.</p>
                                     </div>
 
                                 </div>
@@ -84,7 +84,7 @@ if(!isset($_SESSION['rol']) || $_SESSION['rol'] === 'usuario'){ ?>
                                     <!-- TEXT -->
                                     <div class="icon_box_content">
                                     	<h5>Soporte</h5>
-                                        <p>El soporte técnico se responderá en maximo 24 horas.</p>
+                                        <p>Escríbenos al correo tuferiavirtual19@gmail.com o al WhatsApp +57 3126128025 </p>
                                     </div>
                                     
                                 </div>

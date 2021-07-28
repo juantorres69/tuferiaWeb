@@ -168,7 +168,7 @@
                                 <div class="cart_btn">
                                     <input type="hidden" id="hdProducto" value="<?php echo $producto['id']; ?>">
                                     <button class="btn btn-fill-out btn-addtocart btnIngreso" type="button" onclick="agregarCarrito('<?php echo $url; ?>')"><i class="icon-basket-loaded"></i> Agregar al Carrito</button>
-                                    <a class="add_wishlist" href="<?php echo $url.'deseos/'.$producto['id']; ?>"><i class="icon-heart"></i></a>
+                                    <a class="add_wishlist" style="margin-top: 8px;" href="<?php echo $url.'deseos/'.$producto['id']; ?>"><i class="icon-heart"></i></a>
                                 </div>
 
                             </div>
@@ -344,11 +344,11 @@
                                     $recientes = ControladorProductos::ctrConsultarRecientes(null, null, 5);
                                     // print_r($recientes);
                                     foreach($recientes as $reciente){
-                                        echo '<li>
-                                                <div class="post_img">
-                                                    <a href="#"><img src="'.$url.'assets/images/productos/'.(($reciente['imagen'] != '') ? $reciente['imagen'] : 'no-imagen.png').'" alt="shop_small1"></a>
+                                        echo '<li style="box-shadow: 0 0 2px #2e385e7e; border-radius: 20px;">
+                                                <div class="post_img" style="margin: 5px;">
+                                                    <a href="#"><img style="border-radius: 20px;" src="'.$url.'assets/images/productos/'.(($reciente['imagen'] != '') ? $reciente['imagen'] : 'no-imagen.png').'" alt="shop_small1"></a>
                                                 </div>
-                                                <div class="post_content">
+                                                <div class="post_content" style="margin: 15px;">
                                                     <h6 class="product_title"><a href="'.$url.$reciente['ruta'].'">'.$reciente['nombre'].'</a></h6>
                                                     <div class="product_price"><span class="price">$'.(($reciente['oferta']) ? number_format($reciente['oferta']) : number_format($reciente['precio']) ).'</span><del>'.(($reciente['oferta']) ? '$'.number_format($reciente['precio']) : '' ).'</del></div>
                                                     <div class="rating_wrap">
@@ -365,7 +365,7 @@
                         </div>
 
                         <!-- TAG -->
-                        <div class="widget">
+                        <div class="widget" style="margin-top: 0px;">
                             <h5 class="widget_title">Etiqueta</h5>
                             <div class="tags">
 

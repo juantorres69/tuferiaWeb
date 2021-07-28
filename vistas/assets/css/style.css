@@ -1748,10 +1748,10 @@ button:focus {
 	padding: 0px 5px 5px 0;
 }
 .social_icons li a {
-	font-size: 28px;
+	font-size: 40px;
 	color: #687188;
-	height: 36px;
-	width: 36px;
+	height: 50px;
+	width: 50px;
 	line-height: 36px;
 	display: inline-block;
 	text-align: center;
@@ -3887,11 +3887,12 @@ h6.blog_title {
 }
 .newsletter_text::before {
 	content: "\ecc4";
+	margin-top: -9px;
 	position: absolute;
 	left: 0;
 	color: #fff;
 	font-family: linearicons;
-	font-size: 65px;
+	font-size: 60px;
 	line-height: normal;
 	opacity: 0.7;
 }
@@ -5414,7 +5415,8 @@ footer .widget_title {
     font-size: 26px;
 }
 .cart-product-quantity {
-	margin-bottom: 15px;
+	/*margin-bottom: 15px;*/
+	margin-right: 20px;
 	display: table;
 }
 .quantity {
@@ -5500,9 +5502,9 @@ footer .widget_title {
 	color: #292b2c;
 }
 .cart_btn .add_wishlist, .cart_btn .add_compare {
-    font-size: 20px;
+    font-size: 30px;
     display: inline-block;
-    margin-left: 15px;
+    margin-left: 20px;
 	vertical-align: middle;
 }
 .product_gallery_item a {
@@ -6935,7 +6937,7 @@ footer .widget_recent_post .post_img img {
 	right: -2px;
 }
 .social_icons [class*="sc_"] {
-	border-radius: 4px;
+	border-radius: 50%;
 	color: #fff !important;
 }
 .social_icons [class*="sc_"] i {
