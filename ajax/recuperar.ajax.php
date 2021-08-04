@@ -29,7 +29,7 @@ class Ajaxrecuperar{
 			$mail->Subject = 'Recuperar contraseña'; 
 			$mail->AddAddress($email);                               
 
-			$mail->MsgHTML(file_get_contents(str_replace(' ','%20',$url.'vistas/mails/recuperar_pass.mail.php?id='.$usuario['id'].'&nombre='.$usuario['nombre'].''))); //                 
+			$mail->MsgHTML(file_get_contents(str_replace(' ','%20',$url.'vistas/mails/recuperar_pass.mail.php?id='.$usuario[0]['id'].'&nombre='.$usuario[0]['nombre'].''))); //                 
 
             $mail->AltBody = 'Correo enviado';        
 

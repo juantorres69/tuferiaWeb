@@ -349,7 +349,7 @@ class ModeloUsuario {
         $stmt = null;
     }
 
-    // cambiar el nombre
+    // cambiar contraseña
 
     public static function mdlcambiarcontrasena($tabla, $id, $password){
         $encriptar = sha1($password);

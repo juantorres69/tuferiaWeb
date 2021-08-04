@@ -22,6 +22,8 @@ $(document).ready(function() {
                 success: function(res) {
                     $('.preloader').css('display', 'none');
                     
+                    console.log(datos)
+
                     if (res.ErrorStatus == false) {
 
                         swal.fire({

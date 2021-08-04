@@ -1,5 +1,5 @@
 <!-- START DETALLES -->
-<div class="main_content">    
+<div class="main_content container-heigth-fluid">    
     <div class="staggered-animation-wrap" style="margin-top: 18px;">
         <div class="custom-container">
             <div class="" >

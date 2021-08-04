@@ -170,8 +170,12 @@
                                                                 <img class="product_hover_img" src="'.$url.'assets/images/productos/'.(($reciente['imagen'] != '') ? $reciente['imagen'] : 'no-imagen.png').'" alt="el_hover_img1">
                                                             </a>
                                                             <div class="product_action_box">
-                                                                <ul class="list_none pr_action_btn">
-                                                                    <li class="add-to-cart"><a href="'.$reciente['ruta'].'"><i class="icon-basket-loaded"></i> Añadir al Carrito</a></li>
+                                                                <ul class="list_none pr_action_btn"> 
+                                                                    <li class="add-to-cart">
+                                                                        <a href="'.$reciente['ruta'].'">
+                                                                            <i class="icon-basket-loaded"></i> 
+                                                                        Añadir al Carrito</a>
+                                                                    </li>
                                                                     <li><a href="deseos/'.$reciente['id'].'"><i class="icon-heart"></i></a></li>
                                                                 </ul>
                                                             </div>

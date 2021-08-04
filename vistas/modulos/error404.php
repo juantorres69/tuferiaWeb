@@ -1,5 +1,5 @@
 <!-- 404 SECTION -->
-<div class="main_content">
+<div class="main_content container-heigth-fluid">
     <div class="section">
         <div class="error_wrap">
             <div class="container">

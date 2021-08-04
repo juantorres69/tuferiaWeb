@@ -3887,7 +3887,7 @@ h6.blog_title {
 }
 .newsletter_text::before {
 	content: "\ecc4";
-	margin-top: -9px;
+	margin-top: -12px;
 	position: absolute;
 	left: 0;
 	color: #fff;

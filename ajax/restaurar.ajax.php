@@ -29,7 +29,7 @@ class Ajaxrestaurar{
 			$mail->Subject = 'Restaurar contraseña'; //
 			$mail->AddAddress($usuario['email']);   //  
 
-			$mail->MsgHTML(file_get_contents(str_replace(' ','%20',$url.'vistas/mails/restaurar_pass.mail.php?nombre='.$usuario['nombre'].''))); //                 
+			$mail->MsgHTML(file_get_contents(str_replace(' ','%20',$url.'vistas/mails/recuperar_pass.mail.php?nombre='.$usuario['nombre'].'&id='.$id.''))); //                 
 
             $mail->AltBody = 'Correo enviado';        
 
@@ -40,15 +40,13 @@ class Ajaxrestaurar{
         }
         echo json_encode($result);
     }
-
 }
 
 if(isset($_POST['accion'])){
-
     $objeto = new Ajaxrestaurar();                 //
     if($_POST['accion'] == 'restaurar'){          //
         $PassN = $_POST["txtPass"];              //
-        $idUsuario = $_POST["idUsuario"];
+        $idUsuario = $_POST["idUsuario"];       
         $objeto->CambiarContrasena($idUsuario, $PassN);
     }
 }

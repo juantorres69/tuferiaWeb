@@ -8,11 +8,11 @@ $url = ruta::ctrRuta();
     </div>
     <div style="padding: 20px;">
 
-        <p>¿<strong><?php echo explode(' ',$_GET['nombre'])[0];?></strong>, solucitó restaurar su contraseña?</p> <!-- traté de hacerlo de otra manera pero no funciona aun -->
+        <p>¿<strong><?php echo ($_GET['nombre']);?></strong>, solucitó restaurar su contraseña?</p> <!-- traté de hacerlo de otra manera pero no funciona aun -->
 
         <br>
 
-        <p>Recibes este email porque se solicitó recuperar su contraseña para tu cuenta.
+        <p>Recibes este email porque se solicitó recuperar su contraseña para tu cuenta. <?php echo $_GET['id']; ?>
         <br> ¿deseas restaurar la contraseña?</p>
 
         <p> 

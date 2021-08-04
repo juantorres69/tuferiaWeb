@@ -16,7 +16,9 @@ if(!isset($_SESSION['rol'])){ ?>
                 <!-- SUBSCRIBE -->
                 <div>
                     <div>
-                        <a href="registro"><button class="btn btn-dark btn-radius" style="border-width: 2px; border-color: #fff;">Registrate</button></a>
+                        <a href="registro">
+                            <button class="btn btn-dark btn-radius" style="border-width: 2px; border-color: #fff; font-size:1.4rem !important">Registrate</button>
+                        </a>
                     </div>
                 </div>
 

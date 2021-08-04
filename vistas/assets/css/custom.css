@@ -104,7 +104,7 @@ table.dataTable tbody td {
 
 
 .container-heigth-fluid{
-    min-height: calc(100vh - 134px - 117px ) !important;
+    min-height: calc(100vh - 134px - 103px ) !important;
 }
 
 
