@@ -3,61 +3,47 @@
     <div class="staggered-animation-wrap" style="margin-top: 18px;">
         <div class="custom-container">
             <div class="" >
-
                 <div class="">
                     <input type="hidden" id="hdUrl" value="<?php echo $url; ?>">
-                    
                     <div class="" style="margin-top: 10px;">
-
                         <!-- TITTLE -->
                         <div class="heading_s2">
                             <h4>Detalles de Productos</h4>
                         </div>
-
                         <!-- OPTIONS -->
                         <div class="tab-style2">
-
                             <ul class="nav nav-tabs justify-content-center justify-content-md-end" id="tabmenubar" role="tablist" style="z-index: 10000;">
-
                                 <!-- COLORES -->
                                 <li class="nav-item">
                                     <a class="nav-link active" id="colores-tab" data-toggle="tab" href="#colores" role="tab" aria-controls="colores" aria-selected="true">Colores</a>
                                 </li>
-                                
                                 <!-- TALLAS -->
                                 <li class="nav-item">
                                     <a class="nav-link" id="tallas-tab" data-toggle="tab" href="#tallas" role="tab" aria-controls="tallas" aria-selected="false">Tallas</a>
                                 </li>
-
                                 <!-- ETIQUETAS -->
                                 <li class="nav-item">
                                     <a class="nav-link" id="tags-tab" data-toggle="tab" href="#tags" role="tab" aria-controls="tags" aria-selected="false">Etiquetas</a>
                                 </li>
-
                             </ul>
                         </div>
                     </div>
-
                     <!-- TABLE -->
                     <div class="row">
                         <div class="col-md-12">
                             <div class="tab_slider">
-
                                 <!-- COLORES -->
                                 <div class="tab-pane fade show active" id="colores" role="tabpanel" aria-labelledby="colores-tab">
-        
                                     <!-- VENTANA DE NUEVO COLORES -->
                                     <div class="modal fade" id="mdlColores" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
                                         <div class="modal-dialog modal-lg">
                                             <div class="modal-content">
-
                                                 <div class="modal-header">
                                                     <h5 class="modal-title" id="exampleModalLabel">Colores</h5>
                                                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                                     <span aria-hidden="true">&times;</span>
                                                     </button>
                                                 </div>
-                                                
                                                 <form id="frmColores">
                                                     <input type="hidden" name="hdColor" id="hdColor">
                                                     <div class="modal-body">
@@ -93,9 +79,7 @@
                                             </div>
                                         </div>
                                     </div>
-        
                                     <table class="table">
-
                                         <thead>
                                             <tr>
                                                 <th scope="col">Color</th>
@@ -108,21 +92,16 @@
                                                 </th>
                                             </tr>
                                         </thead>
-
                                         <tbody id="tbColores">
                                         </tbody>
-
                                     </table>
-
                                     <!-- BUTTON -->
                                     <div class="row">
                                         <div class="col-md-12 mb-3" style="margin: 20px 0px; text-align: center;">
                                             <button class="btn btn-danger btn-action" id="btnNuevoColor">Nuevo</button>
                                         </div>
                                     </div>
-
                                 </div>
-
                                 <!-- TALLAS -->
                                 <div class="tab-pane fade" id="tallas" role="tabpanel" aria-labelledby="tallas-tab">
         
@@ -165,7 +144,6 @@
                                             </div>
                                         </div>
                                     </div>
-        
                                     <table class="table">
                                         <thead>
                                             <tr>
@@ -178,24 +156,18 @@
                                                 </th>
                                             </tr>
                                         </thead>
-
                                         <tbody id="tbTallas">
                                         </tbody>
-
                                     </table>
-
                                     <!-- BUTTON -->
                                     <div class="row">
                                         <div class="col-md-12 mb-3" style="margin: 20px 0px; text-align: center;">
                                             <button class="btn btn-danger btn-action" id="btnNuevaTalla">Nueva</button>
                                         </div>
                                     </div>
-
                                 </div>
-
                                 <!-- ETIQUETAS -->
                                 <div class="tab-pane fade" id="tags" role="tabpanel">
-
                                     <!-- VENTANA DE NUEVA ETIQUETA -->
                                     <div class="modal fade" id="mdlTags" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
                                         <div class="modal-dialog modal-lg">
@@ -235,9 +207,7 @@
                                             </div>
                                         </div>
                                     </div>
-        
                                     <table class="table">
-                                        
                                         <thead>
                                             <tr>
                                                 <th scope="col">Etiquetas</th>
@@ -249,18 +219,14 @@
                                                 </th>
                                             </tr>
                                         </thead>
-
                                         <tbody id="tbTags"></tbody>
-
                                     </table>
-
                                     <!-- BUTTON -->
                                     <div class="row">
                                         <div class="col-md-12 mb-3" style="margin: 20px 0px; text-align: center;">
                                             <button class="btn btn-danger btn-action" id="btnNuevoTag">Nuevo</button>
                                         </div>
                                     </div>
-
                                 </div>
                             </div>
                         </div>

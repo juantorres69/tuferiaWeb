@@ -1,5 +1,5 @@
 <!-- SECTION PRODUCT -->
-<div class="section aj1" style="padding: 20px;">
+<div class="section aj1 container-heigth-fluid" style="padding: 20px; min-height: calc(100vh - 134px - 85px ) !important;">
 	<div class="container">
     	<div class="">
             <!-- RIGHT -->
@@ -7,16 +7,12 @@
             	<div class="row align-items-center mb-4 pb-1">
                     <div class="col-12">
                         <div class="product_header">
-
                             <div class="product_header_left"></div>
-
                             <div class="product_header_right">
-
                             	<div class="products_view">
                                     <a href="javascript:Void(0);" class="shorting_icon grid"><i class="ti-view-grid"></i></a>
                                     <a href="javascript:Void(0);" class="shorting_icon list active"><i class="ti-layout-list-thumb"></i></a>
                                 </div>
-
                                 <div class="custom_select">
                                     <select class="form-control form-control-sm" id="cbMostrar">
                                         <option value="">Mostrar</option>
@@ -29,14 +25,11 @@
                         </div>
                     </div>
                 </div>
-
                 <?php
                 echo '<input type="hidden" id="hdRuta" value="'.$_GET['ruta'].'">';
                 echo '<input type="hidden" id="hdUrl" value="'.$url.'">';
                 ?>
-
                 <div class="row shop_container list"></div>
-                
         	</div>
         </div>
     </div>

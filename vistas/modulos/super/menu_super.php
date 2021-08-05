@@ -1,12 +1,10 @@
 <!-- CATEGORY -->
 <div class="categories_wrap">
-
     <!-- TITTLE -->
     <button type="button" data-toggle="collapse" data-target="#navCatContent" aria-expanded="false" class="categories_btn">
         <i class="linearicons-menu"></i>
         <span>Menú </span>
     </button>
-
     <!-- OPTIONS -->
     <div id="navCatContent" class="nav_cat navbar collapse" style="position: relative;margin-bottom: 20px;">
         <ul>

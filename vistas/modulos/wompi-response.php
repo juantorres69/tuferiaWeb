@@ -16,8 +16,6 @@ if($METHOD == 'POST'){
     $payment = json_decode(file_get_contents($endpoint));
 }
     
-    
-
     $error = false;
     if(isset($payment->error)){
         $error = true;
@@ -28,27 +26,20 @@ if($METHOD == 'POST'){
             $transaccion = ControladorCheckout::guardarTransaccion($payment);
             if($transaccion)
                 http_response_code(200);
-                
         }else{
             // Registrar transaccion
             $transaccion = ControladorCheckout::guardarTransaccion($payment->data);
         }
-        
         // limpiar carrito
         $item = 'usuario_id';
         ControladorProductos::ctrEliminarCarrito($item ,$_SESSION['idUsuario']);
-
     }
-    
-    
 // }
 // else{
 //     header('Location /error404');
 // }
-
 if(!$error){
 ?>
-
 <div class="section">
 	<div class="container">
         <div class="row">
@@ -58,7 +49,6 @@ if(!$error){
                 <p class="py-0"><strong>ID de transaccion: </strong> <?php echo $payment->data->id?></p>
                 <p class="py-0"><strong>ID de Seguimiento: </strong> <?php echo $payment->data->payment_method->extra->ticket_id ?></p>
                 <p class="py-0"><strong>Referencia: </strong> <?php echo $payment->data->reference?></p>
-
             </div>
             <div class="col-12">
                 <div class="table-reponsive">
@@ -91,7 +81,5 @@ if(!$error){
         </div>
     </div>
 </div> 
-
 <?php }else{ ?>
-
 <?php } ?>           

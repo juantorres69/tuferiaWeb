@@ -8,15 +8,15 @@ $url = ruta::ctrRuta();
     </div>
     <div style="padding: 20px;">
 
-        <p>¿<strong><?php echo ($_GET['nombre']);?></strong>, solucitó restaurar su contraseña?</p> <!-- traté de hacerlo de otra manera pero no funciona aun -->
+        <p>¿<strong><?php echo ($_GET['nombre']);?></strong>, solucitó restaurar su contraseña?</p>
 
         <br>
 
-        <p>Recibes este email porque se solicitó recuperar su contraseña para tu cuenta. <?php echo $_GET['id']; ?>
+        <p>Recibes este email porque se solicitó recuperar su contraseña para tu cuenta.
         <br> ¿deseas restaurar la contraseña?</p>
 
         <p> 
-            <a href="<?php echo $url; ?>restaurar/<?php echo $_GET['id']; ?>"> <!--  -->
+            <a href="<?php echo $url; ?>restaurar/<?php echo $_GET['id']; ?>">
                 <button style="background-color: #ef7236;border: none; padding: 5px 20px;color: white; border-radius: 15px;">Restaurar</button>
             </a>
         </p>

@@ -12,7 +12,7 @@ class Ajaxrecuperar{
         $tabla = 'usuarios';
         $url = ruta::ctrRuta();
         $usuario = ModeloUsuario::mdlConsultarUsuarioPorEmail($tabla,$email);
-
+        
         if($usuario){
             $mail = new PHPMailer();
 			$mail->CharSet = 'UTF-8';
@@ -29,7 +29,7 @@ class Ajaxrecuperar{
 			$mail->Subject = 'Recuperar contraseña'; 
 			$mail->AddAddress($email);                               
 
-			$mail->MsgHTML(file_get_contents(str_replace(' ','%20',$url.'vistas/mails/recuperar_pass.mail.php?id='.$usuario[0]['id'].'&nombre='.$usuario[0]['nombre'].''))); //                 
+			$mail->MsgHTML(file_get_contents(str_replace(' ','%20',$url.'vistas/mails/recuperar_pass.mail.php?id='.$usuario[0]['id'].'&nombre='.$usuario[0]['nombre'].'')));                 
 
             $mail->AltBody = 'Correo enviado';        
 
@@ -40,11 +40,8 @@ class Ajaxrecuperar{
         }
         echo json_encode($result);
     }
-
 }
-
 if(isset($_POST['accion'])){
-
     $objeto = new Ajaxrecuperar();
     if($_POST['accion'] == 'recuperar'){
         $email = $_POST["txtEmail"];

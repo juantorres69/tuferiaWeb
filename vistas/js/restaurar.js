@@ -1,17 +1,17 @@
 $(document).ready(function() {
 
-    $('#frmRestaurar').on('submit', function(e) { //
+    $('#frmRestaurar').on('submit', function(e) { 
         e.preventDefault();
         let form = $(this).serializeArray();
         let datos = new FormData();
         form.forEach((item,index) => {
             datos.append(item.name, item.value);
         });
-        datos.append('accion', 'restaurar'); //
-        if ($('#txtPass').val() === $('#txtPassC').val() && ($('#txtPass').val() !== "" && $('#txtPassC').val() !== "") ) { // pienso que sería algo así 
+        datos.append('accion', 'restaurar'); 
+        if ($('#txtPass').val() === $('#txtPassC').val() && ($('#txtPass').val() !== "" && $('#txtPassC').val() !== "") ) { 
             $('.preloader').css('display', 'block');
             $.ajax({
-                url: 'ajax/restaurar.ajax.php', // 
+                url: 'ajax/restaurar.ajax.php', 
                 type: 'POST',
                 dataType: 'json',
                 data: datos,
@@ -21,22 +21,20 @@ $(document).ready(function() {
                 success: function(res) {
                     $('.preloader').css('display', 'none');
                     
-                    console.log(datos)
-
                     if (res.ErrorStatus == false) {
 
                         swal.fire({
                             title: 'Restaurar',
-                            text: res,msj, // 
+                            text: res,msj, 
                             icon: 'success',
                             confirmButtonText: 'Aceptar',
                             allowOutsideClick: false
 
                         }).then(() => {
-                            location.href = 'login'; // pretendo llevarlo a login
+                            location.href = 'login'; // pretendo llevarlo a login = no funciona 
                         });
                         
-                    } else {    // no recuerdo 
+                    } else {
                         swal.fire({
                             title: 'No existe',
                             text: 'este usuario no exite',
@@ -48,10 +46,10 @@ $(document).ready(function() {
                     console.log(error)
                 }
             });
-        } else { // no recuerdo // 
+        } else { 
             swal.fire({
                 title: 'Error',
-                text: 'verifique si coicido o jssajsndjas',
+                text: 'Deben ser similares contraseñas',
                 icon: 'error',
                 confirmButtonText: 'Aceptar'
             });

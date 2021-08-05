@@ -8,10 +8,10 @@ require_once '../lib/PHPMailer/PHPMailerAutoload.php';
 
 class Ajaxrestaurar{
 
-    public function CambiarContrasena($id, $PassN){      //
+    public function CambiarContrasena($id, $PassN){
         $tabla = 'usuarios';
         $url = ruta::ctrRuta();
-        $usuario = ModeloUsuario::mdlcambiarcontrasena($tabla, $id, $PassN);     //
+        $usuario = ModeloUsuario::mdlcambiarcontrasena($tabla, $id, $PassN);
 
         if($usuario){
             $mail = new PHPMailer();
@@ -25,11 +25,11 @@ class Ajaxrestaurar{
 			$mail->Username   = Mail::getUser();
 			$mail->Password   = Mail::getPassword();
 			$mail->From = Mail::getUser();
-			$mail->FromName = "Restaurar contraseña"; //
-			$mail->Subject = 'Restaurar contraseña'; //
-			$mail->AddAddress($usuario['email']);   //  
+			$mail->FromName = "Restaurar contraseña"; 
+			$mail->Subject = 'Restaurar contraseña'; 
+			$mail->AddAddress($usuario['email']); 
 
-			$mail->MsgHTML(file_get_contents(str_replace(' ','%20',$url.'vistas/mails/recuperar_pass.mail.php?nombre='.$usuario['nombre'].'&id='.$id.''))); //                 
+			$mail->MsgHTML(file_get_contents(str_replace(' ','%20',$url.'vistas/mails/restaurar_pass.mail.php?nombre='.$usuario['nombre'].'&id='.$id.''))); // es ligeramente diferente al recuperar.ajax.php        
 
             $mail->AltBody = 'Correo enviado';        
 
@@ -41,12 +41,11 @@ class Ajaxrestaurar{
         echo json_encode($result);
     }
 }
-
 if(isset($_POST['accion'])){
-    $objeto = new Ajaxrestaurar();                 //
-    if($_POST['accion'] == 'restaurar'){          //
-        $PassN = $_POST["txtPass"];              //
-        $idUsuario = $_POST["idUsuario"];       
+    $objeto = new Ajaxrestaurar();
+    if($_POST['accion'] == 'restaurar'){
+        $PassN = $_POST["txtPass"];
+        $idUsuario = $_POST["idUsuario"];
         $objeto->CambiarContrasena($idUsuario, $PassN);
     }
 }

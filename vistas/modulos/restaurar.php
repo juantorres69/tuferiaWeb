@@ -46,12 +46,10 @@
                             <h3>Restaurar contraseña</h3>
                         </div>
 
-                        <p>
-                            Ingrese su nueva contraseña
-                        </p>
+                        <p>Ingrese su nueva contraseña</p>
 
                         <!-- FORM -->
-                        <form id="frmRestaurar"> <!-- le puse un id a cada imput para compararlos -->
+                        <form id="frmRestaurar"> 
 
                             <div class="form-group">
                                 <input type="password" id="txtPass" required="" class="form-control" name="txtPass" placeholder="Nueva contraseña" require autofocus>
@@ -61,7 +59,7 @@
                                 <input type="password" id="txtPassC" required="" class="form-control" name="txtPassC" placeholder="Confirme nueva contraseña">
                             </div>
 
-                            <input type="hidden" id="idUsuario" required="" class="form-control" name="idUsuario" value="<?php $id ?>">
+                            <input type="hidden" id="idUsuario" required="" class="form-control" name="idUsuario" value="<?php $id ?>"> <!-- sospecho que este id no se está leyendo -->
 
                             <div class="form-group">
                                 <button type="submit" class="btn btn-fill-out btn-block" name="Restaurar">Restaurar</button>

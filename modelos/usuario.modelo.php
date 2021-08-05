@@ -361,5 +361,4 @@ class ModeloUsuario {
         return $stmt->fetchAll(PDO::FETCH_ASSOC);
         $stmt = null;
     }
-
 }

@@ -5,7 +5,7 @@ $(document).ready(function() {
         let form = $(this).serializeArray();
         let datos = new FormData();
         form.forEach((item,index) => {
-            console.log(item.name, item.value);
+            console.log(item.name, item.value); // este console.log se puede borrar?
             datos.append(item.name, item.value);
         });
         datos.append('accion', 'recuperar');
@@ -22,8 +22,6 @@ $(document).ready(function() {
                 success: function(res) {
                     $('.preloader').css('display', 'none');
                     
-                    console.log(datos)
-
                     if (res.ErrorStatus == false) {
 
                         swal.fire({

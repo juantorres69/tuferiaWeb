@@ -3,10 +3,8 @@
     <div class="staggered-animation-wrap" style="margin-top: 18px;">
         <div class="custom-container">
             <div class="">
-
                 <div class="">
                     <input type="hidden" id="hdUrl" value="<?php echo $url; ?>">
-
                     <div class="row">
                         <div class="col-md-12 text-right mb-3" style="display: flex; justify-content: space-between; margin-top: 10px;">
                             <!-- TITTLE -->
@@ -15,7 +13,6 @@
                             <button class="btn btn-danger btn-action" id="btnNuevaCat">Nueva</button>
                         </div>
                     </div>
-
                     <!-- VENTANA EMERGENTE DE NUEVA CATEGORIA -->
                     <div class="modal fade" id="mdlCategorias" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
                         <div class="modal-dialog modal-lg">
@@ -62,7 +59,6 @@
                             </div>
                         </div>
                     </div>
-
                     <!-- VENTANA EMERGENTE DE SUBCATEGORIAS -->
                     <div class="modal fade" id="mdlSubCategorias" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
                         <div class="modal-dialog modal-lg">
@@ -83,8 +79,7 @@
                                                 <small class="text-danger d-none" id="msjSubCategoria">Debe ingresar una subcategoria.</small>
                                             </div>
                                         </div>
-                                    </div>
-                                    
+                                    </div>     
                                     <table class="table mt-3">
                                             <thead>
                                                 <tr>
@@ -103,7 +98,6 @@
                             </div>
                         </div>
                     </div>
-
                     <!-- TABLE -->
                     <table class="table" id="tbCategorias" style="width: 100%;">
                         <thead>

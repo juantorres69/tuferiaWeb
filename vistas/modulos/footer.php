@@ -1,11 +1,9 @@
 <!-- START FOOTER -->
 <footer style="background-color: #2e385e;">
-
     <!-- SECTION INFO -->
     <div class="bottom_footer border-top-tran">
         <div class="custom-container">
             <div class="row" style="justify-content: center;">
-
                 <!-- DERECHOS RESERVADO -->
                 <div class="col-lg-4" style="align-items: center;display: flex;justify-content: center;">
                     <p class="mb-lg-0 text-center" style="color: #FFF;">
@@ -14,7 +12,6 @@
                         <br> © <?php echo date("Y") ?> todos los derechos reservados
                     </p>
                 </div>
-
                 <!-- REDES SOCIALES -->
                 <div class="col-lg-4" style="align-items: center; display: flex; justify-content: center;">
                     <div class="mb-lg-0 text-center">
@@ -37,7 +34,6 @@
                         </ul>
                     </div>
                 </div>
-                
             </div>
         </div>
     </div>

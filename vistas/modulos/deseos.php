@@ -5,20 +5,16 @@
         ControladorProductos::ctrAgregarDeseos($producto);
     }
 ?>
-
 <!-- SECTION WISH -->
 <div class="breadcrumb_section bg_gray page-title-mini">
-
     <div class="container">
         <div class="row align-items-center">
-
             <!-- TITTLE -->
         	<div class="col-md-6">
                 <div class="page-title">
             		<h1>Lista de Deseos</h1>
                 </div>
             </div>
-
             <!-- ROUTE -->
             <div class="col-md-6">
                 <ol class="breadcrumb justify-content-md-end">
@@ -29,15 +25,12 @@
         </div>
     </div>
 </div>
-
 <!-- SECTION WISH LIST -->
 <div class="section">
 	<div class="container">
         <div class="row">
             <div class="col-12">
-
                 <div class="table-responsive wishlist_table">
-
                     <!-- TABLE -->
                 	<table class="table">
                         <!-- ELEMENT -->
@@ -50,10 +43,8 @@
                                 <th class="product-remove">Eliminar</th>
                             </tr>
                         </thead>
-
                         <!-- ITEMS -->
                         <tbody>
-
                             <?php 
                             $item = 'usuario_id';
                             $valor = $_SESSION['idUsuario'];
@@ -71,8 +62,7 @@
                             }else{
                                 echo '<tr><td colspan="5">No hay información.</td></tr>';
                             }
-                            ?>
-                            
+                            ?>        
                         </tbody>
                     </table>
                 </div>
