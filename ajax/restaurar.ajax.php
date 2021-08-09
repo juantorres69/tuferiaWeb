@@ -32,7 +32,7 @@ class Ajaxrestaurar{
 			$mail->MsgHTML(file_get_contents(str_replace(' ','%20',$url.'vistas/mails/restaurar_pass.mail.php?nombre='.$usuario['nombre'].'&id='.$id.''))); // es ligeramente diferente al recuperar.ajax.php        
 
             $mail->AltBody = 'Correo enviado';        
-
+             
             $mail->Send();
             $result = array('ErrorStatus' => false, 'Msj' => 'se ha restaurado su contraseña.');
         }else{

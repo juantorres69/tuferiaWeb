@@ -7,7 +7,6 @@ $url = ruta::ctrRuta();
         <img src="https://tuferiavirtual.co/images/LOGO%202021-ABRIL.png" style="width: 150px;">
     </div>
     <div style="padding: 20px;">
-
         <p><strong><?php echo $_GET['nombre']?></strong>, se ha restaurado su contraseña</p> 
 
         <br>

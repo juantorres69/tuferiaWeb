@@ -33,7 +33,6 @@ $(document).ready(function() {
                         }).then(() => {
                             location.href = 'login'; // pretendo llevarlo a login = no funciona 
                         });
-                        
                     } else {
                         swal.fire({
                             title: 'No existe',
