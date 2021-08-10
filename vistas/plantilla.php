@@ -151,7 +151,7 @@
                         |_____|_|___/\__\__,_| |_.__/|_|\__,_|_| |_|\___\__,_|
                                                                                 
                         */
-                        $whiteListGeneric = array("productos", "login", "registro-comercio", "registro", "carrito",  "deseos", "checkout", "error404", "buscar", "perfil","wompi-response","recuperar","restaurar");
+                        $whiteListGeneric = array("productos", "login", "registro-comercio", "registro", "carrito",  "deseos", "checkout", "error404", "buscar", "perfil","wompi-response","recuperar","restaurar","tyc","qys");
                         if($ruta != null || $valor == "tags"){
                             include "modulos/productos.php";
                             $sw_prods = true;
