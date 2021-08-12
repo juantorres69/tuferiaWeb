@@ -34,6 +34,37 @@ Version      : 1.0
 	25.START TEXT TYPING STYLE
 		
 *=============================================================*/
+/*===================================*
+          prueba de checkbox
+*===================================*/
+
+input[type=checkbox]{ /*solo se esconde para tener un campo personalisado*/
+	display: none; 
+}
+
+input[type=checkbox] + label{ /*esta linea significa esto + el siguiente elemento*/
+	cursor:pointer;
+}
+
+label:before{
+	content:'';
+	background:transparent;
+	border: 2px solid #ef7236;
+	border-radius: 50%;
+	display: inline-table;
+	height: 20px;
+	width: 20px;
+	margin-right: 5px;
+	text-align: center;
+	text-shadow:1px 1px 3px gray;
+	vertical-align:middle;
+}
+input[type=checkbox]:checked + label:before{
+	content: '●';
+	line-height: 0.7;
+	font-size: 20px;
+	color: #ef7236;
+}
 
 /*===================================*
   01.GENERAL STYLE

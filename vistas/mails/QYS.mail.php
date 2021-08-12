@@ -7,9 +7,15 @@ $url = ruta::ctrRuta();
         <img src="https://tuferiavirtual.co/images/LOGO%202021-ABRIL.png" style="width: 100px;">
     </div>
     <div style="padding: 20px;">
-        <p>¡Gracias por registrarte en <strong>tuferiavirtual.co</strong>!</p>
-        <p><strong><?php echo $_GET['nombre']; ?></strong>, ahora podras gestionar tus productos y servicios.</p>
-        <p>Estamos verificando tu información, te avisaremos cuando tu cuenta este activa.</p>
+        <p><strong><?php echo $_GET['nombre']?></strong>, se ha enviado ___________ con exito</p> <!-- Planeo colocar una variable dinamica, asi como el nombre, colocar la queja -->
+        <br>
+        <p>Hemos recibido su ___________ con exito, pronto atenderemos su ___________ y entraremos en contacto con usted. 
+        <br> regresa a Tu Feria Virtual</p>
+        <p> 
+            <a href="<?php echo $url; ?>home">
+                <button style="background-color: #ef7236;border: none; padding: 5px 20px;color: white; border-radius: 15px;">Regresa a inicio</button>
+            </a>
+        </p>
     </div>
     <div style="background-color: #2e385e;height: 20px; display: flex; justify-content: center; align-items:center">
         <div style="background-color: #2e385e;height: 10px;color: white;text-align: center;text-decoration: none;"></div>

@@ -132,6 +132,7 @@
         <script src="<?php echo $url; ?>vistas/assets/js/jquery.elevatezoom.js"></script>
         <!-- scripts js --> 
         <script src="<?php echo $url; ?>vistas/assets/js/scripts.js"></script>
+        <script src="<?php echo $url; ?>vistas/js/aceptar.js"></script>
         <!-- custom -->
         <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
         <script src="//cdnjs.cloudflare.com/ajax/libs/numeral.js/2.0.6/numeral.min.js"></script>

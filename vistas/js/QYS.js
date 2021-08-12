@@ -1,17 +1,18 @@
 $(document).ready(function() {
 
-    $('#frmRecuperar').on('submit', function(e) {
+    $('#frmQYS').on('submit', function(e) {
         e.preventDefault();
         let form = $(this).serializeArray();
         let datos = new FormData();
         form.forEach((item,index) => {
+            console.log(item.name, item.value); // este console.log se puede borrar?
             datos.append(item.name, item.value);
         });
-        datos.append('accion', 'recuperar');
+        datos.append('accion', 'QYS');
         if ($('#txtEmail').val() !== "") {
             $('.preloader').css('display', 'block');
             $.ajax({
-                url: 'ajax/recuperar.ajax.php',
+                url: 'ajax/QYS.ajax.php',
                 type: 'POST',
                 dataType: 'json',
                 data: datos,
@@ -24,7 +25,7 @@ $(document).ready(function() {
                     if (res.ErrorStatus == false) {
 
                         swal.fire({
-                            title: 'Recuperar',
+                            title: 'Enviado',
                             text: res.Msj,
                             icon: 'success',
                             confirmButtonText: 'Aceptar',
@@ -33,17 +34,16 @@ $(document).ready(function() {
                         }).then(() => {
                             location.href = 'home';
                         });
-                        
                     } else {
                         swal.fire({
                             title: 'No existe',
-                            text: 'el correo que digitó no esta registrado',
+                            text: 'el email que digitó no esta registrado',
                             icon: 'error',
                             confirmButtonText: 'Aceptar'
                         });
                     }
                 }, error:function(error){ 
-                    console.log(error)
+                    console.log(error)          // este console.log se puede borrar?
                 }
             });
         } else {

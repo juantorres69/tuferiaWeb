@@ -43,8 +43,14 @@
                             <div class="form-group">
                                 <input class="form-control" required="" type="password" name="txtCPassword" id="txtCPassword" placeholder="Confirmar Contraseña">
                             </div>
+                            <div class="form-note text-center"> 
+                                <input type="checkbox" id="acepta" value="first_checkbox">
+                                <label for="acepta">
+                                    <a href="<?php echo $url; ?>tyc" target="_blank">He leído y acepto los términos y condiciones</a>
+                                </label>
+                            </div>
                             <div class="form-group">
-                                <button type="submit" class="btn btn-fill-out btn-block" name="register">Guardar</button>
+                                <button type="submit" class="btn btn-fill-out btn-block" disabled name="register">Registrarse</button>
                             </div>
                         </form>
                         <!-- OR -->
@@ -53,9 +59,6 @@
                         </div>
                         <div class="form-note text-center"> ¿Ya estás registrado? 
                             <a href="<?php echo $url; ?>login">Iniciar Sesión</a>
-                        </div>
-                        <div class="form-note text-center"> 
-                            <a href="<?php echo $url; ?>tyc">Términos y condiciones</a>
                         </div>
                     </div>
                 </div>

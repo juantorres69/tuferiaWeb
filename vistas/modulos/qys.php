@@ -30,13 +30,13 @@
                             <h3>Quejas y sugerencias</h3>
                         </div>
                         <!-- QUEJAS Y SUGERENCIAS -->
-                        <form id="">
+                        <form id="frmQYS">
                             <div class="form-group">
-                                <input type="text" required="" class="form-control" name="" placeholder="Nombre"> <!-- nombre -->
+                                <input type="text" required="" class="form-control" name="nombre" placeholder="Nombre"> <!-- nombre -->
                             </div>
                             <div class="form-group">
                                 <div class="custom_select">
-                                    <select required="" class="form-control" name="TipoQueja"> <!-- tipo de usuario -->
+                                    <select required="" class="form-control" name="TipoUsuario"> <!-- tipo de usuario -->
                                         <option value="">¿Comprador o expositor?</option>
                                         <option value="comprador">Comprador</option>
                                         <option value="expositor">Expositor</option>
@@ -44,10 +44,10 @@
                                 </div>
                             </div>
                             <div class="form-group">
-                                <input type="text" required="" class="form-control" name="" placeholder="Numero de celular"> <!-- numero -->
+                                <input type="text" required="" class="form-control" name="numero" placeholder="Numero de celular"> <!-- numero -->
                             </div>
                             <div class="form-group">
-                                <input type="email" required="" class="form-control" name="" placeholder="Email"> <!-- email -->
+                                <input type="email" required="" class="form-control" id="txtEmail" name="txtEmail" placeholder="Email"> <!-- email -->
                             </div>
                             <div class="form-group">
                                 <div class="custom_select">
@@ -59,10 +59,10 @@
                                 </div>
                             </div>
                             <div class="form-group">
-                                <input type="text" required="" class="form-control" name="" placeholder="Que quieres decirnos"> <!-- caja de texto -->
+                                <input type="text" required="" class="form-control" name="dice" placeholder="Que quieres decirnos"> <!-- caja de texto -->
                             </div>
                             <div class="form-group">
-                                <button type="" class="btn btn-fill-out btn-block" name="">Enviar</button> <!-- enviar un correo con la cada -->
+                                <button type="submit" class="btn btn-fill-out btn-block" name="enviar">Enviar</button> <!-- enviar un correo con la cada -->
                             </div>
                         </form>
                     </div>

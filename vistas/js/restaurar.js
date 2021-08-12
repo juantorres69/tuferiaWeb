@@ -10,6 +10,7 @@ $(document).ready(function() {
         datos.append('accion', 'restaurar'); 
         if ($('#txtPass').val() === $('#txtPassC').val() && ($('#txtPass').val() !== "" && $('#txtPassC').val() !== "") ) { 
             $('.preloader').css('display', 'block');
+            console.log(datos)
             $.ajax({
                 url: 'ajax/restaurar.ajax.php', 
                 type: 'POST',
@@ -20,7 +21,7 @@ $(document).ready(function() {
                 processData: false,
                 success: function(res) {
                     $('.preloader').css('display', 'none');
-                    
+                    console.log(res)
                     if (res.ErrorStatus == false) {
 
                         swal.fire({
@@ -31,7 +32,7 @@ $(document).ready(function() {
                             allowOutsideClick: false
 
                         }).then(() => {
-                            location.href = 'login'; // pretendo llevarlo a login = no funciona 
+                            //location.href = 'login'; // pretendo llevarlo a login = no funciona 
                         });
                     } else {
                         swal.fire({

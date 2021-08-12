@@ -3,7 +3,6 @@
     $item = 'id_usuario';
     $valor = $_SESSION['idUsuario'];
     $compras = ControladorUsuario::ctrMostrarCompras($item, $valor);
-                        
 ?>
 <!-- START SECTION PERFIL -->
 <div class="breadcrumb_section bg_gray page-title-mini">
@@ -196,7 +195,7 @@
                                             ?>
                                             <label>Ciudad</label>
                                             <select name="cbCiudad" id="cbCiudad" class="form-control form-custom">
-                                                <option value="">Seleccione..</option>
+                                                <option value="">Seleccione...</option>
                                                 <?php 
                                                     foreach($ciudades as $ciudad){
                                                         echo '<option value="'.$ciudad['id'].'">'.$ciudad['descripcion'].'</option>';
@@ -283,7 +282,7 @@
                                     </div>
                                 </div>
                             </div>
-                        </div>                        
+                        </div>                               
                     </div>
                 </div>
             </div>

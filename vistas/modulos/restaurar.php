@@ -48,7 +48,9 @@
                             <div class="form-group">
                                 <input type="password" id="txtPassC" required="" class="form-control" name="txtPassC" placeholder="Confirme nueva contraseña">
                             </div>
-                            <input type="hidden" id="idUsuario" required="" class="form-control" name="idUsuario" value="<?php $id ?>"> <!-- sospecho que este id no se está leyendo -->
+
+                            <input type="hidden" id="idUsuario" required="" class="form-control" name="idUsuario" value="<?php echo $id ?>"> <!-- sospecho que este id no se está leyendo -->
+
                             <div class="form-group">
                                 <button type="submit" class="btn btn-fill-out btn-block" name="Restaurar">Restaurar</button>
                             </div>

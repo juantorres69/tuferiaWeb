@@ -36,7 +36,7 @@
                                 <input type="email" id="txtEmail" required="" class="form-control" name="txtEmail" placeholder="Ingrese su correo." require autofocus>
                             </div>
                             <div class="form-group">
-                                <button type="submit" class="btn btn-fill-out btn-block" name="login">Enviar</button>
+                                <button type="submit" class="btn btn-fill-out btn-block" name="enviar">Enviar</button>
                             </div>
                         </form>
                     </div>

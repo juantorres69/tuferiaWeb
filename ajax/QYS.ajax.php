@@ -6,12 +6,12 @@ require_once '../modelos/mail.php';
 require_once '../modelos/rutas.php';
 require_once '../lib/PHPMailer/PHPMailerAutoload.php';
 
-class Ajaxrecuperar{
+class AjaxQYS{
 
-    public function validarEmail($email){
+    public function QYS($email){
         $tabla = 'usuarios';
         $url = ruta::ctrRuta();
-        $usuario = ModeloUsuario::mdlConsultarUsuarioPorEmail($tabla,$email);
+        $usuario = ModeloUsuario::mdlConsultarUsuarioPorEmail($tabla,$email); // cambiar el modulo (posibilidad)
         
         if($usuario){
             $mail = new PHPMailer();
@@ -24,17 +24,17 @@ class Ajaxrecuperar{
 			$mail->Port       = 465;
 			$mail->Username   = Mail::getUser();
 			$mail->Password   = Mail::getPassword();
-			$mail->From = Mail::getUser();
-			$mail->FromName = "Recuperar contraseña";  
-			$mail->Subject = 'Recuperar contraseña'; 
+			$mail->From       = Mail::getUser();
+			$mail->FromName   = "Enviado con exito";  
+			$mail->Subject    = 'Enviado con exito'; 
 			$mail->AddAddress($email);                               
 
-			$mail->MsgHTML(file_get_contents(str_replace(' ','%20',$url.'vistas/mails/recuperar_pass.mail.php?id='.$usuario[0]['id'].'&nombre='.$usuario[0]['nombre'].'')));                 
+			$mail->MsgHTML(file_get_contents(str_replace(' ','%20',$url.'vistas/mails/QYS.mail.php?nombre='.$usuario[0]['nombre'].'')));
 
             $mail->AltBody = 'Correo enviado';        
 
             $mail->Send();
-            $result = array('ErrorStatus' => false, 'Msj' => 'Se le ha enviado un correo para restaurar su contraseña');
+            $result = array('ErrorStatus' => false, 'Msj' => 'Enviado con exito');
         }else{
             $result = $usuario;
         }
@@ -42,10 +42,10 @@ class Ajaxrecuperar{
     }
 }
 if(isset($_POST['accion'])){
-    $objeto = new Ajaxrecuperar();
-    if($_POST['accion'] == 'recuperar'){ 
+    $objeto = new AjaxQYS();
+    if($_POST['accion'] == 'QYS'){        // no recuerdo esta linea
         $email = $_POST["txtEmail"];
-        $objeto->validarEmail($email);
+        $objeto->QYS($email);
     }
 }
 ?>

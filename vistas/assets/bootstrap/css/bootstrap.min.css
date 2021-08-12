@@ -239,7 +239,7 @@ th {
 
 label {
     display: inline-block;
-    margin-bottom: .5rem
+    margin-bottom: 1rem
 }
 
 button {
@@ -2550,7 +2550,7 @@ textarea.form-control.is-invalid {
 
 .btn.disabled,
 .btn:disabled {
-    opacity: .65
+    opacity: .5
 }
 
 a.btn.disabled,

@@ -354,9 +354,8 @@ class ModeloUsuario {
     public static function mdlcambiarcontrasena($tabla, $id, $password){
         $encriptar = sha1($password);
         $stmt = Conexion::conectar()->prepare("update $tabla set password=:password where id=:id"); //
-        $stmt -> bindParam(":password", $encriptar, PDO::PARAM_STR);                               //
+        $stmt -> bindParam(":password", "1234", PDO::PARAM_STR);                               //
         $stmt -> bindParam(":id", $id, PDO::PARAM_STR);                                           //
-
         $stmt -> execute();
         return $stmt->fetchAll(PDO::FETCH_ASSOC);
         $stmt = null;

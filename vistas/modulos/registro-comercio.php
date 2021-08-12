@@ -105,7 +105,7 @@
                             <a href="<?php echo $url; ?>login">Iniciar Sesión</a>
                         </div>
                         <div class="form-note text-center"> 
-                            <a href="<?php echo $url; ?>tyc">Términos y condiciones</a>
+                            <a href="<?php echo $url; ?>tyc" target="_blank">Términos y condiciones</a>
                         </div>
                     </div>
                 </div>

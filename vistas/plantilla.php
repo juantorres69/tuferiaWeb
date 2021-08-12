@@ -211,6 +211,7 @@
             <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
             <script src="//cdnjs.cloudflare.com/ajax/libs/numeral.js/2.0.6/numeral.min.js"></script>
             <!-- plantilla js --> 
+            <script src="<?php echo $url; ?>vistas/js/aceptar.js"></script>
             <script src="<?php echo $url; ?>vistas/js/plantilla.js"></script>
             <script src="<?php echo $url; ?>vistas/js/header.js"></script>
             <script src="<?php echo $url; ?>vistas/js/home.js"></script>
@@ -226,5 +227,7 @@
             <script src="<?php echo $url; ?>vistas/js/perfil.js"></script>
             <script src="<?php echo $url; ?>vistas/js/checkout.js"></script>
             <script src="<?php echo $url; ?>vistas/js/recuperar.js"></script>
+            <script src="<?php echo $url; ?>vistas/js/restaurar.js"></script>
+
     </body>
 </html>
