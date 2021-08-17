@@ -1,10 +1,9 @@
-function aceptar(){
-    aceptar = document.getElementById("aceptar").value;
 
-    if(aceptar == false){
-        document.getElementById("aceptar").disable = false;
-    }else{
-        document.getElementById("aceptar").disable = true;
-    }
+alert("está conectado"); // por que no sale el alert
+
+function comprobar(Obj){
+    if (Obj.checked)
+        document.getElementById('acepto').disabled = true;
+    else
+        document.getElementById('acepto').disabled = false;
 }
-document.getElementById("aceptar").addEventListener("nose", habilitar) 

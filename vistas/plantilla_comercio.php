@@ -24,7 +24,7 @@
         <meta name="keywords" content="ecommerce, electronics store, Fashion store, furniture store,  bootstrap 4, clean, minimal, modern, online store, responsive, retail, shopping, ecommerce store">
         <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
         <!-- SITE TITLE -->
-        <title>Tu Feria Virtual</title>
+        <title>Tu Feria Virtual - Expositor</title>
         <?php 
             $plantilla = ControladorPlantilla::ctrEstiloPlantilla();
             // var_dump($url);
@@ -83,7 +83,7 @@
             \____|\___/|_| |_|\__\___|_| |_|_|\__,_|\___/  |____/|_|_| |_|\__,_|_| |_| |_|_|\___\___/   
                                                                                                      
             */
-            include "modulos/header_admin.php";
+            include "modulos/header_expositor.php";
             $rutas = array();
             $ruta = null;
             if(isset($_GET['ruta']) && $_GET['ruta'] != 'admin'){

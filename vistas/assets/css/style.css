@@ -42,12 +42,13 @@ input[type=checkbox]{ /*solo se esconde para tener un campo personalisado*/
 	display: none; 
 }
 
-input[type=checkbox] + label{ /*esta linea significa esto + el siguiente elemento*/
+input[type=checkbox] + .label{ /*esta linea significa esto + el siguiente elemento*/
 	cursor:pointer;
 }
 
-label:before{
+.label:before{
 	content:'';
+	/* content:'✗'; */
 	background:transparent;
 	border: 2px solid #ef7236;
 	border-radius: 50%;
@@ -59,8 +60,9 @@ label:before{
 	text-shadow:1px 1px 3px gray;
 	vertical-align:middle;
 }
-input[type=checkbox]:checked + label:before{
+input[type=checkbox]:checked + .label:before{
 	content: '●';
+	/* content: '✓'; */
 	line-height: 0.7;
 	font-size: 20px;
 	color: #ef7236;

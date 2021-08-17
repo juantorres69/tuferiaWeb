@@ -8,7 +8,10 @@
                         <div class="text-center">
                             <h5 class="mb-2 mb-sm-3">TÉRMINOS Y CONDICIONES</h5> 
                             <p>
+                                
                                 <!-- tengo que esperar los terminos y condiciones de la pagina -->
+
+                                <a href="" download="Terminos y condiciones.pdf">Descarga</a>
                             </p>
                             <a href="home" class="btn btn-fill-out">Llévame al inico</a>
                         </div>
